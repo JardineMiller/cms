@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="cms@localhost">
+  <database-model serializer="dbm" dbms="MSSQL" family-id="MSSQL" format-version="4.14">
+    <root id="1">
+      <ServerVersion>14.0.1000</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="cms">
+      <ObjectId>6</ObjectId>
+      <Current>1</Current>
+      <Visible>1</Visible>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </database>
+    <database id="3" parent="1" name="dev.planner">
+      <ObjectId>5</ObjectId>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </database>
+    <database id="4" parent="1" name="master">
+      <ObjectId>1</ObjectId>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </database>
+    <database id="5" parent="1" name="model">
+      <ObjectId>3</ObjectId>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </database>
+    <database id="6" parent="1" name="msdb">
+      <ObjectId>4</ObjectId>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </database>
+    <database id="7" parent="1" name="tempdb">
+      <ObjectId>2</ObjectId>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </database>
+    <schema id="8" parent="2" name="INFORMATION_SCHEMA">
+      <ObjectId>3</ObjectId>
+    </schema>
+    <schema id="9" parent="2" name="db_accessadmin">
+      <ObjectId>16385</ObjectId>
+    </schema>
+    <schema id="10" parent="2" name="db_backupoperator">
+      <ObjectId>16389</ObjectId>
+    </schema>
+    <schema id="11" parent="2" name="db_datareader">
+      <ObjectId>16390</ObjectId>
+    </schema>
+    <schema id="12" parent="2" name="db_datawriter">
+      <ObjectId>16391</ObjectId>
+    </schema>
+    <schema id="13" parent="2" name="db_ddladmin">
+      <ObjectId>16387</ObjectId>
+    </schema>
+    <schema id="14" parent="2" name="db_denydatareader">
+      <ObjectId>16392</ObjectId>
+    </schema>
+    <schema id="15" parent="2" name="db_denydatawriter">
+      <ObjectId>16393</ObjectId>
+    </schema>
+    <schema id="16" parent="2" name="db_owner">
+      <ObjectId>16384</ObjectId>
+    </schema>
+    <schema id="17" parent="2" name="db_securityadmin">
+      <ObjectId>16386</ObjectId>
+    </schema>
+    <schema id="18" parent="2" name="dbo">
+      <ObjectId>1</ObjectId>
+      <IntrospectionTimestamp>2019-07-03.01:14:57.860</IntrospectionTimestamp>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="19" parent="2" name="guest">
+      <ObjectId>2</ObjectId>
+    </schema>
+    <schema id="20" parent="2" name="sys">
+      <ObjectId>4</ObjectId>
+    </schema>
+    <table id="21" parent="18" name="Comments">
+      <ObjectId>1301579675</ObjectId>
+      <CreatedTimestamp>2019-07-03.01:14:44.230</CreatedTimestamp>
+      <ModifiedTimestamp>2019-07-03.01:14:44.233</ModifiedTimestamp>
+    </table>
+    <table id="22" parent="18" name="Posts">
+      <ObjectId>1237579447</ObjectId>
+      <CreatedTimestamp>2019-07-03.01:14:44.227</CreatedTimestamp>
+      <ModifiedTimestamp>2019-07-03.01:14:44.230</ModifiedTimestamp>
+    </table>
+    <table id="23" parent="18" name="Users">
+      <ObjectId>1269579561</ObjectId>
+      <CreatedTimestamp>2019-07-03.01:14:44.230</CreatedTimestamp>
+      <ModifiedTimestamp>2019-07-03.01:14:44.230</ModifiedTimestamp>
+    </table>
+    <table id="24" parent="18" name="__EFMigrationsHistory">
+      <ObjectId>1205579333</ObjectId>
+      <CreatedTimestamp>2019-07-03.00:53:39.883</CreatedTimestamp>
+      <ModifiedTimestamp>2019-07-03.00:53:39.883</ModifiedTimestamp>
+    </table>
+    <column id="25" parent="21" name="Id">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="26" parent="21" name="Content">
+      <Position>2</Position>
+      <DataType>nvarchar(max)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="27" parent="21" name="PostId">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <index id="28" parent="21" name="PK_Comments">
+      <Position>1</Position>
+      <ColNames>Id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <index id="29" parent="21" name="IX_Comments_PostId">
+      <Position>2</Position>
+      <ColNames>PostId</ColNames>
+    </index>
+    <key id="30" parent="21" name="PK_Comments">
+      <ObjectId>1317579732</ObjectId>
+      <CreatedTimestamp>2019-07-03.01:14:44.230</CreatedTimestamp>
+      <ModifiedTimestamp>2019-07-03.01:14:44.230</ModifiedTimestamp>
+      <ColNames>Id</ColNames>
+      <UnderlyingIndexName>PK_Comments</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="31" parent="21" name="FK_Comments_Posts_PostId">
+      <ObjectId>1333579789</ObjectId>
+      <CreatedTimestamp>2019-07-03.01:14:44.230</CreatedTimestamp>
+      <ModifiedTimestamp>2019-07-03.01:14:44.230</ModifiedTimestamp>
+      <ColNames>PostId</ColNames>
+      <RefTableId>1237579447</RefTableId>
+      <RefSchemaName>dbo</RefSchemaName>
+      <RefTableName>Posts</RefTableName>
+      <RefKeyName>PK_Posts</RefKeyName>
+      <RefColNames>Id</RefColNames>
+    </foreign-key>
+    <column id="32" parent="22" name="Id">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="33" parent="22" name="Content">
+      <Position>2</Position>
+      <DataType>nvarchar(max)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="34" parent="22" name="PK_Posts">
+      <Position>1</Position>
+      <ColNames>Id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="35" parent="22" name="PK_Posts">
+      <ObjectId>1253579504</ObjectId>
+      <CreatedTimestamp>2019-07-03.01:14:44.230</CreatedTimestamp>
+      <ModifiedTimestamp>2019-07-03.01:14:44.230</ModifiedTimestamp>
+      <ColNames>Id</ColNames>
+      <UnderlyingIndexName>PK_Posts</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="36" parent="23" name="Id">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="37" parent="23" name="Name">
+      <Position>2</Position>
+      <DataType>nvarchar(50 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="38" parent="23" name="Email">
+      <Position>3</Position>
+      <DataType>nvarchar(50 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="39" parent="23" name="PK_Users">
+      <Position>1</Position>
+      <ColNames>Id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="40" parent="23" name="PK_Users">
+      <ObjectId>1285579618</ObjectId>
+      <CreatedTimestamp>2019-07-03.01:14:44.230</CreatedTimestamp>
+      <ModifiedTimestamp>2019-07-03.01:14:44.230</ModifiedTimestamp>
+      <ColNames>Id</ColNames>
+      <UnderlyingIndexName>PK_Users</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="41" parent="24" name="MigrationId">
+      <Position>1</Position>
+      <DataType>nvarchar(150 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="42" parent="24" name="ProductVersion">
+      <Position>2</Position>
+      <DataType>nvarchar(32 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="43" parent="24" name="PK___EFMigrationsHistory">
+      <Position>1</Position>
+      <ColNames>MigrationId</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="44" parent="24" name="PK___EFMigrationsHistory">
+      <ObjectId>1221579390</ObjectId>
+      <CreatedTimestamp>2019-07-03.00:53:39.887</CreatedTimestamp>
+      <ModifiedTimestamp>2019-07-03.00:53:39.887</ModifiedTimestamp>
+      <ColNames>MigrationId</ColNames>
+      <UnderlyingIndexName>PK___EFMigrationsHistory</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

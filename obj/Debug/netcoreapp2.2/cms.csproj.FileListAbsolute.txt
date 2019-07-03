@@ -1,0 +1,15 @@
+C:\Users\Jardine\RiderProjects\cms\bin\Debug\netcoreapp2.2\cms.deps.json
+C:\Users\Jardine\RiderProjects\cms\bin\Debug\netcoreapp2.2\cms.runtimeconfig.json
+C:\Users\Jardine\RiderProjects\cms\bin\Debug\netcoreapp2.2\cms.runtimeconfig.dev.json
+C:\Users\Jardine\RiderProjects\cms\bin\Debug\netcoreapp2.2\cms.dll
+C:\Users\Jardine\RiderProjects\cms\bin\Debug\netcoreapp2.2\cms.pdb
+C:\Users\Jardine\RiderProjects\cms\obj\Debug\netcoreapp2.2\cms.csprojAssemblyReference.cache
+C:\Users\Jardine\RiderProjects\cms\obj\Debug\netcoreapp2.2\cms.csproj.CoreCompileInputs.cache
+C:\Users\Jardine\RiderProjects\cms\obj\Debug\netcoreapp2.2\cms.RazorAssemblyInfo.cache
+C:\Users\Jardine\RiderProjects\cms\obj\Debug\netcoreapp2.2\cms.RazorAssemblyInfo.cs
+C:\Users\Jardine\RiderProjects\cms\obj\Debug\netcoreapp2.2\cms.AssemblyInfoInputs.cache
+C:\Users\Jardine\RiderProjects\cms\obj\Debug\netcoreapp2.2\cms.AssemblyInfo.cs
+C:\Users\Jardine\RiderProjects\cms\obj\Debug\netcoreapp2.2\cms.RazorTargetAssemblyInfo.cache
+C:\Users\Jardine\RiderProjects\cms\obj\Debug\netcoreapp2.2\cms.dll
+C:\Users\Jardine\RiderProjects\cms\obj\Debug\netcoreapp2.2\cms.pdb
+C:\Users\Jardine\RiderProjects\cms\bin\Debug\netcoreapp2.2\NLog.config
