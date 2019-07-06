@@ -1,36 +1,69 @@
 using System;
-using cms.Data_Layer;
+using System.Collections.Generic;
+using System.Linq;
+using cms.Data_Layer.Contexts;
 using cms.Data_Layer.Models;
+using Microsoft.Extensions.Logging;
 
-namespace cms.ApplicationLayer.Commands
+namespace cms.ApplicationLayer.Commands.Handlers
 {
-    public class UpdateUsersCommandHandler : ICommandHandler<UpdateUsersCommand>
+    public class UpdateUsersCommandHandler : ICommandHandler<UpdateUsersCommand, CommandResponse<User>>
     {
         private readonly ApplicationDbContext ctx;
+        private readonly ILogger<UpdateUsersCommandHandler> logger;
 
-        public UpdateUsersCommandHandler(ApplicationDbContext ctx)
+        public UpdateUsersCommandHandler(ApplicationDbContext ctx, ILogger<UpdateUsersCommandHandler> logger)
         {
             this.ctx = ctx;
+            this.logger = logger;
         }
 
-        public void Handle(UpdateUsersCommand command)
+        public CommandResponse<User> Handle(UpdateUsersCommand command)
         {
-            foreach (var updatedUser in command.users)
+            var response = new CommandResponse<User>();
+
+            try
             {
-                UpdateUser(updatedUser);
+                var validUsers = ValidateEntries(command.users);
+                UpdateUsers(validUsers);
+
+                ctx.SaveChanges();
+
+                response.Entities.AddRange(validUsers);
+                response.Success = true;
+            }
+            catch (Exception e)
+            {
+                logger.LogError(e.Message);
+                throw;
             }
 
-            ctx.SaveChanges();
+            return response;
         }
 
-        private void UpdateUser(User updatedUser)
+        private List<User> ValidateEntries(IList<User> users)
         {
-            var user = ctx.Users.Find(updatedUser.Id);
+            var updatedUserIds = users.Select(u => u.Id);
+            var validUserIds = ctx.Users.Where(u => updatedUserIds.Contains(u.Id)).Select(u => u.Id);
+            var invalidIds = updatedUserIds.Except(validUserIds).ToList();
 
-            if (user == null) return;
+            if (invalidIds.Any())
+            {
+                var stringIds = string.Join(",", invalidIds);
+                logger.LogWarning($"Entries not found for [{invalidIds.Count}] Users. Ids: [{stringIds}]");
+            }
 
-            var entry = ctx.Entry(user);
-            entry.CurrentValues.SetValues(updatedUser);
+            return users.Where(u => validUserIds.Contains(u.Id)).ToList();
+        }
+
+        private void UpdateUsers(IEnumerable<User> usersToUpdate)
+        {
+            foreach (var user in usersToUpdate)
+            {
+                var dbUser = ctx.Users.Find(user.Id);
+                var entry = ctx.Entry(dbUser);
+                entry.CurrentValues.SetValues(user);
+            }
         }
     }
 }

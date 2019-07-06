@@ -3,11 +3,11 @@ using cms.Data_Layer.Models;
 
 namespace cms.ApplicationLayer.Commands
 {
-    public class UpdateUsersCommand : ICommand
+    public class UpdateUsersCommand : ICommand<UpdateUsersCommand, CommandResponse<User>>
     {
-        public IEnumerable<User> users;
+        public IList<User> users;
 
-        public UpdateUsersCommand(IEnumerable<User> users)
+        public UpdateUsersCommand(IList<User> users)
         {
             this.users = users;
         }

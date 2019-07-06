@@ -1,7 +1,7 @@
 using cms.Data_Layer.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace cms.Data_Layer
+namespace cms.Data_Layer.Contexts
 {
     public class ApplicationDbContext : DbContext
     {

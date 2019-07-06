@@ -1,12 +1,10 @@
-using System;
 using System.Collections.Generic;
-using System.Net.Http;
-using cms.ApplicationLayer;
+using System.Linq;
 using cms.ApplicationLayer.Commands;
-using cms.ApplicationLayer.Commands.Responses;
+using cms.ApplicationLayer.Commands.Processor;
 using cms.ApplicationLayer.Queries;
+using cms.ApplicationLayer.Queries.Processor;
 using cms.Data_Layer.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace cms.Controllers
@@ -15,31 +13,25 @@ namespace cms.Controllers
     [Route("api/users")]
     public class UsersController : Controller
     {
-        private readonly IQueryHandler<GetUsersQuery, IEnumerable<User>> getUsersQueryHandler;
-        private readonly ICommandHandler<DeleteUsersCommand> deleteUsersCommandHandler;
-        private readonly ICommandHandler<UpdateUsersCommand> updateUsersCommandHandler;
-        private readonly ICommandHandler<CreateUserCommand, CommandResponse> createUserCommandHandler;
+        private readonly IQueryProcessor queryProcessor;
+        private readonly ICommandProcessor commandProcessor;
 
-        public UsersController(
-            IQueryHandler<GetUsersQuery, IEnumerable<User>> getUsersQueryHandler,
-            ICommandHandler<UpdateUsersCommand> updateUsersCommandHandler,
-            ICommandHandler<DeleteUsersCommand> deleteUsersCommandHandler,
-            ICommandHandler<CreateUserCommand, CommandResponse> createUserCommandHandler
-            )
+        public UsersController(IQueryProcessor queryProcessor, ICommandProcessor commandProcessor)
         {
-            this.getUsersQueryHandler = getUsersQueryHandler;
-            this.deleteUsersCommandHandler = deleteUsersCommandHandler;
-            this.updateUsersCommandHandler = updateUsersCommandHandler;
-            this.createUserCommandHandler = createUserCommandHandler;
+            this.queryProcessor = queryProcessor;
+            this.commandProcessor = commandProcessor;
         }
 
         [HttpGet]
         public IActionResult GetUsers()
         {
             var query = new GetUsersQuery();
-            var result = getUsersQueryHandler.Handle(query);
+            var result = queryProcessor.Process(query);
 
-            if (result == null) return NotFound();
+            if (!result.Any())
+            {
+                return NotFound();
+            }
 
             return Ok(result);
         }
@@ -50,57 +42,56 @@ namespace cms.Controllers
             var ids = new List<int>() {userId};
 
             var query = new GetUsersQuery(ids);
-            var result = getUsersQueryHandler.Handle(query);
+            var result = queryProcessor.Process(query);
 
-            if (result == null) return NotFound();
+            if (!result.Any())
+            {
+                return NotFound();
+            }
 
             return Ok(result);
         }
 
         [HttpDelete]
-        public IActionResult DeleteUsers([FromBody] IEnumerable<int> userIds)
+        public IActionResult DeleteUsers([FromBody] IList<int> userIds)
         {
-            //TODO: Try catch should be within the command handler
-            try
+            var cmd = new DeleteUsersCommand(userIds);
+            var response = commandProcessor.Process(cmd);
+
+            if (!response.Success)
             {
-                var cmd = new DeleteUsersCommand(userIds);
-                deleteUsersCommandHandler.Handle(cmd);
-                return Ok();
+                return BadRequest(); //TODO: Not accurate
             }
-            catch (Exception e)
-            {
-                return BadRequest();
-            }
+
+            return Ok(response.Success);
         }
 
         [HttpPut]
-        public IActionResult UpdateUsers([FromBody] IEnumerable<User> users)
+        public IActionResult UpdateUsers([FromBody] IList<User> users)
         {
-            //TODO: Try catch should be within the command handler
-            try
+            var cmd = new UpdateUsersCommand(users);
+            var result = commandProcessor.Process(cmd);
+
+            if (!result.Success)
             {
-                var cmd = new UpdateUsersCommand(users);
-                updateUsersCommandHandler.Handle(cmd);
-                return Ok();
+                return BadRequest(); //TODO: Not accurate
             }
-            catch (Exception e)
-            {
-                return BadRequest();
-            }
+
+            return Ok(result.Entities);
         }
 
         [HttpPost]
         public IActionResult CreateUser([FromBody] User user)
         {
             var cmd = new CreateUserCommand(user);
-            var result = createUserCommandHandler.Handle(cmd);
+            var result = commandProcessor.Process(cmd);
 
-            if (!result.Success) {
+            if (!result.Success)
+            {
                 return BadRequest(); //TODO: Not accurate
             }
 
-            user.Id = result.Id;
-            return Ok(user);
+            return Ok(result.Entities);
         }
     }
 }

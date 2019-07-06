@@ -1,22 +1,24 @@
 using System;
-using cms.ApplicationLayer.Commands.Responses;
-using cms.Data_Layer;
+using cms.Data_Layer.Contexts;
 using cms.Data_Layer.Models;
+using Microsoft.Extensions.Logging;
 
-namespace cms.ApplicationLayer.Commands
+namespace cms.ApplicationLayer.Commands.Handlers
 {
-    public class CreateUserCommandHandler : ICommandHandler<CreateUserCommand, CommandResponse>
+    public class CreateUserCommandHandler : ICommandHandler<CreateUserCommand, CommandResponse<User>>
     {
         private readonly ApplicationDbContext ctx;
+        private readonly ILogger<CreateUserCommandHandler> logger;
 
-        public CreateUserCommandHandler(ApplicationDbContext ctx)
+        public CreateUserCommandHandler(ApplicationDbContext ctx, ILogger<CreateUserCommandHandler> logger)
         {
             this.ctx = ctx;
+            this.logger = logger;
         }
 
-        public CommandResponse Handle(CreateUserCommand command)
+        public CommandResponse<User> Handle(CreateUserCommand command)
         {
-            var response = new CommandResponse();
+            var response = new CommandResponse<User>();
 
             try
             {
@@ -25,14 +27,13 @@ namespace cms.ApplicationLayer.Commands
                 ctx.Users.Add(user);
                 ctx.SaveChanges();
 
-                response.Id = user.Id;
+                response.Entities.Add(user);
                 response.Success = true;
-
-
             }
             catch (Exception e)
             {
-                // handle ho ho
+                logger.LogError(e.Message);
+                throw;
             }
 
             return response;

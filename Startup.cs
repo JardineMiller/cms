@@ -1,19 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using cms.ApplicationLayer;
 using cms.ApplicationLayer.Commands;
+using cms.ApplicationLayer.Commands.Handlers;
+using cms.ApplicationLayer.Commands.Processor;
+using cms.ApplicationLayer.Commands.Resolver;
 using cms.ApplicationLayer.Queries;
+using cms.ApplicationLayer.Queries.Handlers;
+using cms.ApplicationLayer.Queries.Processor;
+using cms.ApplicationLayer.Queries.Resolver;
 using cms.Config;
-using cms.Data_Layer;
+using cms.Data_Layer.Contexts;
 using cms.Data_Layer.Models;
 using cms.Data_Layer.Seeding;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -48,11 +49,16 @@ namespace cms
             services.AddMvc();
 
             // Queries
-            services.AddScoped<IQueryHandler<GetUsersQuery, IEnumerable<User>>, GetUsersQueryHandler>();
+            services.AddScoped<IQueryProcessor, QueryProcessor>();
+            services.AddScoped<IQueryResolver, QueryResolver>();
+            services.AddScoped<IQueryHandler<GetUsersQuery, List<User>>, GetUsersQueryHandler>();
 
             // Commands
-            services.AddScoped<ICommandHandler<DeleteUsersCommand>, DeleteUsersCommandHandler>();
-            services.AddScoped<ICommandHandler<UpdateUsersCommand>, UpdateUsersCommandHandler>();
+            services.AddScoped<ICommandProcessor, CommandProcessor>();
+            services.AddScoped<ICommandResolver, CommandResolver>();
+            services.AddScoped<ICommandHandler<DeleteUsersCommand, CommandResponse>, DeleteUsersCommandHandler>();
+            services.AddScoped<ICommandHandler<UpdateUsersCommand, CommandResponse<User>>, UpdateUsersCommandHandler>();
+            services.AddScoped<ICommandHandler<CreateUserCommand, CommandResponse<User>>, CreateUserCommandHandler>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

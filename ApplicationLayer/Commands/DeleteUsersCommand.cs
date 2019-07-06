@@ -2,11 +2,11 @@ using System.Collections.Generic;
 
 namespace cms.ApplicationLayer.Commands
 {
-    public class DeleteUsersCommand : ICommand
+    public class DeleteUsersCommand : ICommand<DeleteUsersCommand, CommandResponse>
     {
-        public IEnumerable<int> UserIds;
+        public IList<int> UserIds;
 
-        public DeleteUsersCommand(IEnumerable<int> userIds)
+        public DeleteUsersCommand(IList<int> userIds)
         {
             UserIds = userIds;
         }

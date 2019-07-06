@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace cms.Migrations
+namespace cms.Data_Layer.Migrations
 {
     public partial class AddCommentPostAndUser : Migration
     {

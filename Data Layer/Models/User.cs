@@ -1,6 +1,4 @@
-using System;
 using System.ComponentModel.DataAnnotations;
-using Newtonsoft.Json;
 
 namespace cms.Data_Layer.Models
 {
