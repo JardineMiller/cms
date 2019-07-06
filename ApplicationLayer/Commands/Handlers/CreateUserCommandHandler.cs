@@ -5,7 +5,7 @@ using Microsoft.Extensions.Logging;
 
 namespace cms.ApplicationLayer.Commands.Handlers
 {
-    public class CreateUserCommandHandler : ICommandHandler<CreateUserCommand, CommandResponse<User>>
+    public class CreateUserCommandHandler : ICommandHandler<CreateUsersCommand, CommandResponse<User>>
     {
         private readonly ApplicationDbContext ctx;
         private readonly ILogger<CreateUserCommandHandler> logger;
@@ -16,18 +16,18 @@ namespace cms.ApplicationLayer.Commands.Handlers
             this.logger = logger;
         }
 
-        public CommandResponse<User> Handle(CreateUserCommand command)
+        public CommandResponse<User> Handle(CreateUsersCommand command)
         {
             var response = new CommandResponse<User>();
 
             try
             {
-                var user = command.User;
+                var users = command.Users;
 
-                ctx.Users.Add(user);
+                ctx.Users.AddRange(users);
                 ctx.SaveChanges();
 
-                response.Entities.Add(user);
+                response.Entities.AddRange(users);
                 response.Success = true;
             }
             catch (Exception e)

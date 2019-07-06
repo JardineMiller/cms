@@ -81,9 +81,9 @@ namespace cms.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateUser([FromBody] User user)
+        public IActionResult CreateUsers([FromBody] IList<User> users)
         {
-            var cmd = new CreateUserCommand(user);
+            var cmd = new CreateUsersCommand(users);
             var result = commandProcessor.Process(cmd);
 
             if (!result.Success)
