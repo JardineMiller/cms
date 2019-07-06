@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Net.Http;
 using cms.ApplicationLayer;
 using cms.ApplicationLayer.Commands;
+using cms.ApplicationLayer.Commands.Responses;
 using cms.ApplicationLayer.Queries;
 using cms.Data_Layer.Models;
 using Microsoft.AspNetCore.Http;
@@ -14,18 +15,22 @@ namespace cms.Controllers
     [Route("api/users")]
     public class UsersController : Controller
     {
-        private IQueryHandler<GetUsersQuery, IEnumerable<User>> getUsersQueryHandler;
-        private ICommandHandler<DeleteUsersCommand> deleteUsersCommandHandler;
-        private ICommandHandler<UpdateUsersCommand> updateUsersCommandHandler;
+        private readonly IQueryHandler<GetUsersQuery, IEnumerable<User>> getUsersQueryHandler;
+        private readonly ICommandHandler<DeleteUsersCommand> deleteUsersCommandHandler;
+        private readonly ICommandHandler<UpdateUsersCommand> updateUsersCommandHandler;
+        private readonly ICommandHandler<CreateUserCommand, CommandResponse> createUserCommandHandler;
 
         public UsersController(
             IQueryHandler<GetUsersQuery, IEnumerable<User>> getUsersQueryHandler,
             ICommandHandler<UpdateUsersCommand> updateUsersCommandHandler,
-            ICommandHandler<DeleteUsersCommand> deleteUsersCommandHandler)
+            ICommandHandler<DeleteUsersCommand> deleteUsersCommandHandler,
+            ICommandHandler<CreateUserCommand, CommandResponse> createUserCommandHandler
+            )
         {
             this.getUsersQueryHandler = getUsersQueryHandler;
             this.deleteUsersCommandHandler = deleteUsersCommandHandler;
             this.updateUsersCommandHandler = updateUsersCommandHandler;
+            this.createUserCommandHandler = createUserCommandHandler;
         }
 
         [HttpGet]
@@ -39,9 +44,23 @@ namespace cms.Controllers
             return Ok(result);
         }
 
+        [HttpGet("{id}")]
+        public IActionResult GetUser([FromQuery] int userId)
+        {
+            var ids = new List<int>() {userId};
+
+            var query = new GetUsersQuery(ids);
+            var result = getUsersQueryHandler.Handle(query);
+
+            if (result == null) return NotFound();
+
+            return Ok(result);
+        }
+
         [HttpDelete]
         public IActionResult DeleteUsers([FromBody] IEnumerable<int> userIds)
         {
+            //TODO: Try catch should be within the command handler
             try
             {
                 var cmd = new DeleteUsersCommand(userIds);
@@ -57,6 +76,7 @@ namespace cms.Controllers
         [HttpPut]
         public IActionResult UpdateUsers([FromBody] IEnumerable<User> users)
         {
+            //TODO: Try catch should be within the command handler
             try
             {
                 var cmd = new UpdateUsersCommand(users);
@@ -67,6 +87,20 @@ namespace cms.Controllers
             {
                 return BadRequest();
             }
+        }
+
+        [HttpPost]
+        public IActionResult CreateUser([FromBody] User user)
+        {
+            var cmd = new CreateUserCommand(user);
+            var result = createUserCommandHandler.Handle(cmd);
+
+            if (!result.Success) {
+                return BadRequest(); //TODO: Not accurate
+            }
+
+            user.Id = result.Id;
+            return Ok(user);
         }
     }
 }

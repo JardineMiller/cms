@@ -16,7 +16,12 @@ namespace cms.ApplicationLayer.Queries
 
         public IEnumerable<User> Handle(GetUsersQuery query)
         {
-            return ctx.Users;
+            if (!query.userIds.Any())
+            {
+                return ctx.Users;
+            }
+
+            return ctx.Users.Where(u => query.userIds.Contains(u.Id));
         }
     }
 }
