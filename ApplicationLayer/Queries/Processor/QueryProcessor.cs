@@ -11,10 +11,10 @@ namespace cms.ApplicationLayer.Queries.Processor
             this.resolver = resolver;
         }
 
-        public TResult Process<TQuery, TResult>(IQuery<TQuery, TResult> request) where TQuery : IQuery<TQuery, TResult>
+        public TResult Process<TQuery, TResult>(IQuery<TQuery, TResult> query) where TQuery : IQuery<TQuery, TResult>
         {
-            var handler = this.resolver.Resolve(request);
-            var result = handler.Handle((TQuery)request);
+            var handler = this.resolver.Resolve(query);
+            var result = handler.Handle((TQuery)query);
             return result;
         }
     }

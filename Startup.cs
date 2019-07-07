@@ -52,13 +52,17 @@ namespace cms
             services.AddScoped<IQueryProcessor, QueryProcessor>();
             services.AddScoped<IQueryResolver, QueryResolver>();
             services.AddScoped<IQueryHandler<GetUsersQuery, List<User>>, GetUsersQueryHandler>();
+            services.AddScoped<IQueryHandler<GetUserPostsQuery, List<Post>>, GetUserPostsQueryHandler>();
 
             // Commands
             services.AddScoped<ICommandProcessor, CommandProcessor>();
             services.AddScoped<ICommandResolver, CommandResolver>();
-            services.AddScoped<ICommandHandler<DeleteUsersCommand, CommandResponse>, DeleteUsersCommandHandler>();
-            services.AddScoped<ICommandHandler<UpdateUsersCommand, CommandResponse<User>>, UpdateUsersCommandHandler>();
-            services.AddScoped<ICommandHandler<CreateUsersCommand, CommandResponse<User>>, CreateUserCommandHandler>();
+            services.AddScoped<ICommandHandler<DeleteUsersCommand, CommandResult<bool>>, DeleteUsersCommandHandler>();
+            services.AddScoped<ICommandHandler<UpdateUsersCommand, CommandResult<List<User>>>, UpdateUsersCommandHandler>();
+            services.AddScoped<ICommandHandler<CreateUsersCommand, CommandResult<List<User>>>, CreateUserCommandHandler>();
+            services.AddScoped<ICommandHandler<CreateUserPostCommand, CommandResult<Post>>, CreateUserPostCommandHandler>();
+            services.AddScoped<ICommandHandler<UpdateUserPostCommand, CommandResult<Post>>, UpdateUserPostCommandHandler>();
+            services.AddScoped<ICommandHandler<DeleteUserPostCommand, CommandResult<bool>>, DeleteUserPostCommandHandler>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
