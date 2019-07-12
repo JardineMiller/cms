@@ -1,0 +1,9 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\jardi\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\jardi\\.nuget\\packages",
+      "C:\\Users\\jardi\\.dotnet\\sdk\\NuGetFallbackFolder"
+    ]
+  }
+}

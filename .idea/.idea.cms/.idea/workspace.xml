@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="80dd5eca-d90b-426b-b82c-8c18fa31b277" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.cms/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.cms/.idea/dataSources/e69b9547-cd36-403c-960d-45bcbc8c6078.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.cms/.idea/dataSources/e69b9547-cd36-403c-960d-45bcbc8c6078/storage_v2/_src_/database/cms.SYEBAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.cms/.idea/dataSources/e69b9547-cd36-403c-960d-45bcbc8c6078/storage_v2/_src_/database/cms.SYEBAA/schema/dbo.sYMBAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.cms/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.cms/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.cms/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.cms/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationLayer/Commands/CommandResponse.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationLayer/Commands/CreateUsersCommand.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationLayer/Commands/DeleteUsersCommand.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationLayer/Commands/Handlers/CreateUserCommandHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationLayer/Commands/Handlers/DeleteUsersCommandHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationLayer/Commands/Handlers/ICommandHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationLayer/Commands/Handlers/UpdateUsersCommandHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationLayer/Commands/ICommand.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationLayer/Commands/Processor/CommandProcessor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationLayer/Commands/Processor/ICommandProcessor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationLayer/Commands/Resolver/CommandResolver.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationLayer/Commands/Resolver/ICommandResolver.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationLayer/Commands/UpdateUsersCommand.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationLayer/Queries/GetUsersQuery.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationLayer/Queries/Handlers/GetUsersQueryHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationLayer/Queries/Handlers/IQueryHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationLayer/Queries/IQuery.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationLayer/Queries/Processor/IQueryProcessor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationLayer/Queries/Processor/QueryProcessor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationLayer/Queries/Resolver/IQueryResolver.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationLayer/Queries/Resolver/QueryResolver.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DatabaseConfig.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/UsersController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Layer/Contexts/ApplicationDbContext.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Layer/Migrations/20190702225328_InitialMigration.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Layer/Migrations/20190702225328_InitialMigration.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Layer/Migrations/20190702231434_AddCommentPostAndUser.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Layer/Migrations/20190702231434_AddCommentPostAndUser.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Layer/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Layer/Models/Comment.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Layer/Models/Post.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Layer/Models/User.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Layer/Seeding/DatabaseSeeder.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Layer/Seeding/ISeeder.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Properties/launchSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Startup.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appsettings.Development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appsettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/NLog.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/cms.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/cms.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/cms.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/cms.runtimeconfig.dev.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/cms.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms.sln.DotSettings.user" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/cms.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/cms.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/cms.RazorAssemblyInfo.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/cms.RazorAssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/cms.RazorTargetAssemblyInfo.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/cms.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/cms.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/cms.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/cms.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/cms.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/cms.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/cms.csproj.EntityFrameworkCore.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/cms.csproj.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/cms.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/cms.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="319" />
+    <option name="y" value="192" />
+    <option name="width" value="1922" />
+    <option name="height" value="1157" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AssemblyExplorer" />
+      <pane id="FileSystemExplorer" />
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected=".NET Launch Settings Profile.cms">
+    <configuration name="cms" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/cms.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v2.2" />
+      <option name="LAUNCH_PROFILE_NAME" value="cms" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="cms: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/cms.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v2.2" />
+      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="80dd5eca-d90b-426b-b82c-8c18fa31b277" name="Default Changelist" comment="" />
+      <created>1562926833516</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1562926833516</updated>
+      <workItem from="1562926834821" duration="780000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="780000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1721" height="1041" extended-state="6" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18351384" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="NuGet" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Unit Tests" />
+      <window_info anchor="bottom" id="REST Client" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Build" weight="0.32936078" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Errors In Solution" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
