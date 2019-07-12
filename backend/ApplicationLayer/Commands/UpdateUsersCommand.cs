@@ -3,7 +3,7 @@ using cms.Data_Layer.Models;
 
 namespace cms.ApplicationLayer.Commands
 {
-    public class UpdateUsersCommand : ICommand<UpdateUsersCommand, CommandResponse<User>>
+    public class UpdateUsersCommand : ICommand<UpdateUsersCommand, CommandResult<List<User>>>
     {
         public IList<User> users;
 

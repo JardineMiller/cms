@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using cms.Data_Layer.Contexts;
 
 namespace cms.Data_Layer.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20190707093334_AddPostsToUser")]
+    partial class AddPostsToUser
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -25,16 +27,12 @@ namespace cms.Data_Layer.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int?>("CommentId");
-
                     b.Property<string>("Content")
                         .IsRequired();
 
                     b.Property<int?>("PostId");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("CommentId");
 
                     b.HasIndex("PostId");
 
@@ -84,10 +82,6 @@ namespace cms.Data_Layer.Migrations
 
             modelBuilder.Entity("cms.Data_Layer.Models.Comment", b =>
                 {
-                    b.HasOne("cms.Data_Layer.Models.Comment")
-                        .WithMany("Replies")
-                        .HasForeignKey("CommentId");
-
                     b.HasOne("cms.Data_Layer.Models.Post")
                         .WithMany("Comments")
                         .HasForeignKey("PostId");
@@ -96,7 +90,7 @@ namespace cms.Data_Layer.Migrations
             modelBuilder.Entity("cms.Data_Layer.Models.Post", b =>
                 {
                     b.HasOne("cms.Data_Layer.Models.User", "Author")
-                        .WithMany()
+                        .WithMany("Posts")
                         .HasForeignKey("AuthorId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });

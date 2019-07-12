@@ -11,22 +11,40 @@ namespace cms.Data_Layer.Models
         public int Id { get; set; }
 
         [ForeignKey("Author")]
-        public string AuthorId;
+        public int AuthorId { get; set; }
 
         [Required]
-        public string Title;
+        public string Title { get; set; }
 
-        public string Body;
+        public string Body { get; set; }
 
-        public string Snippet;
+        [NotMapped]
+        public string Snippet
+        {
 
-        public User Author;
+            get
+            {
+                var bodyLength = Body.Length;
+                var snippetLength = bodyLength < 196 ? bodyLength : 196;
+                return Body.Substring(0, snippetLength) + "...";
+            }
+            private set { }
+        }
 
-        public DateTimeOffset Timestamp;
+        public User Author { get; private set; }
+
+        [Required]
+        public DateTimeOffset Timestamp { get; private set; }
 
         public List<Comment> Comments { get; set; }
 
-        [Required]
-        public string Content { get; set; }
+        public Post(int authorId, string title, string body)
+        {
+            AuthorId = authorId;
+            Title = title;
+            Body = body;
+            Timestamp = DateTimeOffset.UtcNow;
+            Comments = new List<Comment>();
+        }
     }
 }

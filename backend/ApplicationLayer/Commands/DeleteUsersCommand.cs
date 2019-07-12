@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace cms.ApplicationLayer.Commands
 {
-    public class DeleteUsersCommand : ICommand<DeleteUsersCommand, CommandResponse>
+    public class DeleteUsersCommand : ICommand<DeleteUsersCommand, CommandResult<bool>>
     {
         public IList<int> UserIds;
 

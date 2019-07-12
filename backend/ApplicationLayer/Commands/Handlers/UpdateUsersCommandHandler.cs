@@ -7,7 +7,7 @@ using Microsoft.Extensions.Logging;
 
 namespace cms.ApplicationLayer.Commands.Handlers
 {
-    public class UpdateUsersCommandHandler : ICommandHandler<UpdateUsersCommand, CommandResponse<User>>
+    public class UpdateUsersCommandHandler : ICommandHandler<UpdateUsersCommand, CommandResult<List<User>>>
     {
         private readonly ApplicationDbContext ctx;
         private readonly ILogger<UpdateUsersCommandHandler> logger;
@@ -18,9 +18,9 @@ namespace cms.ApplicationLayer.Commands.Handlers
             this.logger = logger;
         }
 
-        public CommandResponse<User> Handle(UpdateUsersCommand command)
+        public CommandResult<List<User>> Handle(UpdateUsersCommand command)
         {
-            var response = new CommandResponse<User>();
+            var response = new CommandResult<List<User>>();
 
             try
             {
@@ -29,13 +29,12 @@ namespace cms.ApplicationLayer.Commands.Handlers
 
                 ctx.SaveChanges();
 
-                response.Entities.AddRange(validUsers);
+                response.Response = validUsers;
                 response.Success = true;
             }
             catch (Exception e)
             {
                 logger.LogError(e.Message);
-                throw;
             }
 
             return response;

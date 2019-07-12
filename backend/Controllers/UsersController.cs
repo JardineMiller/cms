@@ -36,8 +36,8 @@ namespace cms.Controllers
             return Ok(result);
         }
 
-        [HttpGet("{id}")]
-        public IActionResult GetUser([FromQuery] int userId)
+        [HttpGet("{userId}")]
+        public IActionResult GetUser(int userId)
         {
             var ids = new List<int>() {userId};
 
@@ -77,7 +77,7 @@ namespace cms.Controllers
                 return BadRequest(); //TODO: Not accurate
             }
 
-            return Ok(result.Entities);
+            return Ok(result.Response);
         }
 
         [HttpPost]
@@ -91,7 +91,68 @@ namespace cms.Controllers
                 return BadRequest(); //TODO: Not accurate
             }
 
-            return Ok(result.Entities);
+            return Ok(result.Response);
         }
+
+        #region Posts
+
+        [HttpGet("{userId}/posts")]
+        public IActionResult GetUserPosts(int userId)
+        {
+            var query = new GetUserPostsQuery(userId);
+            var result = queryProcessor.Process(query);
+
+            if (result == null)
+            {
+                return BadRequest();
+            }
+
+            return Ok(result);
+        }
+
+        [HttpPost("{userId}/posts")]
+        public IActionResult CreateUserPost(int userId, [FromBody] Post post)
+        {
+            var cmd = new CreateUserPostCommand(userId, post);
+            var result = commandProcessor.Process(cmd);
+
+            if (!result.Success)
+            {
+                return BadRequest(); //TODO: Not accurate
+            }
+
+            return Ok(result.Response);
+
+        }
+
+        [HttpPut("{userId}/posts")]
+        public IActionResult UpdateUserPost(int userId, [FromBody] Post post)
+        {
+            var cmd = new UpdateUserPostCommand(userId, post);
+            var result = commandProcessor.Process(cmd);
+
+            if (!result.Success)
+            {
+                return BadRequest(); //TODO: Not accurate
+            }
+
+            return Ok(result.Response);
+        }
+
+        [HttpDelete("{userId}/posts")]
+        public IActionResult DeleteUserPost(int userId, [FromBody] Post post)
+        {
+            var cmd = new DeleteUserPostCommand(userId, post);
+            var result = commandProcessor.Process(cmd);
+
+            if (!result.Success)
+            {
+                return BadRequest();
+            }
+
+            return Ok(result.Response);
+        }
+
+        #endregion
     }
 }
