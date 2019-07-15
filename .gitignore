@@ -5,6 +5,9 @@
 
 # User-specific stuff
 .idea/**/workspace.xml
+.idea/**/modules.xml
+.idea/**/indexLayout.xml
+.idea/**/contentModel.xml
 .idea/**/tasks.xml
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
