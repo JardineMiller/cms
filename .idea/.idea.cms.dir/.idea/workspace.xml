@@ -2,135 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21f517bd-2579-4515-aaca-607bb6cf5ee8" name="Default Changelist" comment="a bit more restructurin">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.cms.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cms.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.cms/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cms/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.cms/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cms/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.cms/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cms/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.cms/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cms/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.cms/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cms/riderModule.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.idea/.idea.cms/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.idea/.idea.cms/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.idea/.idea.cms/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.idea/.idea.cms/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.idea/.idea.cms/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.idea/.idea.cms/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.idea/.idea.cms/.idea/watcherTasks.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/ApplicationLayer/Commands/CommandResult.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/ApplicationLayer/Commands/CreateUserPostCommand.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/ApplicationLayer/Commands/CreateUsersCommand.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/ApplicationLayer/Commands/DeleteUserPostCommand.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/ApplicationLayer/Commands/DeleteUsersCommand.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/ApplicationLayer/Commands/Handlers/CreateUserCommandHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/ApplicationLayer/Commands/Handlers/CreateUserPostCommandHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/ApplicationLayer/Commands/Handlers/DeleteUserPostCommandHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/ApplicationLayer/Commands/Handlers/DeleteUsersCommandHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/ApplicationLayer/Commands/Handlers/ICommandHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/ApplicationLayer/Commands/Handlers/UpdateUserPostCommandHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/ApplicationLayer/Commands/Handlers/UpdateUsersCommandHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/ApplicationLayer/Commands/ICommand.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/ApplicationLayer/Commands/Processor/CommandProcessor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/ApplicationLayer/Commands/Processor/ICommandProcessor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/ApplicationLayer/Commands/Resolver/CommandResolver.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/ApplicationLayer/Commands/Resolver/ICommandResolver.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/ApplicationLayer/Commands/UpdateUserPostCommand.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/ApplicationLayer/Commands/UpdateUsersCommand.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/ApplicationLayer/Queries/GetUserPostsQuery.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/ApplicationLayer/Queries/GetUsersQuery.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/ApplicationLayer/Queries/Handlers/GetUserPostsQueryHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/ApplicationLayer/Queries/Handlers/GetUsersQueryHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/ApplicationLayer/Queries/Handlers/IQueryHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/ApplicationLayer/Queries/IQuery.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/ApplicationLayer/Queries/Processor/IQueryProcessor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/ApplicationLayer/Queries/Processor/QueryProcessor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/ApplicationLayer/Queries/Resolver/IQueryResolver.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/ApplicationLayer/Queries/Resolver/QueryResolver.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Config/DatabaseConfig.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Controllers/UsersController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Data Layer/Contexts/ApplicationDbContext.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Data Layer/Migrations/20190702225328_InitialMigration.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Data Layer/Migrations/20190702225328_InitialMigration.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Data Layer/Migrations/20190702231434_AddCommentPostAndUser.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Data Layer/Migrations/20190702231434_AddCommentPostAndUser.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Data Layer/Migrations/20190707093334_AddPostsToUser.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Data Layer/Migrations/20190707093334_AddPostsToUser.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Data Layer/Migrations/20190707165656_RemotePostsFromUser.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Data Layer/Migrations/20190707165656_RemotePostsFromUser.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Data Layer/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Data Layer/Models/Comment.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Data Layer/Models/Post.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Data Layer/Models/User.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Data Layer/Seeding/DatabaseSeeder.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Data Layer/Seeding/ISeeder.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Properties/launchSettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Startup.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/appsettings.Development.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/appsettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/bin/Debug/netcoreapp2.2/NLog.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/bin/Debug/netcoreapp2.2/cms.deps.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/bin/Debug/netcoreapp2.2/cms.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/bin/Debug/netcoreapp2.2/cms.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/bin/Debug/netcoreapp2.2/cms.runtimeconfig.dev.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/bin/Debug/netcoreapp2.2/cms.runtimeconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/cms.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/cms.sln" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/cms.sln.DotSettings.user" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/netcoreapp2.2/cms.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/netcoreapp2.2/cms.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/netcoreapp2.2/cms.RazorAssemblyInfo.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/netcoreapp2.2/cms.RazorAssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/netcoreapp2.2/cms.RazorTargetAssemblyInfo.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/netcoreapp2.2/cms.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/netcoreapp2.2/cms.csproj.CoreCompileInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/netcoreapp2.2/cms.csproj.FileListAbsolute.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/netcoreapp2.2/cms.csprojAssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/netcoreapp2.2/cms.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/Debug/netcoreapp2.2/cms.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/cms.csproj.EntityFrameworkCore.targets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/cms.csproj.nuget.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/cms.csproj.nuget.g.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/cms.csproj.nuget.g.targets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/project.assets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/obj/project.packagespec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/cms.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/cms.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/angular.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/browserslist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/e2e/protractor.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/e2e/src/app.e2e-spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/e2e/src/app.po.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/e2e/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/karma.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/assets/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/css/compiled/app.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/css/compiled/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/css/styles.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/environments/environment.prod.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/environments/environment.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/polyfills.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/test.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/tsconfig.app.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/tsconfig.spec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/tslint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/cms.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/cms.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/cms.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/cms.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/cms.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/cms.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/cms.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/cms.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.packagespec.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -138,11 +11,63 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/.Rider2018.3/config/resharper-host/DecompilerCache/decompiler/A2DDBDA9-1E09-414A-801B-36BA566856C2/c2/8f6bad2b/ExceptionDispatchInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/backend/Startup.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/frontend/src/css/compiled/styles.css" />
+        <option value="$PROJECT_DIR$/frontend/src/css/styles.scss" />
+        <option value="$PROJECT_DIR$/frontend/src/app/app.component.scss" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/.idea.cms.dir/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/.idea.cms.dir/.idea/indexLayout.xml" />
+      </list>
+    </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="400" />
@@ -165,6 +90,30 @@
             <path>
               <item name="" type="161ac34:FileSystemExplorerRootNode" />
               <item name="cms" type="34e6ba20:FileSystemExplorerNode" />
+            </path>
+            <path>
+              <item name="" type="161ac34:FileSystemExplorerRootNode" />
+              <item name="cms" type="34e6ba20:FileSystemExplorerNode" />
+              <item name=".idea" type="34e6ba20:FileSystemExplorerNode" />
+            </path>
+            <path>
+              <item name="" type="161ac34:FileSystemExplorerRootNode" />
+              <item name="cms" type="34e6ba20:FileSystemExplorerNode" />
+              <item name=".idea" type="34e6ba20:FileSystemExplorerNode" />
+              <item name=".idea.cms" type="34e6ba20:FileSystemExplorerNode" />
+            </path>
+            <path>
+              <item name="" type="161ac34:FileSystemExplorerRootNode" />
+              <item name="cms" type="34e6ba20:FileSystemExplorerNode" />
+              <item name=".idea" type="34e6ba20:FileSystemExplorerNode" />
+              <item name=".idea.cms" type="34e6ba20:FileSystemExplorerNode" />
+              <item name=".idea" type="34e6ba20:FileSystemExplorerNode" />
+            </path>
+            <path>
+              <item name="" type="161ac34:FileSystemExplorerRootNode" />
+              <item name="cms" type="34e6ba20:FileSystemExplorerNode" />
+              <item name=".idea" type="34e6ba20:FileSystemExplorerNode" />
+              <item name=".idea.cms.dir" type="34e6ba20:FileSystemExplorerNode" />
             </path>
           </expand>
           <select />
@@ -205,15 +154,33 @@
       <updated>1563268355132</updated>
       <workItem from="1563268359256" duration="13000" />
     </task>
+    <task id="LOCAL-00003" summary="More gitignore nonsense">
+      <created>1563229119068</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1563229119068</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="262000" />
+    <option name="totallyTimeSpent" value="4321000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="400" y="-1088" width="1874" height="1096" extended-state="6" />
+    <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22754821" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12011019" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -225,7 +192,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="NuGet" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32958034" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Unit Tests" order="11" />
       <window_info anchor="bottom" id="Terminal" order="12" />
@@ -234,11 +201,48 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Errors In Solution" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Database" order="4" weight="0.2" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="a bit more restructurin" />
+    <MESSAGE value="More gitignore nonsense" />
+    <option name="LAST_COMMIT_MESSAGE" value="More gitignore nonsense" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -249,5 +253,64 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/backend/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="52" column="64" lean-forward="true" selection-start-line="52" selection-start-column="64" selection-end-line="52" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/css/compiled/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/css/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="37" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/css/compiled/app.component.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/app.component.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/cms.sln">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/cms.csproj">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/.Rider2018.3/config/resharper-host/DecompilerCache/decompiler/A2DDBDA9-1E09-414A-801B-36BA566856C2/c2/8f6bad2b/ExceptionDispatchInfo.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1199">
+          <caret line="97" column="5" lean-forward="true" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/.idea.cms/riderModule.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/.idea.cms/.idea/modules.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
