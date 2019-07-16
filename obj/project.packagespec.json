@@ -1,13 +1,13 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\Users\\jardi\\Documents\\Development\\cms\\cms.csproj",
+    "projectUniqueName": "/Users/jardine/Desktop/Web-Dev/Projects/cms/cms.csproj",
     "projectName": "cms",
-    "projectPath": "C:\\Users\\jardi\\Documents\\Development\\cms\\cms.csproj",
-    "outputPath": "C:\\Users\\jardi\\Documents\\Development\\cms\\obj\\",
+    "projectPath": "/Users/jardine/Desktop/Web-Dev/Projects/cms/cms.csproj",
+    "outputPath": "/Users/jardine/Desktop/Web-Dev/Projects/cms/obj/",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
-      "C:\\Users\\jardi\\.dotnet\\sdk\\NuGetFallbackFolder"
+      "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
     ],
     "originalTargetFrameworks": [
       "netcoreapp2.2"
@@ -29,6 +29,10 @@
   "frameworks": {
     "netcoreapp2.2": {
       "dependencies": {
+        "Microsoft.AspNet.Mvc": {
+          "target": "Package",
+          "version": "[5.2.7, )"
+        },
         "Microsoft.AspNetCore.App": {
           "suppressParent": "All",
           "target": "Package",
@@ -39,6 +43,14 @@
           "suppressParent": "All",
           "target": "Package",
           "version": "[2.2.0, )"
+        },
+        "Microsoft.AspNetCore.StaticFiles": {
+          "target": "Package",
+          "version": "[2.2.0, )"
+        },
+        "Microsoft.DotNet.Watcher.Tools": {
+          "target": "Package",
+          "version": "[2.0.2, )"
         },
         "Microsoft.NETCore.App": {
           "suppressParent": "All",
