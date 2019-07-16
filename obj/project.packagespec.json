@@ -57,6 +57,10 @@
         "NLog.Extensions.Logging": {
           "target": "Package",
           "version": "[1.5.1, )"
+        },
+        "Npgsql.EntityFrameworkCore.PostgreSQL": {
+          "target": "Package",
+          "version": "[2.2.4, )"
         }
       },
       "imports": [

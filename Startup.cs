@@ -42,7 +42,7 @@ namespace cms
             // Database
             var serviceProvider = services.BuildServiceProvider();
             var connection = serviceProvider.GetService<IOptions<DatabaseConfig>>().Value.Connection;
-            services.AddDbContext<ApplicationDbContext>(o => o.UseSqlServer(connection));
+            services.AddDbContext<ApplicationDbContext>(o => o.UseNpgsql(connection));
             services.AddScoped<ISeeder, DatabaseSeeder>();
 
             // Services
