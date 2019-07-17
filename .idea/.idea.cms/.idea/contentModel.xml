@@ -110,20 +110,12 @@
             <e p="app.component.spec.ts" t="Include" />
             <e p="app.component.ts" t="Include" />
             <e p="app.module.ts" t="Include" />
-            <e p="src" t="Include">
-              <e p="css" t="Include">
-                <e p="compiled" t="Include">
-                  <e p="app.component.css" t="Include" />
-                </e>
-              </e>
-            </e>
           </e>
           <e p="assets" t="Include">
             <e p=".gitkeep" t="Include" />
           </e>
           <e p="css" t="Include">
             <e p="compiled" t="Include">
-              <e p="app.component.css" t="Include" />
               <e p="styles.css" t="Include" />
             </e>
             <e p="styles.scss" t="Include" />

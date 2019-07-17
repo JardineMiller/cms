@@ -12,10 +12,14 @@ export class AppComponent implements OnInit {
   }
 
   users: any[] = [];
+  userKeys: string[] = [];
 
   ngOnInit(): void {
     this._http.get('api/users').subscribe(values => {
       this.users = values as any[];
+      if (this.users.length) {
+        this.userKeys = Object.keys(this.users[0]);
+      }
     })
   }
 }
