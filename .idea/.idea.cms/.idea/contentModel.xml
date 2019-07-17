@@ -116,7 +116,10 @@
           </e>
           <e p="css" t="Include">
             <e p="compiled" t="Include">
+              <e p="app.component.css" t="Include" />
+              <e p="app.component.css.map" t="Include" />
               <e p="styles.css" t="Include" />
+              <e p="styles.css.map" t="Include" />
             </e>
             <e p="styles.scss" t="Include" />
           </e>

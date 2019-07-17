@@ -3,15 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="80dd5eca-d90b-426b-b82c-8c18fa31b277" name="Default Changelist" comment="Playing around with the front end page hitting up the user's API and display data">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.cms/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cms/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.cms/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cms/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.cms/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cms/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Startup.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/app/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/app.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/css/compiled/app.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/css/compiled/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/css/compiled/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/css/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/css/styles.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/NLog.config" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/NLog.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/cms.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/cms.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/cms.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/cms.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/cms.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/cms.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/cms.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/cms.pdb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,22 +77,12 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Startup.cs">
+        <entry file="file://$PROJECT_DIR$/app/src/app/app.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="77" column="48" lean-forward="true" selection-start-line="77" selection-start-column="48" selection-end-line="77" selection-end-column="48" />
+            <state relative-caret-position="240">
+              <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
               <folding>
-                <marker date="1563301114240" expanded="false" signature="6:836" ph="..." />
-                <marker date="1563301114240" expanded="true" signature="851:4294" ph="{...}" />
-                <marker date="1563301114240" expanded="true" signature="878:4292" ph="{...}" />
-                <marker date="1563301114240" expanded="true" signature="997:1046" ph="{...}" />
-                <marker date="1563301114240" expanded="true" signature="1056:1271" ph="/* This method gets called by the runtime. Use this method to add services to the container. ... */" />
-                <marker date="1563301114240" expanded="true" signature="1338:3124" ph="{...}" />
-                <marker date="1563301114240" expanded="true" signature="3358:4286" ph="{...}" />
-                <marker date="1563301114240" expanded="true" signature="3521:3598" ph="{...}" />
-                <marker date="1563301114240" expanded="true" signature="3615:3686" ph="{...}" />
-                <marker date="1563301114240" expanded="true" signature="3801:4163" ph="{...}" />
-                <marker date="1563301114240" expanded="true" signature="4030:4149" ph="{...}" />
+                <element signature="e#0#56#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -112,66 +103,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/app/app.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="62" selection-start-line="3" selection-start-column="62" selection-end-line="3" selection-end-column="62" />
+            <state relative-caret-position="135">
+              <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/css/styles.scss">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/css/compiled/styles.css">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/app/app.component.scss">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controllers/UsersController.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="39" column="48" lean-forward="true" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
-              <folding>
-                <marker date="1563311444784" expanded="false" signature="6:279" ph="..." />
-                <marker date="1563311444784" expanded="true" signature="306:4233" ph="{...}" />
-                <marker date="1563311444784" expanded="true" signature="414:4231" ph="{...}" />
-                <marker date="1563311444784" expanded="true" signature="638:762" ph="{...}" />
-                <marker date="1563311444784" expanded="true" signature="821:1069" ph="{...}" />
-                <marker date="1563311444784" expanded="true" signature="964:1027" ph="{...}" />
-                <marker date="1563311444784" expanded="true" signature="1149:1449" ph="{...}" />
-                <marker date="1563311444784" expanded="true" signature="1344:1407" ph="{...}" />
-                <marker date="1563311444784" expanded="true" signature="1543:1840" ph="{...}" />
-                <marker date="1563311444784" expanded="true" signature="1702:1788" ph="{...}" />
-                <marker date="1563311444784" expanded="true" signature="1930:2220" ph="{...}" />
-                <marker date="1563311444784" expanded="true" signature="2083:2169" ph="{...}" />
-                <marker date="1563311444784" expanded="true" signature="2311:2601" ph="{...}" />
-                <marker date="1563311444784" expanded="true" signature="2464:2550" ph="{...}" />
-                <marker date="1563311444784" expanded="false" signature="2611:4225" ph="Posts" />
-                <marker date="1563311444784" expanded="true" signature="2715:2976" ph="{...}" />
-                <marker date="1563311444784" expanded="true" signature="2869:2934" ph="{...}" />
-                <marker date="1563311444784" expanded="true" signature="3092:3393" ph="{...}" />
-                <marker date="1563311444784" expanded="true" signature="3255:3341" ph="{...}" />
-                <marker date="1563311444784" expanded="true" signature="3508:3808" ph="{...}" />
-                <marker date="1563311444784" expanded="true" signature="3671:3757" ph="{...}" />
-                <marker date="1563311444784" expanded="true" signature="3926:4205" ph="{...}" />
-                <marker date="1563311444784" expanded="true" signature="4089:4154" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="120">
+              <caret line="8" column="48" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -201,14 +143,21 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Data Layer/Migrations/ApplicationDbContextModelSnapshot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Controllers/UsersController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/obj/Debug/netcoreapp2.2/cms.AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/088051FB-72DE-4607-81C4-D1937DDE71E2/89/9a06491c/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/bin/Debug/netcoreapp2.2/NLog.config" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/35302C35-81DB-438A-91F3-8FEFA7A01676/fe/2f800d0e/DeveloperExceptionPageMiddleware.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/obj/Debug/netcoreapp2.2/cms.AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/088051FB-72DE-4607-81C4-D1937DDE71E2/f6/3a393bdc/MemoryExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Data Layer/Seeding/DatabaseSeeder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Data Layer/Contexts/ApplicationDbContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Data Layer/Migrations/20190702225328_InitialMigration.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Data Layer/Migrations/20190707165656_RemotePostsFromUser.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Startup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Data Layer/Migrations/20190702231434_AddCommentPostAndUser.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EA0F7286-DD97-4781-8DBA-04B6963C416B/c8/46eea2e9/HttpProtocol.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/.nuget/packages/nlog.config/4.6.5/contentFiles/any/any/NLog.config" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/088051FB-72DE-4607-81C4-D1937DDE71E2/8f/67ca36d3/Path.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -229,14 +178,15 @@
         <option value="$PROJECT_DIR$/app/package.json" />
         <option value="$PROJECT_DIR$/app/src/proxy.config.json" />
         <option value="$PROJECT_DIR$/app/proxy.config.json" />
-        <option value="$PROJECT_DIR$/Startup.cs" />
         <option value="$PROJECT_DIR$/Controllers/UsersController.cs" />
-        <option value="$PROJECT_DIR$/app/src/index.html" />
         <option value="$PROJECT_DIR$/app/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/app/src/css/compiled/styles.css" />
+        <option value="$USER_HOME$/.nuget/packages/nlog.config/4.6.5/contentFiles/any/any/NLog.config" />
+        <option value="$PROJECT_DIR$/Startup.cs" />
+        <option value="$PROJECT_DIR$/app/src/app/app.component.scss" />
         <option value="$PROJECT_DIR$/app/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/app/src/css/styles.scss" />
-        <option value="$PROJECT_DIR$/app/src/app/app.component.scss" />
-        <option value="$PROJECT_DIR$/app/src/css/compiled/styles.css" />
+        <option value="$PROJECT_DIR$/app/src/index.html" />
       </list>
     </option>
   </component>
@@ -254,6 +204,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="FileSystemExplorer" />
+      <pane id="AssemblyExplorer" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -297,32 +249,13 @@
             </path>
             <path>
               <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="app" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="css" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="compiled" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="ApplicationLayer" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Controllers" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
           </expand>
           <select />
         </subPane>
         <option name="show-all-files" value="false" />
       </pane>
-      <pane id="AssemblyExplorer" />
-      <pane id="FileSystemExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -334,8 +267,11 @@
     <property name="database.console.LAST_STATE" value="true" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
@@ -367,13 +303,6 @@
       <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
       <method v="2">
         <option name="Build" enabled="true" />
-        <option name="NpmBeforeRunTask" enabled="true">
-          <package-json value="$PROJECT_DIR$/app/package.json" />
-          <command value="start" />
-          <node-interpreter value="project" />
-          <envs />
-        </option>
-        <option name="LaunchBrowser.Before.Run" browser="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" url="http://localhost:4200" />
       </method>
     </configuration>
     <configuration name="cms: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
@@ -417,6 +346,7 @@
       <workItem from="1563276493483" duration="4996000" />
       <workItem from="1563296328820" duration="31000" />
       <workItem from="1563297558507" duration="9000000" />
+      <workItem from="1563386673415" duration="2452000" />
     </task>
     <task id="LOCAL-00001" summary="File restructure">
       <created>1562927766954</created>
@@ -471,7 +401,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23285000" />
+    <option name="totallyTimeSpent" value="25737000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -486,24 +416,24 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21245421" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21489622" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32857144" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32857144" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39183673" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="NuGet" order="7" weight="0.32905984" />
+      <window_info anchor="bottom" id="NuGet" order="7" weight="0.32857144" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32959184" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Unit Tests" order="11" />
       <window_info anchor="bottom" id="REST Client" order="12" weight="0.32959184" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
-      <window_info anchor="bottom" id="Build" order="14" weight="0.7030612" />
+      <window_info anchor="bottom" id="Build" order="14" weight="0.27755103" />
       <window_info anchor="bottom" id="TypeScript" order="15" weight="0.32959184" />
       <window_info anchor="bottom" id="Terminal" order="16" weight="0.327551" />
       <window_info active="true" anchor="bottom" id="Database Console" order="17" visible="true" weight="0.32958034" />
@@ -545,6 +475,34 @@
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>context.Request.Path.Value.StartsWith(&quot;/api/&quot;)</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>!context.Request.Path.Value.StartsWith(&quot;/api/&quot;)</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Path.HasExtension(context.Request.Path.Value)</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>!Path.HasExtension(context.Request.Path.Value)</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../frontend/src/css/app.component.css" />
@@ -689,16 +647,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/tsconfig.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -712,15 +660,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
           <caret line="1063" column="4" selection-start-line="1063" selection-start-column="4" selection-end-line="1063" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/environments/environment.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -752,30 +691,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Startup.cs">
+    <entry file="file://$PROJECT_DIR$/app/src/css/compiled/app.component.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="77" column="48" lean-forward="true" selection-start-line="77" selection-start-column="48" selection-end-line="77" selection-end-column="48" />
-          <folding>
-            <marker date="1563301114240" expanded="false" signature="6:836" ph="..." />
-            <marker date="1563301114240" expanded="true" signature="851:4294" ph="{...}" />
-            <marker date="1563301114240" expanded="true" signature="878:4292" ph="{...}" />
-            <marker date="1563301114240" expanded="true" signature="997:1046" ph="{...}" />
-            <marker date="1563301114240" expanded="true" signature="1056:1271" ph="/* This method gets called by the runtime. Use this method to add services to the container. ... */" />
-            <marker date="1563301114240" expanded="true" signature="1338:3124" ph="{...}" />
-            <marker date="1563301114240" expanded="true" signature="3358:4286" ph="{...}" />
-            <marker date="1563301114240" expanded="true" signature="3521:3598" ph="{...}" />
-            <marker date="1563301114240" expanded="true" signature="3615:3686" ph="{...}" />
-            <marker date="1563301114240" expanded="true" signature="3801:4163" ph="{...}" />
-            <marker date="1563301114240" expanded="true" signature="4030:4149" ph="{...}" />
-          </folding>
+        <state>
+          <caret lean-forward="true" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/css/compiled/styles.css">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Controllers/UsersController.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
-          <caret line="39" column="48" lean-forward="true" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
+          <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
           <folding>
             <marker date="1563311444784" expanded="false" signature="6:279" ph="..." />
             <marker date="1563311444784" expanded="true" signature="306:4233" ph="{...}" />
@@ -804,6 +733,98 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/.nuget/packages/nlog.config/4.6.5/contentFiles/any/any/NLog.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="8" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/088051FB-72DE-4607-81C4-D1937DDE71E2/f6/3a393bdc/MemoryExtensions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="886" column="37" selection-start-line="886" selection-start-column="37" selection-end-line="886" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/088051FB-72DE-4607-81C4-D1937DDE71E2/8f/67ca36d3/Path.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="201" column="39" selection-start-line="201" selection-start-column="39" selection-end-line="201" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EA0F7286-DD97-4781-8DBA-04B6963C416B/c8/46eea2e9/HttpProtocol.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="503" column="8" selection-start-line="503" selection-start-column="8" selection-end-line="503" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/35302C35-81DB-438A-91F3-8FEFA7A01676/fe/2f800d0e/DeveloperExceptionPageMiddleware.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="69" column="8" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="752">
+          <caret line="91" column="5" lean-forward="true" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
+          <folding>
+            <marker date="1563387797802" expanded="false" signature="6:836" ph="..." />
+            <marker date="1563387797802" expanded="true" signature="851:3869" ph="{...}" />
+            <marker date="1563387797802" expanded="true" signature="878:3867" ph="{...}" />
+            <marker date="1563387797802" expanded="true" signature="997:1046" ph="{...}" />
+            <marker date="1563387797802" expanded="true" signature="1056:1271" ph="/* This method gets called by the runtime. Use this method to add services to the container. ... */" />
+            <marker date="1563387797802" expanded="true" signature="1338:3124" ph="{...}" />
+            <marker date="1563387797802" expanded="true" signature="3358:3861" ph="{...}" />
+            <marker date="1563387797802" expanded="true" signature="3521:3598" ph="{...}" />
+            <marker date="1563387797802" expanded="true" signature="3615:3686" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/app/app.component.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/environments/environment.prod.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/environments/environment.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/css/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" lean-forward="true" selection-start-line="20" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/app/app.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -816,33 +837,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="120">
+          <caret line="8" column="48" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="62" selection-start-line="3" selection-start-column="62" selection-end-line="3" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/css/compiled/app.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/app/app.component.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/css/styles.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/css/compiled/styles.css">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

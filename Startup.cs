@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.IO;
 using cms.ApplicationLayer;
 using cms.ApplicationLayer.Commands;
 using cms.ApplicationLayer.Commands.Handlers;
@@ -84,16 +83,8 @@ namespace cms
 
             seeder.SeedAll();
             app.UseStatusCodePages();
-            app.Use(async (context, next) => {
-                await next();
-                if (context.Response.StatusCode == 404 &&
-                    !Path.HasExtension(context.Request.Path.Value) &&
-                    !context.Request.Path.Value.StartsWith("/api/")) {
-                    context.Request.Path = "/app/src/index.html";
-                    await next();
-                }
-            });
-            app.UseMvcWithDefaultRoute();
+
+            app.UseMvc();
             app.UseDefaultFiles();
             app.UseStaticFiles();
         }
