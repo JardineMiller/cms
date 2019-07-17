@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="80dd5eca-d90b-426b-b82c-8c18fa31b277" name="Default Changelist" comment="Playing around with the front end page hitting up the user's API and display data">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.cms/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cms/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.cms/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cms/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/app.component.html" afterDir="false" />
+    <list default="true" id="80dd5eca-d90b-426b-b82c-8c18fa31b277" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/css/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/css/styles.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/NLog.config" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/NLog.config" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/cms.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/cms.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/cms.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/cms.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/cms.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/cms.dll" afterDir="false" />
@@ -80,7 +77,7 @@
         <entry file="file://$PROJECT_DIR$/app/src/app/app.module.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+              <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
               <folding>
                 <element signature="e#0#56#0" expanded="true" />
               </folding>
@@ -92,7 +89,7 @@
         <entry file="file://$PROJECT_DIR$/app/src/app/app.component.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
               </folding>
@@ -104,18 +101,32 @@
         <entry file="file://$PROJECT_DIR$/app/src/app/app.component.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+              <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/index.html">
+        <entry file="file://$PROJECT_DIR$/app/src/css/styles.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="48" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+            <state relative-caret-position="75">
+              <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/css/compiled/styles.css">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -185,8 +196,8 @@
         <option value="$PROJECT_DIR$/Startup.cs" />
         <option value="$PROJECT_DIR$/app/src/app/app.component.scss" />
         <option value="$PROJECT_DIR$/app/src/app/app.component.html" />
-        <option value="$PROJECT_DIR$/app/src/css/styles.scss" />
         <option value="$PROJECT_DIR$/app/src/index.html" />
+        <option value="$PROJECT_DIR$/app/src/css/styles.scss" />
       </list>
     </option>
   </component>
@@ -229,23 +240,15 @@
               <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
               <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
               <item name="app" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="node_modules" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
               <item name="" type="784c90a0:SolutionExplorerRootNode" />
               <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
               <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
               <item name="app" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="app" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="app" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="css" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="node_modules" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="bootstrap" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
               <item name="" type="784c90a0:SolutionExplorerRootNode" />
@@ -346,7 +349,7 @@
       <workItem from="1563276493483" duration="4996000" />
       <workItem from="1563296328820" duration="31000" />
       <workItem from="1563297558507" duration="9000000" />
-      <workItem from="1563386673415" duration="2452000" />
+      <workItem from="1563386673415" duration="2720000" />
     </task>
     <task id="LOCAL-00001" summary="File restructure">
       <created>1562927766954</created>
@@ -397,11 +400,18 @@
       <option name="project" value="LOCAL" />
       <updated>1563311660354</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Trying to get NLog up and running">
+      <created>1563389217437</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1563389217437</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25737000" />
+    <option name="totallyTimeSpent" value="26005000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -416,12 +426,12 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21489622" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21489622" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32857144" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32857144" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39183673" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -459,7 +469,8 @@
     <MESSAGE value="Put the angular file back into the main solution directory as it was causing so much hassle" />
     <MESSAGE value="Migrated from Sql server to postgres to try and get this thing running on unix" />
     <MESSAGE value="Playing around with the front end page hitting up the user's API and display data" />
-    <option name="LAST_COMMIT_MESSAGE" value="Playing around with the front end page hitting up the user's API and display data" />
+    <MESSAGE value="Trying to get NLog up and running" />
+    <option name="LAST_COMMIT_MESSAGE" value="Trying to get NLog up and running" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -698,9 +709,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/css/compiled/styles.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Controllers/UsersController.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -773,15 +781,15 @@
         <state relative-caret-position="752">
           <caret line="91" column="5" lean-forward="true" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
           <folding>
-            <marker date="1563387797802" expanded="false" signature="6:836" ph="..." />
-            <marker date="1563387797802" expanded="true" signature="851:3869" ph="{...}" />
-            <marker date="1563387797802" expanded="true" signature="878:3867" ph="{...}" />
-            <marker date="1563387797802" expanded="true" signature="997:1046" ph="{...}" />
-            <marker date="1563387797802" expanded="true" signature="1056:1271" ph="/* This method gets called by the runtime. Use this method to add services to the container. ... */" />
-            <marker date="1563387797802" expanded="true" signature="1338:3124" ph="{...}" />
-            <marker date="1563387797802" expanded="true" signature="3358:3861" ph="{...}" />
-            <marker date="1563387797802" expanded="true" signature="3521:3598" ph="{...}" />
-            <marker date="1563387797802" expanded="true" signature="3615:3686" ph="{...}" />
+            <marker date="1563389217141" expanded="false" signature="6:819" ph="..." />
+            <marker date="1563389217141" expanded="true" signature="834:3852" ph="{...}" />
+            <marker date="1563389217141" expanded="true" signature="861:3850" ph="{...}" />
+            <marker date="1563389217141" expanded="true" signature="980:1029" ph="{...}" />
+            <marker date="1563389217141" expanded="true" signature="1039:1254" ph="/* This method gets called by the runtime. Use this method to add services to the container. ... */" />
+            <marker date="1563389217141" expanded="true" signature="1321:3107" ph="{...}" />
+            <marker date="1563389217141" expanded="true" signature="3341:3844" ph="{...}" />
+            <marker date="1563389217141" expanded="true" signature="3504:3581" ph="{...}" />
+            <marker date="1563389217141" expanded="true" signature="3598:3669" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -789,7 +797,7 @@
     <entry file="file://$PROJECT_DIR$/app/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
           <folding>
             <element signature="e#0#56#0" expanded="true" />
           </folding>
@@ -811,24 +819,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/css/styles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" lean-forward="true" selection-start-line="20" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/app/app.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/app/app.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
           </folding>
@@ -837,8 +838,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="48" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+        <state relative-caret-position="75">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/css/compiled/styles.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/css/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
         </state>
       </provider>
     </entry>
