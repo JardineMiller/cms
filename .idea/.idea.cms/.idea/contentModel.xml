@@ -339,6 +339,12 @@
             <e p="app.component.spec.ts" t="Include" />
             <e p="app.component.ts" t="Include" />
             <e p="app.module.ts" t="Include" />
+            <e p="Users" t="Include">
+              <e p="users.component.html" t="Include" />
+              <e p="users.component.scss" t="Include" />
+              <e p="users.component.spec.ts" t="Include" />
+              <e p="users.component.ts" t="Include" />
+            </e>
           </e>
           <e p="assets" t="Include">
             <e p=".gitkeep" t="Include" />

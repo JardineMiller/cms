@@ -1,0 +1,19 @@
+<section class="container">
+  <h1>Application says what?</h1>
+
+  <table class="table table-striped table-bordered table-hover">
+    <thead class="thead-light">
+    <tr>
+      <th class="upper-case" scope="col" *ngFor="let key of userKeys">{{key}}</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let user of users">
+      <td *ngFor="let key of userKeys">{{user[key]}}</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <router-outlet></router-outlet>
+</section>
+
