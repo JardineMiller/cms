@@ -13,8 +13,10 @@ export class UsersComponent implements OnInit {
 
   users: any[] = [];
   userKeys: string[] = [];
+  pageTitle: string = "Users";
 
   ngOnInit(): void {
+    //TODO: This should live in a users service
     this._http.get('api/users').subscribe(values => {
       this.users = values as any[];
       if (this.users.length) {

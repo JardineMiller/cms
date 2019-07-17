@@ -1,19 +1,28 @@
-<section class="container">
-  <h1>Application says what?</h1>
-
-  <table class="table table-striped table-bordered table-hover">
-    <thead class="thead-light">
-    <tr>
-      <th class="upper-case" scope="col" *ngFor="let key of userKeys">{{key}}</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr *ngFor="let user of users">
-      <td *ngFor="let key of userKeys">{{user[key]}}</td>
-    </tr>
-    </tbody>
-  </table>
-
-  <router-outlet></router-outlet>
+<section class="container" *ngIf="users && users.length">
+  <div class="row">
+    <div class="col">
+      <div class="card">
+        <div class="card-header bg-white">
+          {{pageTitle}}
+        </div>
+        <div class="card-body bg-grey">
+          <table class="table table-bordered bg-white table-striped table-hover shadow-sm">
+            <thead class="">
+            <tr>
+              <th class="upper" scope="col" *ngFor="let key of userKeys">{{key}}</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let user of users">
+              <td *ngFor="let key of userKeys">{{user[key]}}</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
+
+<router-outlet></router-outlet>
 
