@@ -1,0 +1,14 @@
+.card-body {
+  > * {
+    margin-top: 15px;
+  }
+
+  :first-child {
+    margin-top: 0;
+  }
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+}
