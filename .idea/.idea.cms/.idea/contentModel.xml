@@ -355,6 +355,7 @@
               <e p="app.component.css.map" t="Include" />
               <e p="styles.css" t="Include" />
               <e p="styles.css.map" t="Include" />
+              <e p="users.component.css" t="Include" />
             </e>
             <e p="styles.scss" t="Include" />
           </e>
