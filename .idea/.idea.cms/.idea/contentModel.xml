@@ -365,6 +365,11 @@
           <e p="favicon.ico" t="Include" />
           <e p="index.html" t="Include" />
           <e p="main.ts" t="Include" />
+          <e p="Models" t="Include">
+            <e p="interfaces" t="Include">
+              <e p="user.ts" t="Include" />
+            </e>
+          </e>
           <e p="polyfills.ts" t="Include" />
           <e p="test.ts" t="Include" />
         </e>

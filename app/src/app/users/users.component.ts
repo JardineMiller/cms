@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {animate, state, style, transition, trigger} from "@angular/animations";
+import {IUser} from "../../models/interfaces/user";
 
 @Component({
   selector: 'app-users',
@@ -20,10 +21,16 @@ export class UsersComponent implements OnInit {
   constructor(private _http: HttpClient) {
   }
 
+  private filter(filterString: string) {
+    return this.users.filter((each) => {
+      return each.name.indexOf(filterString) > -1 || each.email.indexOf(filterString) > -1;
+    })
+  }
+
   pageTitle: string = "Users";
-  users: any[] = [];
+  users: IUser[] = [];
   userKeys: string[] = [];
-  filteredUsers: any[] = [];
+  filteredUsers: IUser[] = [];
 
   _filterString: string;
   get filterString(): string {
@@ -52,11 +59,5 @@ export class UsersComponent implements OnInit {
 
   delete() {
     this.users.pop();
-  }
-
-  private filter(filterString: string) {
-    return this.users.filter((each) => {
-      return each.name.indexOf(filterString) > -1 || each.email.indexOf(filterString) > -1;
-    })
   }
 }
