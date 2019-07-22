@@ -7,7 +7,8 @@ import {AppComponent} from './app.component';
 
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from "@angular/common/http";
-import {UsersComponent} from './users/users.component';
+// Components
+import {UsersComponent} from './components/users/users.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,7 @@ import {UsersComponent} from './users/users.component';
     BrowserAnimationsModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

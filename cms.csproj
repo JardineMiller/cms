@@ -21,4 +21,8 @@
       <TypeScriptCompile Include="app\src\models\interfaces\user.ts" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="app\src\app\components" />
+    </ItemGroup>
+
 </Project>

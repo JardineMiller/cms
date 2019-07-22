@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
 import {animate, state, style, transition, trigger} from "@angular/animations";
-import {IUser} from "../../models/interfaces/user";
+import {IUser} from "../../../models/interfaces/user";
+import {UsersService} from "../../services/users.service";
 
 @Component({
   selector: 'app-users',
@@ -18,7 +18,14 @@ import {IUser} from "../../models/interfaces/user";
 })
 export class UsersComponent implements OnInit {
 
-  constructor(private _http: HttpClient) {
+  private _userService: UsersService;
+  public pageTitle: string = "Users";
+  public users: IUser[] = [];
+  public userKeys: string[] = [];
+  public filteredUsers: IUser[] = [];
+
+  constructor(private userService: UsersService) {
+    this._userService = userService;
   }
 
   private filter(filterString: string) {
@@ -26,11 +33,6 @@ export class UsersComponent implements OnInit {
       return each.name.indexOf(filterString) > -1 || each.email.indexOf(filterString) > -1;
     })
   }
-
-  pageTitle: string = "Users";
-  users: IUser[] = [];
-  userKeys: string[] = [];
-  filteredUsers: IUser[] = [];
 
   _filterString: string;
   get filterString(): string {
@@ -42,22 +44,19 @@ export class UsersComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    //TODO: This should live in a users service
-    this._http.get('api/users').subscribe(values => {
-      this.users = values as any[];
+    this._userService.getUsers().subscribe(values => {
+      this.users = values as IUser[];
+      this.userKeys = this.users.length ? Object.keys(this.users[0]) : [];
       this.filteredUsers = this.users;
-      if (this.users.length) {
-        this.userKeys = Object.keys(this.users[0]);
-      }
     })
   }
 
-  addUser() {
+  addUser():void {
     let lastId = this.users[this.users.length - 1].id;
     this.users.push({id: lastId + 1, name: "User", email: "email@provider.com"});
   }
 
-  delete() {
+  delete():void {
     this.users.pop();
   }
 }
