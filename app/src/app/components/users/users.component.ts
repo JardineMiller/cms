@@ -45,9 +45,11 @@ export class UsersComponent implements OnInit {
 
   ngOnInit(): void {
     this._userService.getUsers().subscribe(values => {
-      this.users = values as IUser[];
-      this.userKeys = this.users.length ? Object.keys(this.users[0]) : [];
+      console.table(values);
+      this.users = values;
       this.filteredUsers = this.users;
+      this.userKeys = this.users.length ? Object.keys(this.users[0]) : [];
+
     })
   }
 
