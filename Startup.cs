@@ -57,7 +57,7 @@ namespace cms
             // Commands
             services.AddScoped<ICommandProcessor, CommandProcessor>();
             services.AddScoped<ICommandResolver, CommandResolver>();
-            services.AddScoped<ICommandHandler<DeleteUsersCommand, CommandResult<bool>>, DeleteUsersCommandHandler>();
+            services.AddScoped<ICommandHandler<DeleteUsersCommand, CommandResult<List<int>>>, DeleteUsersCommandHandler>();
             services.AddScoped<ICommandHandler<UpdateUsersCommand, CommandResult<List<User>>>, UpdateUsersCommandHandler>();
             services.AddScoped<ICommandHandler<CreateUsersCommand, CommandResult<List<User>>>, CreateUserCommandHandler>();
             services.AddScoped<ICommandHandler<CreateUserPostCommand, CommandResult<Post>>, CreateUserPostCommandHandler>();
