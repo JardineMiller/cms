@@ -1,11 +1,12 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using cms.Data_Layer.Contexts;
 using Microsoft.Extensions.Logging;
 
 namespace cms.ApplicationLayer.Commands.Handlers
 {
-    public class DeleteUsersCommandHandler : ICommandHandler<DeleteUsersCommand, CommandResult<bool>>
+    public class DeleteUsersCommandHandler : ICommandHandler<DeleteUsersCommand, CommandResult<List<int>>>
     {
         private readonly ApplicationDbContext ctx;
         private readonly ILogger<DeleteUsersCommandHandler> logger;
@@ -16,9 +17,9 @@ namespace cms.ApplicationLayer.Commands.Handlers
             this.logger = logger;
         }
 
-        public CommandResult<bool> Handle(DeleteUsersCommand command)
+        public CommandResult<List<int>> Handle(DeleteUsersCommand command)
         {
-            var response = new CommandResult<bool>();
+            var response = new CommandResult<List<int>>();
 
             try
             {
@@ -35,7 +36,7 @@ namespace cms.ApplicationLayer.Commands.Handlers
                 ctx.SaveChanges();
 
                 response.Success = true;
-                response.Response = true;
+                response.Response = toRemove.Select(u => u.Id).ToList();
             }
             catch (Exception e)
             {

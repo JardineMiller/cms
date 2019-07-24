@@ -19,10 +19,11 @@ import {UsersService} from "../../services/users.service";
 export class UsersComponent implements OnInit {
 
   private _userService: UsersService;
+
   public pageTitle: string = "Users";
   public users: IUser[] = [];
-  public userKeys: string[] = [];
   public filteredUsers: IUser[] = [];
+  public keys: string[];
 
   constructor(private userService: UsersService) {
     this._userService = userService;
@@ -44,13 +45,16 @@ export class UsersComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this._userService.getUsers().subscribe(values => {
-      console.table(values);
-      this.users = values;
-      this.filteredUsers = this.users;
-      this.userKeys = this.users.length ? Object.keys(this.users[0]) : [];
+    // Init services
+    this._userService.loadAll();
 
-    })
+    this._userService.users.subscribe(
+      values => {
+        this.users = values;
+        this.filteredUsers = values;
+        this.keys = values.length ? Object.keys(values[0]) : [];
+      }
+    )
   }
 
   addUser():void {

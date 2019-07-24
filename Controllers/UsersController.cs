@@ -49,7 +49,7 @@ namespace cms.Controllers
                 return NotFound();
             }
 
-            return Ok(result);
+            return Ok(result.First());
         }
 
         [HttpDelete]
