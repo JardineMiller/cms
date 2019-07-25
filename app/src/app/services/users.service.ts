@@ -1,6 +1,5 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
-import {BehaviorSubject, Observable} from "rxjs";
 import {IUser} from "../../models/interfaces/user";
 
 @Injectable({
@@ -8,107 +7,101 @@ import {IUser} from "../../models/interfaces/user";
 })
 export class UsersService {
 
-  public users: Observable<IUser[]>;
   private readonly baseUrl: string;
-  private _users: BehaviorSubject<IUser[]>;
   private store: {
-    users: IUser[]
+    users: Map<number, IUser>
   };
 
   constructor(private http: HttpClient) {
     this.baseUrl = "api/users";
-    this.store = {users: []};
-    this._users = <BehaviorSubject<IUser[]>>new BehaviorSubject([]);
-    this.users = this._users.asObservable();
+    this.store = {
+      users: new Map()
+    };
+  }
+
+  public getAll() {
+    //TODO: Figure out a way to sensibly cache this. It's expensive to turn the whole map into a list every time anyone needs it.
+    return Array.from(this.store.users.values());
+  }
+
+  public get(id: number) {
+    return this.store.users.get(id);
   }
 
   public create(users: IUser[]) {
-    this.http.post<IUser[]>(this.baseUrl, JSON.stringify(users)).subscribe(
-      data => {
-        data.forEach((item) => {
-          this.store.users.push(item);
-        });
-        this._users.next(Object.assign({}, this.store).users);
-      },
-      error => {
-        console.log('Could not create users.')
-      });
+    return new Promise((resolve, reject) => {
+      this.http.post<IUser[]>(this.baseUrl, JSON.stringify(users)).toPromise().then(
+        newUsers => {
+          newUsers.forEach(u => this.store.users.set(u.id, u));
+          resolve();
+        },
+        err => {
+          console.log('Could not create users');
+          reject(err);
+        }
+      )
+    })
   }
 
   public update(users: IUser[]) {
-    this.http.put<IUser[]>(this.baseUrl, JSON.stringify(users)).subscribe(
-      data => {
-        data.forEach((item) => {
-          this.store.users.forEach((user, u) => {
-            if (user.id == item.id) {
-              this.store.users[u] = item;
-            }
-          })
-        });
+    return new Promise((resolve, reject) => {
+      this.http.put<IUser[]>(this.baseUrl, JSON.stringify(users)).toPromise().then(
+        updatedUsers => {
+          updatedUsers.forEach(u => this.store.users.set(u.id, u));
+          resolve();
+        },
+        err => {
+          console.log('Could not update users');
+          reject(err);
 
-        this._users.next(Object.assign({}, this.store).users);
-      },
-      error => {
-        console.log('Could not update users');
-      }
-    )
+        }
+      )
+    })
   }
 
   public remove(userIds: number[]) {
-    this.http.delete<number[]>(this.baseUrl).subscribe(
-      response => {
-        response.forEach((deleteId) => {
-          this.store.users.forEach((user, u) => {
-            if (user.id == deleteId) {
-              this.store.users.splice(u, 1);
-            }
-          })
-        });
-
-        this._users.next(Object.assign({}, this.store).users);
-      },
-      error => {
-        console.log('Could not delete users.')
-      }
-    );
+    return new Promise((resolve, reject) => {
+      this.http.delete<number[]>(this.baseUrl).toPromise().then(
+        deletedIds => {
+          deletedIds.forEach(id => this.store.users.delete(id));
+          resolve();
+        },
+        err => {
+          console.log('Could not delete users.')
+          reject(err);
+        }
+      )
+    })
   }
 
   public load(id: number) {
     const url = `${this.baseUrl}/${id}`;
-    this.http.get<IUser>(url).subscribe(
-      data => {
-        let notFound = true;
-
-        this.store.users.forEach((item, index) => {
-          if (item.id == data.id) {
-            this.store.users[index] = data;
-            notFound = false;
-          }
-        });
-
-        if (notFound) {
-          this.store.users.push(data)
+    return new Promise((resolve, reject) => {
+      this.http.get<IUser>(url).toPromise().then(
+        user => {
+          this.store.users.set(user.id, user);
+          resolve();
+        },
+        err => {
+          console.log(`Could not load user [${id}]: ${err}`);
+          reject(err);
         }
-
-        this._users.next(Object.assign({}, this.store).users);
-      },
-      error => {
-        console.log(`Could not load user [${id}]: ${error}`);
-
-      }
-    )
+      )
+    })
   }
 
-  public loadAll() {
-    this.http.get<IUser[]>(this.baseUrl).subscribe(
-      data => {
-        this.store.users = data as IUser[];
-        this._users.next(Object.assign({}, this.store).users);
-      },
-      error => {
-        console.log(`Could not load users: ${error}`);
-      }
-    )
+  public init() {
+    return new Promise((resolve, reject) => {
+      this.http.get<IUser[]>(this.baseUrl).toPromise().then(
+        data => {
+          data.forEach(u => this.store.users.set(u.id, u));
+          resolve();
+        },
+        reject => {
+          console.log(`Could not load users: ${reject}`);
+          reject(reject);
+        }
+      )
+    });
   }
-
 }

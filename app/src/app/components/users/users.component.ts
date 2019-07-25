@@ -45,24 +45,20 @@ export class UsersComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    // Init services
-    this._userService.loadAll();
-
-    this._userService.users.subscribe(
-      values => {
-        this.users = values;
-        this.filteredUsers = values;
-        this.keys = values.length ? Object.keys(values[0]) : [];
+    this._userService.init().then(
+      res => {
+        this.users = this.userService.getAll();
+        this.filteredUsers = this.users;
+        this.keys = this.users.length ? Object.keys(this.users[0]) : [];
       }
     )
   }
 
   addUser():void {
-    let lastId = this.users[this.users.length - 1].id;
-    this.users.push({id: lastId + 1, name: "User", email: "email@provider.com"});
+
   }
 
   delete():void {
-    this.users.pop();
+
   }
 }
