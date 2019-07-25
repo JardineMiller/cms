@@ -348,6 +348,8 @@
               </e>
             </e>
             <e p="services" t="Include">
+              <e p="posts.service.spec.ts" t="Include" />
+              <e p="posts.service.ts" t="Include" />
               <e p="users.service.spec.ts" t="Include" />
               <e p="users.service.ts" t="Include" />
             </e>
@@ -374,6 +376,7 @@
           <e p="main.ts" t="Include" />
           <e p="Models" t="Include">
             <e p="interfaces" t="Include">
+              <e p="post.ts" t="Include" />
               <e p="user.ts" t="Include" />
             </e>
           </e>
@@ -441,6 +444,7 @@
         <e p="DatabaseConfig.cs" t="Include" />
       </e>
       <e p="Controllers" t="Include">
+        <e p="PostsController.cs" t="Include" />
         <e p="UsersController.cs" t="Include" />
       </e>
       <e p="Data Layer" t="Include">
