@@ -22,7 +22,10 @@ namespace cms.ApplicationLayer.Commands.Handlers
 
             try
             {
+                var authorId = command.UserId;
                 var post = command.Post;
+
+                post.AuthorId = authorId;
                 ctx.Posts.Add(post);
                 ctx.SaveChanges();
 

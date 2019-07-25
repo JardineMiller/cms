@@ -1,16 +1,14 @@
-using cms.Data_Layer.Models;
-
 namespace cms.ApplicationLayer.Commands
 {
     public class DeleteUserPostCommand : ICommand<DeleteUserPostCommand, CommandResult<bool>>
     {
         public int UserId;
-        public Post Post;
+        public int PostId;
 
-        public DeleteUserPostCommand(int userId, Post post)
+        public DeleteUserPostCommand(int userId, int postId)
         {
             UserId = userId;
-            Post = post;
+            PostId = postId;
         }
     }
 }

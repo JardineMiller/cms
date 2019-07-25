@@ -1,6 +1,7 @@
 using System;
 using System.Linq;
 using cms.Data_Layer.Contexts;
+using cms.Data_Layer.Models;
 using Microsoft.Extensions.Logging;
 
 namespace cms.ApplicationLayer.Commands.Handlers
@@ -23,25 +24,33 @@ namespace cms.ApplicationLayer.Commands.Handlers
             try
             {
                 var userId = command.UserId;
-                var postToDelete = command.Post;
+                var postId = command.PostId;
 
                 var dbUser = ctx.Users.FirstOrDefault(u => u.Id == userId);
+                var dbPost = ctx.Posts.FirstOrDefault(p => p.Id == postId);
 
                 if (dbUser == null)
                 {
-                    logger.LogWarning($"Unable to find User with Id: [{userId}]");
+                    logger.LogWarning($"Unable to find [{nameof(User)}] with Id: [{userId}]");
                     result.Response = false;
                     return result;
                 }
-
-                if (postToDelete.AuthorId != userId)
+                
+                if (dbPost == null)
                 {
-                    logger.LogWarning($"Post [{postToDelete.Id}] does not belong to to User [{userId}]. Refusing the delete request.");
+                    logger.LogWarning($"Unable to find [{nameof(Post)}] with Id: [{postId}]");
                     result.Response = false;
                     return result;
                 }
 
-                ctx.Posts.Remove(postToDelete);
+                if (dbPost.AuthorId != userId)
+                {
+                    logger.LogWarning($"Post [{postId}] does not belong [{nameof(User)}] [{userId}]. Refusing the delete request.");
+                    result.Response = false;
+                    return result;
+                }
+
+                ctx.Posts.Remove(dbPost);
                 ctx.SaveChanges();
 
                 result.Success = true;
