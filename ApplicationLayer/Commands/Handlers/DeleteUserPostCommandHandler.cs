@@ -6,7 +6,7 @@ using Microsoft.Extensions.Logging;
 
 namespace cms.ApplicationLayer.Commands.Handlers
 {
-    public class DeleteUserPostCommandHandler : ICommandHandler<DeleteUserPostCommand, CommandResult<bool>>
+    public class DeleteUserPostCommandHandler : ICommandHandler<DeleteUserPostCommand, CommandResult<int?>>
     {
         private readonly ApplicationDbContext ctx;
         private readonly ILogger<DeleteUserPostCommandHandler> logger;
@@ -17,9 +17,9 @@ namespace cms.ApplicationLayer.Commands.Handlers
             this.logger = logger;
         }
 
-        public CommandResult<bool> Handle(DeleteUserPostCommand command)
+        public CommandResult<int?> Handle(DeleteUserPostCommand command)
         {
-            var result = new CommandResult<bool>();
+            var result = new CommandResult<int?>();
 
             try
             {
@@ -32,21 +32,21 @@ namespace cms.ApplicationLayer.Commands.Handlers
                 if (dbUser == null)
                 {
                     logger.LogWarning($"Unable to find [{nameof(User)}] with Id: [{userId}]");
-                    result.Response = false;
+                    result.Success = false;
                     return result;
                 }
                 
                 if (dbPost == null)
                 {
                     logger.LogWarning($"Unable to find [{nameof(Post)}] with Id: [{postId}]");
-                    result.Response = false;
+                    result.Success = false;
                     return result;
                 }
 
                 if (dbPost.AuthorId != userId)
                 {
-                    logger.LogWarning($"Post [{postId}] does not belong [{nameof(User)}] [{userId}]. Refusing the delete request.");
-                    result.Response = false;
+                    logger.LogWarning($"Post [{postId}] does not belong to [{nameof(User)}] [{userId}]. Refusing the delete request.");
+                    result.Success = false;
                     return result;
                 }
 
@@ -54,7 +54,7 @@ namespace cms.ApplicationLayer.Commands.Handlers
                 ctx.SaveChanges();
 
                 result.Success = true;
-                result.Response = true;
+                result.Response = postId;
             }
             catch (Exception e)
             {

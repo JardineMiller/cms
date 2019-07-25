@@ -19,7 +19,7 @@ namespace cms.ApplicationLayer.Commands.Handlers
 
         public CommandResult<List<int>> Handle(DeleteUsersCommand command)
         {
-            var response = new CommandResult<List<int>>();
+            var result = new CommandResult<List<int>>();
 
             try
             {
@@ -30,20 +30,22 @@ namespace cms.ApplicationLayer.Commands.Handlers
                 {
                     var stringIds = string.Join(", ", userIdsNotFound);
                     logger.LogWarning($"Entries not found for [{userIdsNotFound.Count}] Users. Ids: [{stringIds}]");
+                    result.Success = false;
+                    return result;
                 }
 
                 ctx.Users.RemoveRange(toRemove);
                 ctx.SaveChanges();
 
-                response.Success = true;
-                response.Response = toRemove.Select(u => u.Id).ToList();
+                result.Success = true;
+                result.Response = toRemove.Select(u => u.Id).ToList();
             }
             catch (Exception e)
             {
                 logger.LogWarning(e.Message);
             }
 
-            return response;
+            return result;
         }
     }
 }
