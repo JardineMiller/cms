@@ -24,9 +24,23 @@ namespace cms.Data_Layer.Models
 
             get
             {
-                var bodyLength = Body.Length;
-                var snippetLength = bodyLength < 196 ? bodyLength : 196;
-                return Body.Substring(0, snippetLength) + "...";
+                int snippetLength;
+                bool includeElipsis = true;
+                if (Body.Length < 196)
+                {
+                    snippetLength = Body.Length;
+                    includeElipsis = false;
+                }
+                else
+                {
+                    snippetLength = 196;
+                }
+                
+                var snippet = Body.Substring(0, snippetLength);
+
+                if (includeElipsis) snippet += "...";
+
+                return snippet;
             }
             private set { }
         }
