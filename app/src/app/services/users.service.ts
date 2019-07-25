@@ -38,10 +38,10 @@ export class UsersService {
 
   public create(users: IUser[]) {
     return new Promise((resolve, reject) => {
-      this.http.post<IUser[]>(this.baseUrl, JSON.stringify(users)).toPromise().then(
+      this.http.post<IUser[]>(this.baseUrl, users).toPromise().then(
         newUsers => {
           newUsers.forEach(u => this.store.usersById.set(u.id, u));
-          resolve();
+          resolve(newUsers);
         },
         err => {
           console.log('Could not create users');
@@ -53,10 +53,10 @@ export class UsersService {
 
   public update(users: IUser[]) {
     return new Promise((resolve, reject) => {
-      this.http.put<IUser[]>(this.baseUrl, JSON.stringify(users)).toPromise().then(
+      this.http.put<IUser[]>(this.baseUrl, users).toPromise().then(
         updatedUsers => {
           updatedUsers.forEach(u => this.store.usersById.set(u.id, u));
-          resolve();
+          resolve(updatedUsers);
         },
         err => {
           console.log('Could not update users');
@@ -67,15 +67,16 @@ export class UsersService {
     })
   }
 
-  public remove(userIds: number[]) {
+  public delete(userIds: number[]) {
+    let url = `${this.baseUrl}/?userIds=${userIds.join(",")}`;
     return new Promise((resolve, reject) => {
-      this.http.delete<number[]>(this.baseUrl).toPromise().then(
+      this.http.delete<number[]>(url).toPromise().then(
         deletedIds => {
           deletedIds.forEach(id => this.store.usersById.delete(id));
-          resolve();
+          resolve(deletedIds);
         },
         err => {
-          console.log('Could not delete users.')
+          console.log('Could not delete users.');
           reject(err);
         }
       )
@@ -88,7 +89,7 @@ export class UsersService {
       this.http.get<IUser>(url).toPromise().then(
         user => {
           this.store.usersById.set(user.id, user);
-          resolve();
+          resolve(user);
         },
         err => {
           console.log(`Could not load user [${id}]: ${err}`);
@@ -98,12 +99,12 @@ export class UsersService {
     })
   }
 
-  public init() {
+  public fetchAll() {
     return new Promise((resolve, reject) => {
       this.http.get<IUser[]>(this.baseUrl).toPromise().then(
         data => {
           data.forEach(u => this.store.usersById.set(u.id, u));
-          resolve();
+          resolve(data);
         },
         reject => {
           console.log(`Could not load users: ${reject}`);

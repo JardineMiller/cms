@@ -45,9 +45,9 @@ export class UsersComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this._userService.init().then(
-      res => {
-        this.users = this.userService.getAll();
+    this._userService.fetchAll().then(
+      users => {
+        this.users = users as IUser[];
         this.filteredUsers = this.users;
         this.keys = this.users.length ? Object.keys(this.users[0]) : [];
       }
@@ -55,10 +55,30 @@ export class UsersComponent implements OnInit {
   }
 
   addUser():void {
+    let user = {
+      name: "Test",
+      email: "test@test.com"
+    };
 
+    this.userService.create([user]).then(
+      users => {
+        (users as IUser[]).forEach(u => this.users.push(u));
+      }
+    )
   }
 
-  delete():void {
+  delete(userId: number):void {
+    this.userService.delete([userId]).then(
+      ids => {
+        (ids as number[]).forEach(id => {
+          this.users.forEach((user, index) => {
+            if (user.id == id) {
+              this.users.splice(index, 1);
+            }
+          })
+        });
 
+      }
+    )
   }
 }

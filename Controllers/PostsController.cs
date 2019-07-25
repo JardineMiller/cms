@@ -65,7 +65,7 @@ namespace cms.Controllers
         }
 
         [HttpDelete("user/{userId}")]
-        public IActionResult DeleteUserPost(int userId, int postId)
+        public IActionResult DeleteUserPost(int userId, [FromQuery] int postId)
         {
             var cmd = new DeleteUserPostCommand(userId, postId);
             var result = commandProcessor.Process(cmd);

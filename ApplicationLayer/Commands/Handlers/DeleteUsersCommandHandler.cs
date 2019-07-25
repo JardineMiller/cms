@@ -24,7 +24,8 @@ namespace cms.ApplicationLayer.Commands.Handlers
             try
             {
                 var toRemove = ctx.Users.Where(u => command.UserIds.Contains(u.Id));
-                var userIdsNotFound = command.UserIds.Except(toRemove.Select(u => u.Id)).ToList();
+                var idsToRemove = toRemove.Select(u => u.Id).ToList();
+                var userIdsNotFound = command.UserIds.Except(idsToRemove).ToList();
 
                 if (userIdsNotFound.Any())
                 {
@@ -38,7 +39,7 @@ namespace cms.ApplicationLayer.Commands.Handlers
                 ctx.SaveChanges();
 
                 result.Success = true;
-                result.Response = toRemove.Select(u => u.Id).ToList();
+                result.Response = idsToRemove;
             }
             catch (Exception e)
             {

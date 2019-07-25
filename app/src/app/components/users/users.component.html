@@ -16,11 +16,13 @@
             <thead class="">
             <tr>
               <th class="upper" scope="col" *ngFor="let key of keys">{{key}}</th>
+              <th>Actions</th>
             </tr>
             </thead>
             <tbody>
             <tr *ngFor="let user of filteredUsers" [@fadeInOut]>
               <td *ngFor="let key of keys">{{user[key]}}</td>
+              <td><span (click)="delete(user.id)" class="btn btn-danger fa fa-trash"></span></td>
             </tr>
             </tbody>
           </table>

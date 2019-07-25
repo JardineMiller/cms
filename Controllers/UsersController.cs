@@ -53,7 +53,7 @@ namespace cms.Controllers
         }
 
         [HttpDelete]
-        public IActionResult DeleteUsers([FromBody] IList<int> userIds)
+        public IActionResult DeleteUsers([FromQuery] IList<int> userIds)
         {
             var cmd = new DeleteUsersCommand(userIds);
             var response = commandProcessor.Process(cmd);
@@ -63,7 +63,7 @@ namespace cms.Controllers
                 return BadRequest(); //TODO: Not accurate
             }
 
-            return Ok(response.Success);
+            return Ok(response.Response);
         }
 
         [HttpPut]
