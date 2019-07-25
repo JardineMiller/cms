@@ -21,7 +21,7 @@ namespace cms.Controllers
             this.commandProcessor = commandProcessor;
         }
 
-        [HttpGet("/user/{userId}")]
+        [HttpGet("user/{userId}")]
         public IActionResult GetUserPosts(int userId)
         {
             var query = new GetUserPostsQuery(userId);
@@ -35,7 +35,7 @@ namespace cms.Controllers
             return Ok(result);
         }
 
-        [HttpPost("/user/{userId}")]
+        [HttpPost("user/{userId}")]
         public IActionResult CreateUserPost(int userId, [FromBody] Post post)
         {
             var cmd = new CreateUserPostCommand(userId, post);
@@ -50,7 +50,7 @@ namespace cms.Controllers
 
         }
 
-        [HttpPut("/user/{userId}")]
+        [HttpPut("user/{userId}")]
         public IActionResult UpdateUserPost(int userId, [FromBody] Post post)
         {
             var cmd = new UpdateUserPostCommand(userId, post);
@@ -64,7 +64,7 @@ namespace cms.Controllers
             return Ok(result.Response);
         }
 
-        [HttpDelete("/user/{userId}")]
+        [HttpDelete("user/{userId}")]
         public IActionResult DeleteUserPost(int userId, int postId)
         {
             var cmd = new DeleteUserPostCommand(userId, postId);
