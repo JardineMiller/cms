@@ -49,4 +49,14 @@
 /******** SECTION: MISC *********/
 /********************************/
 
+.last-child-no-margin {
+  :last-child {
+    margin-bottom: 0;
+  }
+}
 
+.center-page {
+  position: relative;
+  top: 45%;
+  left: 45%;
+}
