@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using cms.Data_Layer.Contexts;
 using cms.Data_Layer.Models;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
 namespace cms.ApplicationLayer.Queries.Handlers
@@ -19,7 +20,7 @@ namespace cms.ApplicationLayer.Queries.Handlers
 
         public List<Post> Handle(GetPostsQuery query)
         {
-            return ctx.Posts.ToList();
+            return ctx.Posts.Include(p => p.Author).ToList();
         }
     }
 }
