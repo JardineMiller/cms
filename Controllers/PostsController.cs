@@ -21,6 +21,20 @@ namespace cms.Controllers
             this.commandProcessor = commandProcessor;
         }
 
+        [HttpGet("posts")]
+        public IActionResult GetAllPosts()
+        {
+            var query = new GetPostsQuery();
+            var result = queryProcessor.Process(query);
+
+            if (result == null)
+            {
+                return BadRequest();
+            }
+
+            return Ok(result);
+        }
+
         [HttpGet("user/{userId}")]
         public IActionResult GetUserPosts(int userId)
         {

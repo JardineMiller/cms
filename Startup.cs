@@ -53,6 +53,7 @@ namespace cms
             services.AddScoped<IQueryResolver, QueryResolver>();
             services.AddScoped<IQueryHandler<GetUsersQuery, List<User>>, GetUsersQueryHandler>();
             services.AddScoped<IQueryHandler<GetUserPostsQuery, List<Post>>, GetUserPostsQueryHandler>();
+            services.AddScoped<IQueryHandler<GetPostsQuery, List<Post>>, GetPostsQueryHandler>();
 
             // Commands
             services.AddScoped<ICommandProcessor, CommandProcessor>();
@@ -60,6 +61,7 @@ namespace cms
             services.AddScoped<ICommandHandler<DeleteUsersCommand, CommandResult<List<int>>>, DeleteUsersCommandHandler>();
             services.AddScoped<ICommandHandler<UpdateUsersCommand, CommandResult<List<User>>>, UpdateUsersCommandHandler>();
             services.AddScoped<ICommandHandler<CreateUsersCommand, CommandResult<List<User>>>, CreateUserCommandHandler>();
+            
             services.AddScoped<ICommandHandler<CreateUserPostCommand, CommandResult<Post>>, CreateUserPostCommandHandler>();
             services.AddScoped<ICommandHandler<UpdateUserPostCommand, CommandResult<Post>>, UpdateUserPostCommandHandler>();
             services.AddScoped<ICommandHandler<DeleteUserPostCommand, CommandResult<int?>>, DeleteUserPostCommandHandler>();

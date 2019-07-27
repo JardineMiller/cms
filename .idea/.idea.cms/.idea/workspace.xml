@@ -1,27 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="80dd5eca-d90b-426b-b82c-8c18fa31b277" name="Default Changelist" comment="Got Users Creating and Deleting from the front end&#10;- Delete routes now take the Ids to delete from the URL, not Body as Angular does not support that&#10;- I now actually return data in the promise resolves...&#10;- Entity interfaces now have an optional Id field so we can use it when sending data to create (e.g. we don't have an Id)&#10;- Fixed an issue in the DeleteUsersCommandHandler where we were trying to retrieve the Ids of entities we have just deleted.">
-      <change afterPath="$PROJECT_DIR$/app/src/app/components/home/home.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/app/components/home/home.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/app/components/home/home.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/app/components/home/home.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/app/components/user-detail/user-detail.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/app/components/user-detail/user-detail.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/app/components/user-detail/user-detail.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/app/components/user-detail/user-detail.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/app/guards/user-detail.guard.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/app/guards/user-detail.guard.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/css/compiled/home.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/css/compiled/user-detail.component.css" afterDir="false" />
+    <list default="true" id="80dd5eca-d90b-426b-b82c-8c18fa31b277" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ApplicationLayer/Queries/GetPostsQuery.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApplicationLayer/Queries/Handlers/GetPostsQueryHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.cms/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cms/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.cms/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cms/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/PostsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/PostsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Startup.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/app/components/user-detail/user-detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/user-detail/user-detail.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/app/components/users/users.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/users/users.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/app/components/users/users.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/users/users.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/app/components/users/users.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/users/users.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/css/compiled/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/css/compiled/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/css/compiled/users.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/css/compiled/users.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/css/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/css/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/cms.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/cms.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/cms.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/cms.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/cms.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/cms.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/cms.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/cms.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/cms.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/cms.pdb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,66 +83,68 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/css/styles.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="49" column="10" lean-forward="true" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Controllers/PostsController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+              <folding>
+                <marker date="1564221018378" expanded="true" signature="6:226" ph="..." />
+                <marker date="1564221018378" expanded="true" signature="253:2621" ph="{...}" />
+                <marker date="1564221018378" expanded="true" signature="361:2619" ph="{...}" />
+                <marker date="1564221018378" expanded="true" signature="586:710" ph="{...}" />
+                <marker date="1564221018378" expanded="true" signature="781:1032" ph="{...}" />
+                <marker date="1564221018378" expanded="true" signature="925:990" ph="{...}" />
+                <marker date="1564221018378" expanded="true" signature="1122:1383" ph="{...}" />
+                <marker date="1564221018378" expanded="true" signature="1276:1341" ph="{...}" />
+                <marker date="1564221018378" expanded="true" signature="1498:1799" ph="{...}" />
+                <marker date="1564221018378" expanded="true" signature="1661:1747" ph="{...}" />
+                <marker date="1564221018378" expanded="true" signature="1913:2213" ph="{...}" />
+                <marker date="1564221018378" expanded="true" signature="2076:2162" ph="{...}" />
+                <marker date="1564221018378" expanded="true" signature="2332:2613" ph="{...}" />
+                <marker date="1564221018378" expanded="true" signature="2497:2562" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/app/components/users/users.component.ts">
+        <entry file="file://$PROJECT_DIR$/ApplicationLayer/Queries/GetPostsQuery.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
-              <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+            <state relative-caret-position="30">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
               <folding>
-                <element signature="e#0#48#0" expanded="true" />
+                <marker date="1564221406250" expanded="true" signature="6:62" ph="..." />
+                <marker date="1564221406250" expanded="true" signature="102:194" ph="{...}" />
+                <marker date="1564221406250" expanded="true" signature="171:192" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/app/services/users.service.ts">
+        <entry file="file://$PROJECT_DIR$/app/src/app/components/new-user/new-user.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+            <state>
+              <caret column="8" selection-start-column="8" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/app/app.module.ts">
+        <entry file="file://$PROJECT_DIR$/app/src/app/components/new-user/new-user.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="20" column="52" lean-forward="true" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
-              <folding>
-                <element signature="e#0#56#0" expanded="true" />
-                <element signature="e#383#449#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/app/guards/user-detail.guard.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/app/components/user-detail/user-detail.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="8" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/app/components/user-detail/user-detail.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="41" lean-forward="true" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
+            <state relative-caret-position="630">
+              <caret line="42" column="5" lean-forward="true" selection-start-line="41" selection-start-column="13" selection-end-line="42" selection-end-column="5" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -153,10 +153,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/app/components/users/users.component.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/app/components/users/users.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="20" lean-forward="true" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+            <state relative-caret-position="375">
+              <caret line="25" column="62" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/app/app.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -197,7 +215,9 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/088051FB-72DE-4607-81C4-D1937DDE71E2/89/9a06491c/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ApplicationLayer/Queries/GetUserPostsQuery.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ApplicationLayer/Queries/Handlers/GetUserPostsQueryHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ApplicationLayer/Queries/Handlers/GetPostsQueryHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ApplicationLayer/Queries/Processor/IQueryProcessor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ApplicationLayer/Queries/GetPostsQuery.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ApplicationLayer/Commands/DeleteUserPostCommand.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ApplicationLayer/Commands/DeleteUsersCommand.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ApplicationLayer/Commands/CreateUserPostCommand.cs" root0="FORCE_HIGHLIGHTING" />
@@ -228,7 +248,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../frontend/src/css/app.component.css" />
         <option value="$PROJECT_DIR$/../frontend/src/css/styles.scss" />
         <option value="$PROJECT_DIR$/../frontend/src/index.html" />
         <option value="$PROJECT_DIR$/../frontend/angular.json" />
@@ -250,14 +269,11 @@
         <option value="$PROJECT_DIR$/app/src/app/users/users.component.ts" />
         <option value="$PROJECT_DIR$/app/src/extensions/arrayExtensions.js" />
         <option value="$PROJECT_DIR$/ApplicationLayer/Commands/DeleteUsersCommand.cs" />
-        <option value="$PROJECT_DIR$/app/src/app/components/users/users.component.scss" />
         <option value="$PROJECT_DIR$/app/src/index.html" />
         <option value="$PROJECT_DIR$/ApplicationLayer/Commands/Handlers/CreateUserPostCommandHandler.cs" />
         <option value="$PROJECT_DIR$/Data Layer/Models/Post.cs" />
         <option value="$PROJECT_DIR$/ApplicationLayer/Commands/DeleteUserPostCommand.cs" />
         <option value="$PROJECT_DIR$/ApplicationLayer/Commands/Handlers/DeleteUserPostCommandHandler.cs" />
-        <option value="$PROJECT_DIR$/Startup.cs" />
-        <option value="$PROJECT_DIR$/Controllers/PostsController.cs" />
         <option value="$PROJECT_DIR$/app/src/models/interfaces/post.ts" />
         <option value="$PROJECT_DIR$/app/src/models/interfaces/user.ts" />
         <option value="$PROJECT_DIR$/Controllers/UsersController.cs" />
@@ -266,24 +282,29 @@
         <option value="$PROJECT_DIR$/app/src/css/compiled/styles.css" />
         <option value="$PROJECT_DIR$/app/src/app/app.component.ts" />
         <option value="$PROJECT_DIR$/app/src/app/components/home/home.component.html" />
-        <option value="$PROJECT_DIR$/app/src/css/styles.scss" />
         <option value="$PROJECT_DIR$/app/src/app/components/users/users.component.ts" />
-        <option value="$PROJECT_DIR$/app/src/app/components/users/users.component.html" />
         <option value="$PROJECT_DIR$/app/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/app/src/app/components/user-detail/user-detail.component.scss" />
-        <option value="$PROJECT_DIR$/app/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/app/src/app/guards/user-detail.guard.ts" />
         <option value="$PROJECT_DIR$/app/src/app/components/user-detail/user-detail.component.ts" />
         <option value="$PROJECT_DIR$/app/src/app/services/users.service.ts" />
         <option value="$PROJECT_DIR$/app/src/app/components/user-detail/user-detail.component.html" />
+        <option value="$PROJECT_DIR$/app/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/app/src/app/components/users/users.component.html" />
+        <option value="$PROJECT_DIR$/app/src/app/components/new-user/new-user.component.ts" />
+        <option value="$PROJECT_DIR$/app/src/app/components/users/users.component.scss" />
+        <option value="$PROJECT_DIR$/app/src/app/components/new-user/new-user.component.html" />
+        <option value="$PROJECT_DIR$/app/src/css/styles.scss" />
+        <option value="$PROJECT_DIR$/Controllers/PostsController.cs" />
+        <option value="$PROJECT_DIR$/ApplicationLayer/Queries/Handlers/GetPostsQueryHandler.cs" />
+        <option value="$PROJECT_DIR$/Startup.cs" />
+        <option value="$PROJECT_DIR$/ApplicationLayer/Queries/GetPostsQuery.cs" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="508" />
-    <option name="y" value="-1058" />
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1680" />
-    <option name="height" value="1028" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -311,64 +332,28 @@
               <item name="" type="784c90a0:SolutionExplorerRootNode" />
               <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
               <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="app" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="app" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="app" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="app" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="app" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="app" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="components" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="app" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="app" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="components" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="users" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="app" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="css" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="app" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="css" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="compiled" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ApplicationLayer" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
               <item name="" type="784c90a0:SolutionExplorerRootNode" />
               <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
               <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
               <item name="ApplicationLayer" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Queries" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ApplicationLayer" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Queries" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Handlers" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Controllers" type="24d0babc:SolutionExplorerModelNode" />
             </path>
           </expand>
           <select />
@@ -467,7 +452,7 @@
       <workItem from="1563296328820" duration="31000" />
       <workItem from="1563297558507" duration="9000000" />
       <workItem from="1563386673415" duration="53674000" />
-      <workItem from="1564133047712" duration="10822000" />
+      <workItem from="1564133047712" duration="15705000" />
     </task>
     <task id="LOCAL-00001" summary="File restructure">
       <created>1562927766954</created>
@@ -686,11 +671,39 @@
       <option name="project" value="LOCAL" />
       <updated>1564149010385</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Removed unecessary styles">
+      <created>1564149062084</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1564149062084</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Added a super basic home component">
+      <created>1564149111418</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1564149111418</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Added a user detail component for editing user information">
+      <created>1564149153954</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1564149153954</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Added routing">
+      <created>1564149201960</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1564149201960</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87781000" />
+    <option name="totallyTimeSpent" value="92664000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -702,15 +715,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-254" y="-1058" width="1920" height="1058" extended-state="6" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1943557" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22283272" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32919255" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32712215" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32244897" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39183673" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -730,7 +743,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Errors In Solution" order="3" weight="0.3295082" />
+      <window_info anchor="right" id="Errors In Solution" order="3" weight="0.32905984" />
       <window_info anchor="right" id="Database" order="4" weight="0.22161172" />
     </layout>
   </component>
@@ -741,10 +754,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="Migrated from Sql server to postgres to try and get this thing running on unix" />
-    <MESSAGE value="Playing around with the front end page hitting up the user's API and display data" />
-    <MESSAGE value="Trying to get NLog up and running" />
-    <MESSAGE value="Added bootstrap and font-awesome to the project files, rather than rely on the CDN" />
     <MESSAGE value="Created a new users component and removed the user information that was previously in the app component over to the user" />
     <MESSAGE value="Messing around with users components styling" />
     <MESSAGE value="Updated the code style config to prevent line wrapping. I hate automatic line wrapping :(" />
@@ -766,7 +775,11 @@
     <MESSAGE value="Skeleton for a posts service" />
     <MESSAGE value="Got Users Creating and Deleting from the front end&#10;- Delete routes now take the Ids to delete from the URL, not Body as Angular does not support that&#10;- I now actually return data in the promise resolves...&#10;- Entity interfaces now have an optional Id field so we can use it when sending data to create (e.g. we don't have an Id)&#10;- Fixed an issue in the DeleteUsersCommandHandler where we were trying to retrieve the Ids of entities we have just deleted." />
     <MESSAGE value="Added some styles" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added some styles" />
+    <MESSAGE value="Removed unecessary styles" />
+    <MESSAGE value="Added a super basic home component" />
+    <MESSAGE value="Added a user detail component for editing user information" />
+    <MESSAGE value="Added routing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added routing" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -812,30 +825,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/node_modules/rxjs/src/internal/Observable.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="79" column="2" selection-start-line="79" selection-start-column="2" selection-end-line="79" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ApplicationLayer/Queries/Processor/IQueryProcessor.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/tsconfig.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="15" lean-forward="true" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/angular.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-732">
@@ -1008,24 +997,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Startup.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="59" column="105" lean-forward="true" selection-start-line="59" selection-start-column="105" selection-end-line="59" selection-end-column="105" />
-          <folding>
-            <marker date="1564050640045" expanded="false" signature="6:819" ph="..." />
-            <marker date="1564050640045" expanded="true" signature="834:3857" ph="{...}" />
-            <marker date="1564050640045" expanded="true" signature="861:3855" ph="{...}" />
-            <marker date="1564050640045" expanded="true" signature="980:1029" ph="{...}" />
-            <marker date="1564050640045" expanded="true" signature="1039:1254" ph="/* This method gets called by the runtime. Use this method to add services to the container. ... */" />
-            <marker date="1564050640045" expanded="true" signature="1321:3112" ph="{...}" />
-            <marker date="1564050640045" expanded="true" signature="3346:3849" ph="{...}" />
-            <marker date="1564050640045" expanded="true" signature="3509:3586" ph="{...}" />
-            <marker date="1564050640045" expanded="true" signature="3603:3674" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Data Layer/Models/User.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1107,24 +1078,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/css/compiled/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/app/components/home/home.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/app/components/users/users.component.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
@@ -1171,27 +1128,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/PostsController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="55" column="47" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="47" />
-          <folding>
-            <marker date="1564083650815" expanded="true" signature="6:226" ph="..." />
-            <marker date="1564083650815" expanded="true" signature="253:2299" ph="{...}" />
-            <marker date="1564083650815" expanded="true" signature="361:2297" ph="{...}" />
-            <marker date="1564083650815" expanded="true" signature="586:710" ph="{...}" />
-            <marker date="1564083650815" expanded="true" signature="800:1061" ph="{...}" />
-            <marker date="1564083650815" expanded="true" signature="954:1019" ph="{...}" />
-            <marker date="1564083650815" expanded="true" signature="1176:1477" ph="{...}" />
-            <marker date="1564083650815" expanded="true" signature="1339:1425" ph="{...}" />
-            <marker date="1564083650815" expanded="true" signature="1591:1891" ph="{...}" />
-            <marker date="1564083650815" expanded="true" signature="1754:1840" ph="{...}" />
-            <marker date="1564083650815" expanded="true" signature="2010:2291" ph="{...}" />
-            <marker date="1564083650815" expanded="true" signature="2175:2240" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ApplicationLayer/Queries/GetUserPostsQuery.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1227,13 +1163,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/css/styles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="34" column="46" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/css/compiled/users.component.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -1248,17 +1177,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="20" column="52" lean-forward="true" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#56#0" expanded="true" />
-            <element signature="e#383#449#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cms.csproj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -1269,17 +1187,14 @@
     <entry file="file://$PROJECT_DIR$/app/src/app/guards/user-detail.guard.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
+          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/app/services/users.service.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
@@ -1290,36 +1205,148 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/app/components/users/users.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="44" column="3" selection-start-line="44" selection-start-column="3" selection-end-line="44" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/css/compiled/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/app/components/user-detail/user-detail.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="41" lean-forward="true" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
+        <state relative-caret-position="302">
+          <caret line="23" column="3" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/app/components/user-detail/user-detail.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/app/components/new-user/new-user.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="5" lean-forward="true" selection-start-line="41" selection-start-column="13" selection-end-line="42" selection-end-column="5" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/app/components/user-detail/user-detail.component.html">
+    <entry file="file://$PROJECT_DIR$/app/src/app/components/users/users.component.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="8" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/app/components/new-user/new-user.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="8" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/app/components/users/users.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="20" lean-forward="true" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+        <state relative-caret-position="375">
+          <caret line="25" column="62" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="62" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/app/components/users/users.component.ts">
+    <entry file="file://$PROJECT_DIR$/app/src/css/styles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+        <state relative-caret-position="243">
+          <caret line="49" column="10" lean-forward="true" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/PostsController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
           <folding>
-            <element signature="e#0#48#0" expanded="true" />
+            <marker date="1564221018378" expanded="true" signature="6:226" ph="..." />
+            <marker date="1564221018378" expanded="true" signature="253:2621" ph="{...}" />
+            <marker date="1564221018378" expanded="true" signature="361:2619" ph="{...}" />
+            <marker date="1564221018378" expanded="true" signature="586:710" ph="{...}" />
+            <marker date="1564221018378" expanded="true" signature="781:1032" ph="{...}" />
+            <marker date="1564221018378" expanded="true" signature="925:990" ph="{...}" />
+            <marker date="1564221018378" expanded="true" signature="1122:1383" ph="{...}" />
+            <marker date="1564221018378" expanded="true" signature="1276:1341" ph="{...}" />
+            <marker date="1564221018378" expanded="true" signature="1498:1799" ph="{...}" />
+            <marker date="1564221018378" expanded="true" signature="1661:1747" ph="{...}" />
+            <marker date="1564221018378" expanded="true" signature="1913:2213" ph="{...}" />
+            <marker date="1564221018378" expanded="true" signature="2076:2162" ph="{...}" />
+            <marker date="1564221018378" expanded="true" signature="2332:2613" ph="{...}" />
+            <marker date="1564221018378" expanded="true" signature="2497:2562" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="55" column="93" selection-start-line="55" selection-start-column="93" selection-end-line="55" selection-end-column="93" />
+          <folding>
+            <marker date="1564221368575" expanded="false" signature="6:819" ph="..." />
+            <marker date="1564221368575" expanded="true" signature="834:3968" ph="{...}" />
+            <marker date="1564221368575" expanded="true" signature="861:3966" ph="{...}" />
+            <marker date="1564221368575" expanded="true" signature="980:1029" ph="{...}" />
+            <marker date="1564221368575" expanded="true" signature="1039:1254" ph="/* This method gets called by the runtime. Use this method to add services to the container. ... */" />
+            <marker date="1564221368575" expanded="true" signature="1321:3223" ph="{...}" />
+            <marker date="1564221368575" expanded="true" signature="3457:3960" ph="{...}" />
+            <marker date="1564221368575" expanded="true" signature="3620:3697" ph="{...}" />
+            <marker date="1564221368575" expanded="true" signature="3714:3785" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApplicationLayer/Queries/Handlers/GetPostsQueryHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+          <folding>
+            <marker date="1564221300320" expanded="true" signature="6:148" ph="..." />
+            <marker date="1564221300320" expanded="true" signature="197:705" ph="{...}" />
+            <marker date="1564221300320" expanded="true" signature="280:703" ph="{...}" />
+            <marker date="1564221300320" expanded="true" signature="501:583" ph="{...}" />
+            <marker date="1564221300320" expanded="true" signature="638:697" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApplicationLayer/Queries/GetPostsQuery.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <marker date="1564221406250" expanded="true" signature="6:62" ph="..." />
+            <marker date="1564221406250" expanded="true" signature="102:194" ph="{...}" />
+            <marker date="1564221406250" expanded="true" signature="171:192" ph="{...}" />
           </folding>
         </state>
       </provider>

@@ -119,6 +119,12 @@
                 <e p="home.component.spec.ts" t="Include" />
                 <e p="home.component.ts" t="Include" />
               </e>
+              <e p="new-user" t="Include">
+                <e p="new-user.component.html" t="Include" />
+                <e p="new-user.component.scss" t="Include" />
+                <e p="new-user.component.spec.ts" t="Include" />
+                <e p="new-user.component.ts" t="Include" />
+              </e>
               <e p="user-detail" t="Include">
                 <e p="user-detail.component.html" t="Include" />
                 <e p="user-detail.component.scss" t="Include" />
@@ -151,6 +157,7 @@
               <e p="app.component.css" t="Include" />
               <e p="app.component.css.map" t="Include" />
               <e p="home.component.css" t="Include" />
+              <e p="new-user.component.css" t="Include" />
               <e p="styles.css" t="Include" />
               <e p="styles.css.map" t="Include" />
               <e p="user-detail.component.css" t="Include" />
@@ -208,9 +215,11 @@
           <e p="UpdateUsersCommand.cs" t="Include" />
         </e>
         <e p="Queries" t="Include">
+          <e p="GetPostsQuery.cs" t="Include" />
           <e p="GetUserPostsQuery.cs" t="Include" />
           <e p="GetUsersQuery.cs" t="Include" />
           <e p="Handlers" t="Include">
+            <e p="GetPostsQueryHandler.cs" t="Include" />
             <e p="GetUserPostsQueryHandler.cs" t="Include" />
             <e p="GetUsersQueryHandler.cs" t="Include" />
             <e p="IQueryHandler.cs" t="Include" />
