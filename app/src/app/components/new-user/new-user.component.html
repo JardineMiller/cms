@@ -1,15 +1,17 @@
-<div class="container">
+<section class="container">
   <div class="card">
-    <div class="card-header">User: {{user.name}}</div>
+    <div class="card-header">Create User</div>
     <div class="card-body last-child-no-margin">
+
       <div class="form-group row no-gutters" *ngFor="let prop of props">
         <div class="col-2">
           <label class="title" for="{{prop}}">{{prop}}:</label>
         </div>
         <div class="col-10">
-          <input id="{{prop}}" [disabled]="prop == 'id'" class="form-control" type="text" [(ngModel)]="user[prop]">
+          <input id="{{prop}}" [required] class="form-control" type="text" [(ngModel)]="user[prop]">
         </div>
       </div>
+
     </div>
     <div class="card-footer">
       <div class="btn btn-outline-secondary" (click)="back()">
@@ -23,4 +25,4 @@
       </div>
     </div>
   </div>
-</div>
+</section>

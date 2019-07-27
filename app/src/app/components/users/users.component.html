@@ -22,16 +22,16 @@
             <tbody>
             <tr *ngFor="let user of filteredUsers" [@fadeInOut]>
               <td *ngFor="let key of keys">{{user[key]}}</td>
-              <td>
-                <span [routerLink]="['/users', user.id]" class="text-primary fa fa-pencil"></span>
-                <span (click)="delete(user.id)" class="text-danger fa fa-trash-o"></span>
+              <td class="actions">
+                <span [routerLink]="['/users/', user.id, 'edit']" class="fa fa-pencil action bg-primary"></span>
+                <span (click)="delete(user.id)" class="fa fa-trash-o action bg-danger"></span>
               </td>
             </tr>
             </tbody>
           </table>
         </div>
         <div class="card-footer">
-          <button (click)="addUser()" class="btn btn-primary">Add User</button>
+          <button [routerLink]="['/users/new']" class="btn btn-primary">Add User</button>
         </div>
       </div>
     </div>

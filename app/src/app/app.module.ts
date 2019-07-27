@@ -12,10 +12,12 @@ import {UsersComponent} from './components/users/users.component';
 import {UserDetailComponent} from './components/user-detail/user-detail.component';
 import {HomeComponent} from './components/home/home.component';
 import {UserDetailGuard} from "./guards/user-detail.guard";
+import {NewUserComponent} from './components/new-user/new-user.component';
 
 const routes = [
   {path: 'users', component: UsersComponent},
-  {path: 'users/:id', canActivate: [UserDetailGuard], component: UserDetailComponent},
+  {path: 'users/:id/edit', canActivate: [UserDetailGuard], component: UserDetailComponent},
+  {path: 'users/new', component: NewUserComponent},
   {path: 'home', component: HomeComponent},
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: '**', redirectTo: 'home', pathMatch: 'full'},
@@ -26,7 +28,8 @@ const routes = [
     AppComponent,
     UsersComponent,
     UserDetailComponent,
-    HomeComponent
+    HomeComponent,
+    NewUserComponent
   ],
   imports: [
     BrowserModule,
