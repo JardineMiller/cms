@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {IPost} from "../../models/interfaces/post";
+import {IPost} from "../../../models/interfaces/post";
 import {HttpClient} from "@angular/common/http";
 
 @Injectable({

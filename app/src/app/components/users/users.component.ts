@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {animate, state, style, transition, trigger} from "@angular/animations";
 import {IUser} from "../../../models/interfaces/user";
-import {UsersService} from "../../services/users.service";
+import {UsersService} from "../../services/users/users.service";
 
 @Component({
   selector: 'app-users',

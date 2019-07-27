@@ -1,5 +1,6 @@
 @import url(~bootstrap/dist/css/bootstrap.min.css);
 @import url(~font-awesome/css/font-awesome.min.css);
+@import url(~now-ui-kit/assets/css/now-ui-kit.css);
 /********************************/
 /******** SECTION: TEXT *********/
 /********************************/
@@ -27,11 +28,15 @@
   display: flex;
   justify-content: space-between; }
 
+.btn-table {
+  margin: 0 5px 0 0;
+  padding: 5px 7.5px; }
+
 /*********************************/
 /***** SECTION: BACKGROUNDS ******/
 /*********************************/
 .bg-grey {
-  background: #fcfcfc; }
+  background: #efefef; }
 
 /********************************/
 /******** SECTION: MISC *********/
@@ -57,3 +62,8 @@
 
 section {
   margin: 30px 0; }
+
+.notif {
+  position: absolute;
+  top: 0;
+  width: 100%; }

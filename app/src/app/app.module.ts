@@ -13,11 +13,15 @@ import {UserDetailComponent} from './components/user-detail/user-detail.componen
 import {HomeComponent} from './components/home/home.component';
 import {UserDetailGuard} from "./guards/user-detail.guard";
 import {NewUserComponent} from './components/new-user/new-user.component';
+import {PostComponent} from './components/post/post.component';
+import {PostListComponent} from './components/post-list/post-list.component';
 
 const routes = [
   {path: 'users', component: UsersComponent},
   {path: 'users/:id/edit', canActivate: [UserDetailGuard], component: UserDetailComponent},
   {path: 'users/new', component: NewUserComponent},
+  {path: 'posts', component: PostListComponent},
+  {path: 'posts/:id', component: PostComponent},
   {path: 'home', component: HomeComponent},
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: '**', redirectTo: 'home', pathMatch: 'full'},
@@ -29,7 +33,9 @@ const routes = [
     UsersComponent,
     UserDetailComponent,
     HomeComponent,
-    NewUserComponent
+    NewUserComponent,
+    PostComponent,
+    PostListComponent
   ],
   imports: [
     BrowserModule,
