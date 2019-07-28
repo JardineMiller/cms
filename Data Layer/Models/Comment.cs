@@ -11,7 +11,7 @@ namespace cms.Data_Layer.Models
         public int Id { get; set; }
 
         [ForeignKey("Author")]
-        public string AuthorId;
+        public int AuthorId;
 
         public User Author;
 
