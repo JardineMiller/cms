@@ -2,6 +2,7 @@ using System;
 using System.Linq;
 using cms.Data_Layer.Contexts;
 using cms.Data_Layer.Models;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
 namespace cms.ApplicationLayer.Commands.Handlers
@@ -47,7 +48,7 @@ namespace cms.ApplicationLayer.Commands.Handlers
                 ctx.SaveChanges();
 
                 result.Success = true;
-                result.Response = updatedPost;
+                result.Response = ctx.Posts.Where(p => p.Id == updatedPost.Id).Include(p => p.Author).First();
             }
             catch (Exception e)
             {

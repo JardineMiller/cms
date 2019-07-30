@@ -10,9 +10,10 @@ import {IPost} from "../../../models/interfaces/post";
 })
 export class PostComponent implements OnInit {
   private post: IPost;
+  public editMode: boolean;
 
   constructor(private posts: PostsService, private route: ActivatedRoute, private router: Router) {
-
+    this.editMode = false;
   }
 
   ngOnInit() {
@@ -27,4 +28,14 @@ export class PostComponent implements OnInit {
     })
   }
 
+  private toggleEditMode() : void {
+    this.editMode = !this.editMode;
+  }
+
+  private save() : void {
+    this.posts.update(this.post.authorId, this.post).then(updatedPost => {
+      this.post = updatedPost as IPost;
+      this.editMode = false;
+    })
+  }
 }

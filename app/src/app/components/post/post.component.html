@@ -1,9 +1,9 @@
-<div *ngIf="post">
+<div *ngIf="post && !editMode">
   <section class="container">
     <article class="post">
       <div class="post-header">
         <h5>{{post.title}}</h5>
-        <i class="btn btn-info btn-table fa fa-pencil"></i>
+        <i class="btn btn-info btn-table fa fa-pencil" (click)="toggleEditMode()"></i>
         <div class="post-meta-info">
           <p>Written by {{post.author.name}} on {{post.timestamp | date}}</p>
         </div>
@@ -23,5 +23,22 @@
 
       </li>
     </ul>
+  </section>
+</div>
+
+<div *ngIf="editMode">
+  <section class="container">
+    <form action="" class="">
+      <div class="form-group">
+        <label for="post-title">Post Title</label>
+        <input class="form-control" name="post-title" [(ngModel)]="post.title" id="post-title" type="text">
+      </div>
+      <div class="form-group">
+        <label for="post-body">Post Body</label>
+        <textarea name="" id="post-body" cols="30" rows="10" class="form-control" name="post-body" [(ngModel)]="post.body"></textarea>
+      </div>
+    </form>
+    <button class="btn btn-primary" (click)="save()">Save</button>
+    <button class="btn btn-secondary" (click)="toggleEditMode()">Back</button>
   </section>
 </div>
