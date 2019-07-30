@@ -20,11 +20,6 @@ export class UserDetailComponent implements OnInit {
   }
 
   ngOnInit() {
-
-  }
-
-  back(): void {
-    this.router.navigate(['/users']);
   }
 
   saveUser() {

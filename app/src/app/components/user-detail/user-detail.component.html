@@ -12,10 +12,10 @@
       </div>
     </div>
     <div class="card-footer">
-      <div class="btn btn-outline-secondary" (click)="back()">
+      <button class="btn btn-outline-secondary" [routerLink]="['/users']">
         <span class="fa fa-chevron-left"></span>
         Back
-      </div>
+      </button>
 
       <div class="btn btn-primary" (click)="saveUser()">
         <span class="fa fa-save"></span>

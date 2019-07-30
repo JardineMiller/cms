@@ -18,6 +18,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <TypeScriptCompile Include="app\src\models\interfaces\IComment.ts" />
       <TypeScriptCompile Include="app\src\models\interfaces\post.ts" />
       <TypeScriptCompile Include="app\src\models\interfaces\user.ts" />
     </ItemGroup>

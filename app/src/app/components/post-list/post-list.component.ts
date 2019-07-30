@@ -16,9 +16,8 @@ export class PostListComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.postService.fetchAll().then(
+    this.postService.init().then(
       posts => {
-        console.table(posts);
         this.posts = posts as IPost[];
       }
     )

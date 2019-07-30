@@ -1,1 +1,27 @@
-<p>post works!</p>
+<div *ngIf="post">
+  <section class="container">
+    <article class="post">
+      <div class="post-header">
+        <h5>{{post.title}}</h5>
+        <i class="btn btn-info btn-table fa fa-pencil"></i>
+        <div class="post-meta-info">
+          <p>Written by {{post.author.name}} on {{post.timestamp | date}}</p>
+        </div>
+      </div>
+      <div class="post-snippet" [innerHTML]="post.snippet">
+      </div>
+    </article>
+  </section>
+  <section class="container">
+    <h5>Comments</h5>
+    <div *ngIf="!post.comments.length">
+      Be the first to leave a comment
+      <textarea class="form-control" name="comment" id="comment" rows="4"></textarea>
+    </div>
+    <ul class="comments" *ngIf="post.comments.length">
+      <li class="comment" *ngFor="let comment of post.comments">
+
+      </li>
+    </ul>
+  </section>
+</div>

@@ -3,13 +3,13 @@
     <div class="post-header">
       <h5>{{post.title}}</h5>
       <div class="post-meta-info">
-        <p>Written by {{post.author.name}} on {{post.timestamp}}</p>
+        <p>Written by {{post.author.name}} on {{post.timestamp | date}}</p>
       </div>
     </div>
     <div class="post-snippet" [innerHTML]="post.snippet">
     </div>
     <div class="post-footer">
-      <p>{{post.comments.length}} comments</p>
+      <p [routerLink]="['/posts/', post.id]">{{post.comments.length}} comments</p>
     </div>
   </article>
 </section>

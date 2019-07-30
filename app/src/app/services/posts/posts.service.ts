@@ -8,6 +8,7 @@ import {HttpClient} from "@angular/common/http";
 export class PostsService {
 
   private readonly baseUrl: string;
+  public initialised: boolean = false;
   private store: {
     postsByUserId: Map<number, IPost[]>,
     postsById: Map<number, IPost>
@@ -24,6 +25,18 @@ export class PostsService {
   public getAll(): IPost[] {
     //TODO: Figure out a way to sensibly cache this. It's expensive to turn the whole map into a list every time anyone needs it.
     return Array.from(this.store.postsById.values());
+  }
+
+  public getById(postId: number): IPost {
+    let post = this.store.postsById.get(postId);
+
+    if (!post) {
+      this.fetch(postId).then(res => {
+        post = this.store.postsById.get(postId);
+      });
+    }
+
+    return post;
   }
 
   public getByUserId(userId: number): IPost[] {
@@ -131,7 +144,7 @@ export class PostsService {
     })
   }
 
-  public fetchAll() {
+  public init() {
     return new Promise((resolve, reject) => {
       this.http.get<IPost[]>(this.baseUrl).toPromise().then(
         posts => {
@@ -146,6 +159,7 @@ export class PostsService {
             }
 
           });
+          this.initialised = true;
           resolve(posts);
         },
         reject => {

@@ -1,3 +1,5 @@
+import {IComment} from "./IComment";
+
 export interface IPost {
   id: number,
   authorId: number,
@@ -6,5 +8,5 @@ export interface IPost {
   snippet: string,
   author: object,
   timestamp: Date,
-  comments: object[]
+  comments: IComment[]
 }

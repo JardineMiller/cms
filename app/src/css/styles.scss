@@ -99,3 +99,57 @@ section {
   top: 0;
   width: 100%;
 }
+
+article.post,
+.comments {
+  transition: all .2s;
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  padding: 25px;
+  margin-bottom: 20px;
+  color: #333;
+
+  p {
+    :last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .post-header {
+    position: relative;
+
+    i {
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  .post-meta-info {
+    color: #666;
+  }
+
+  .post-footer {
+    color: #666;
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    :hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+}
+
+
+.preview:hover {
+  cursor: pointer;
+}
+
+.post:hover {
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+}
