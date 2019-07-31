@@ -38,4 +38,10 @@ export class PostComponent implements OnInit {
       this.editMode = false;
     })
   }
+
+  private deletePost(postId: number) {
+    this.posts.delete(this.post.authorId, this.post.id).then(res => {
+      this.router.navigate(['/posts']);
+    })
+  }
 }

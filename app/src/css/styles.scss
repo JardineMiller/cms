@@ -119,8 +119,11 @@ article.post,
   .post-header {
     position: relative;
 
-    i {
-      cursor: pointer;
+    .action-buttons {
+      i {
+        cursor: pointer;
+      }
+
       position: absolute;
       top: 0;
       right: 0;

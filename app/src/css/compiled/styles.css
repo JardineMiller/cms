@@ -83,12 +83,14 @@ article.post,
   article.post .post-header,
   .comments .post-header {
     position: relative; }
-    article.post .post-header i,
-    .comments .post-header i {
-      cursor: pointer;
+    article.post .post-header .action-buttons,
+    .comments .post-header .action-buttons {
       position: absolute;
       top: 0;
       right: 0; }
+      article.post .post-header .action-buttons i,
+      .comments .post-header .action-buttons i {
+        cursor: pointer; }
   article.post .post-meta-info,
   .comments .post-meta-info {
     color: #666; }

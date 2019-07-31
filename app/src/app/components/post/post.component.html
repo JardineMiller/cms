@@ -3,7 +3,10 @@
     <article class="post">
       <div class="post-header">
         <h5>{{post.title}}</h5>
-        <i class="btn btn-info btn-table fa fa-pencil" (click)="toggleEditMode()"></i>
+        <div class="action-buttons">
+          <i class="btn btn-info btn-table fa fa-pencil" (click)="toggleEditMode()"></i>
+          <i class="btn btn-danger btn-table fa fa-times" (click)="deletePost(post.id)"></i>
+        </div>
         <div class="post-meta-info">
           <p>Written by {{post.author.name}} on {{post.timestamp | date}}</p>
         </div>
