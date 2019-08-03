@@ -15,7 +15,7 @@ namespace cms.Data_Layer.Models
 
         public User Author { get; set; }
 
-        [Required] public DateTimeOffset Timestamp;
+        public DateTimeOffset Timestamp;
 
         [Required]
         public string Content { get; set; }
