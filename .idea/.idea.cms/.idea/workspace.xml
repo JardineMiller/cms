@@ -1,12 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="80dd5eca-d90b-426b-b82c-8c18fa31b277" name="Default Changelist" comment="">
+    <list default="true" id="80dd5eca-d90b-426b-b82c-8c18fa31b277" name="Default Changelist" comment="Can now edit a post">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.cms/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cms/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.cms/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cms/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.cms/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cms/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationLayer/Commands/CreateUserPostCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationLayer/Commands/CreateUserPostCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationLayer/Commands/DeleteUserPostCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationLayer/Commands/DeleteUserPostCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationLayer/Commands/DeleteUsersCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationLayer/Commands/DeleteUsersCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationLayer/Commands/Handlers/DeleteUserPostCommandHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationLayer/Commands/Handlers/DeleteUserPostCommandHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationLayer/Commands/Handlers/DeleteUsersCommandHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationLayer/Commands/Handlers/DeleteUsersCommandHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationLayer/Commands/Handlers/UpdateUserPostCommandHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationLayer/Commands/Handlers/UpdateUserPostCommandHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationLayer/Queries/GetUsersQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationLayer/Queries/GetUsersQuery.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationLayer/Queries/Handlers/GetPostsQueryHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationLayer/Queries/Handlers/GetPostsQueryHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationLayer/Queries/Handlers/GetUserPostsQueryHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationLayer/Queries/Handlers/GetUserPostsQueryHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/UsersController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/UsersController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Layer/Contexts/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data Layer/Contexts/ApplicationDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Layer/Migrations/20190702231434_AddCommentPostAndUser.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Layer/Migrations/20190702231434_AddCommentPostAndUser.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Layer/Migrations/20190707093334_AddPostsToUser.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Layer/Migrations/20190707093334_AddPostsToUser.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Layer/Migrations/20190707165656_RemotePostsFromUser.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Layer/Migrations/20190707165656_RemotePostsFromUser.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Layer/Migrations/20190728111856_CommentAuthorIdToInt.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Layer/Migrations/20190728111856_CommentAuthorIdToInt.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Layer/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data Layer/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Layer/Models/Comment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data Layer/Models/Comment.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Layer/Models/Post.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data Layer/Models/Post.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Layer/Models/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data Layer/Models/User.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Layer/Seeding/DatabaseSeeder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data Layer/Seeding/DatabaseSeeder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/app/components/post-list/post-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/post-list/post-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/app/components/post-list/post-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/post-list/post-list.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/app/components/post/post.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/post/post.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/app/components/post/post.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/components/post/post.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/css/compiled/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/css/compiled/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/css/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/css/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/cms.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/cms.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/cms.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/cms.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/cms.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/cms.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/cms.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/cms.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/cms.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/cms.pdb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,42 +59,7 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="cms: database" type="162271b6:PgImplModel$Database" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="cms: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="cms: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="cms: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="cms@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
     </expand>
     <select />
@@ -71,86 +67,80 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/app/components/user-detail/user-detail.component.ts">
+        <entry file="file://$PROJECT_DIR$/Data Layer/Migrations/20190803211652_LongIds.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+            <state relative-caret-position="57">
+              <caret line="47" column="31" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
               <folding>
-                <element signature="e#0#48#0" expanded="true" />
+                <marker date="1564867012481" expanded="false" signature="6:101" ph="..." />
+                <marker date="1564867012481" expanded="true" signature="138:4452" ph="{...}" />
+                <marker date="1564867012481" expanded="true" signature="185:4450" ph="{...}" />
+                <marker date="1564867012481" expanded="true" signature="261:2316" ph="{...}" />
+                <marker date="1564867012481" expanded="true" signature="2389:4444" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/app/components/post/post.component.ts">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/088051FB-72DE-4607-81C4-D1937DDE71E2/89/9a06491c/ExceptionDispatchInfo.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="43" column="39" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
+            <state relative-caret-position="339">
+              <caret line="91" column="6" selection-start-line="91" selection-start-column="6" selection-end-line="91" selection-end-column="6" />
               <folding>
-                <element signature="e#0#48#0" expanded="true" />
+                <marker date="1563277093837" expanded="true" signature="0:360" ph="/* Decompiled with JetBrains decompiler ... */" />
+                <marker date="1563277093837" expanded="true" signature="431:2426" ph="{...}" />
+                <marker date="1563277093837" expanded="true" signature="477:2424" ph="{...}" />
+                <marker date="1563277093837" expanded="true" signature="759:1239" ph="{...}" />
+                <marker date="1563277093837" expanded="true" signature="1280:1360" ph="{...}" />
+                <marker date="1563277093837" expanded="true" signature="1296:1354" ph="{...}" />
+                <marker date="1563277093837" expanded="true" signature="1395:1470" ph="{...}" />
+                <marker date="1563277093837" expanded="true" signature="1411:1464" ph="{...}" />
+                <marker date="1563277093837" expanded="true" signature="1513:1585" ph="{...}" />
+                <marker date="1563277093837" expanded="true" signature="1529:1579" ph="{...}" />
+                <marker date="1563277093837" expanded="true" signature="1625:1701" ph="{...}" />
+                <marker date="1563277093837" expanded="true" signature="1641:1695" ph="{...}" />
+                <marker date="1563277093837" expanded="true" signature="1739:1817" ph="{...}" />
+                <marker date="1563277093837" expanded="true" signature="1755:1811" ph="{...}" />
+                <marker date="1563277093837" expanded="true" signature="1884:2049" ph="{...}" />
+                <marker date="1563277093837" expanded="true" signature="2087:2158" ph="{...}" />
+                <marker date="1563277093837" expanded="true" signature="2103:2152" ph="{...}" />
+                <marker date="1563277093837" expanded="true" signature="2206:2307" ph="{...}" />
+                <marker date="1563277093837" expanded="true" signature="2355:2420" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/css/styles.scss">
+        <entry file="file://$PROJECT_DIR$/Data Layer/Seeding/DatabaseSeeder.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="124" selection-start-line="124" selection-end-line="124" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/app/components/post/post.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/css/compiled/styles.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="86" column="42" selection-start-line="86" selection-start-column="42" selection-end-line="86" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controllers/PostsController.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="693">
-              <caret line="94" column="1" lean-forward="true" selection-start-line="94" selection-start-column="1" selection-end-line="94" selection-end-column="1" />
+            <state relative-caret-position="300">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
               <folding>
-                <marker date="1564222596090" expanded="true" signature="6:226" ph="..." />
-                <marker date="1564222596090" expanded="true" signature="253:2612" ph="{...}" />
-                <marker date="1564222596090" expanded="true" signature="361:2610" ph="{...}" />
-                <marker date="1564222596090" expanded="true" signature="586:710" ph="{...}" />
-                <marker date="1564222596090" expanded="true" signature="772:1023" ph="{...}" />
-                <marker date="1564222596090" expanded="true" signature="916:981" ph="{...}" />
-                <marker date="1564222596090" expanded="true" signature="1113:1374" ph="{...}" />
-                <marker date="1564222596090" expanded="true" signature="1267:1332" ph="{...}" />
-                <marker date="1564222596090" expanded="true" signature="1489:1790" ph="{...}" />
-                <marker date="1564222596090" expanded="true" signature="1652:1738" ph="{...}" />
-                <marker date="1564222596090" expanded="true" signature="1904:2204" ph="{...}" />
-                <marker date="1564222596090" expanded="true" signature="2067:2153" ph="{...}" />
-                <marker date="1564222596090" expanded="true" signature="2323:2604" ph="{...}" />
-                <marker date="1564222596090" expanded="true" signature="2488:2553" ph="{...}" />
+                <marker date="1564867208841" expanded="false" signature="6:174" ph="..." />
+                <marker date="1564867208841" expanded="true" signature="208:1415" ph="{...}" />
+                <marker date="1564867208841" expanded="true" signature="252:1413" ph="{...}" />
+                <marker date="1564867208841" expanded="true" signature="455:537" ph="{...}" />
+                <marker date="1564867208841" expanded="true" signature="568:821" ph="{...}" />
+                <marker date="1564867208841" expanded="true" signature="856:1407" ph="{...}" />
+                <marker date="1564867208841" expanded="true" signature="943:1302" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/models/interfaces/user.ts">
+        <entry file="file://$PROJECT_DIR$/Data Layer/Contexts/ApplicationDbContext.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="225">
+              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+              <folding>
+                <marker date="1564867235446" expanded="false" signature="6:65" ph="..." />
+                <marker date="1564867235446" expanded="true" signature="100:479" ph="{...}" />
+                <marker date="1564867235446" expanded="true" signature="159:477" ph="{...}" />
+                <marker date="1564867235446" expanded="true" signature="265:323" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -185,6 +175,7 @@
       <find>console.log</find>
       <find>post-header</find>
       <find>textarea.</find>
+      <find>int</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -199,15 +190,17 @@
     <setting file="file://$PROJECT_DIR$/Data Layer/Migrations/ApplicationDbContextModelSnapshot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Controllers/UsersController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/088051FB-72DE-4607-81C4-D1937DDE71E2/89/9a06491c/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ApplicationLayer/Queries/GetUsersQuery.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ApplicationLayer/Queries/GetUserPostsQuery.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ApplicationLayer/Queries/Handlers/GetUsersQueryHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ApplicationLayer/Queries/Handlers/GetUserPostsQueryHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ApplicationLayer/Queries/Handlers/GetPostsQueryHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ApplicationLayer/Queries/Processor/IQueryProcessor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ApplicationLayer/Queries/GetPostsQuery.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ApplicationLayer/Commands/DeleteUserPostCommand.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ApplicationLayer/Commands/DeleteUsersCommand.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Data Layer/Migrations/20190728111856_CommentAuthorIdToInt.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ApplicationLayer/Commands/CreateUserPostCommand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ApplicationLayer/Commands/CommandResult.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EA0F7286-DD97-4781-8DBA-04B6963C416B/c8/46eea2e9/HttpProtocol.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ApplicationLayer/Commands/Handlers/DeleteUserPostCommandHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ApplicationLayer/Commands/Handlers/CreateUserPostCommandHandler.cs" root0="FORCE_HIGHLIGHTING" />
@@ -229,39 +222,24 @@
     <setting file="file://$PROJECT_DIR$/Data Layer/Seeding/DatabaseSeeder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Data Layer/Contexts/ApplicationDbContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Data Layer/Migrations/20190702225328_InitialMigration.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Data Layer/Migrations/20190707165656_RemotePostsFromUser.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Data Layer/Migrations/20190702231434_AddCommentPostAndUser.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data Layer/Migrations/20190803211652_LongIds.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/.nuget/packages/nlog.config/4.6.5/contentFiles/any/any/NLog.config" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/088051FB-72DE-4607-81C4-D1937DDE71E2/8f/67ca36d3/Path.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/.nuget/packages/nlog.config/4.6.5/contentFiles/any/any/NLog.config" />
-        <option value="$PROJECT_DIR$/app/src/app/app.component.scss" />
-        <option value="$PROJECT_DIR$/app/src/app/users/users.component.html" />
-        <option value="$PROJECT_DIR$/app/src/app/users/users.component.scss" />
-        <option value="$PROJECT_DIR$/app/src/app/users/users.component.ts" />
-        <option value="$PROJECT_DIR$/app/src/extensions/arrayExtensions.js" />
-        <option value="$PROJECT_DIR$/ApplicationLayer/Commands/DeleteUsersCommand.cs" />
         <option value="$PROJECT_DIR$/ApplicationLayer/Commands/Handlers/CreateUserPostCommandHandler.cs" />
-        <option value="$PROJECT_DIR$/Data Layer/Models/Post.cs" />
-        <option value="$PROJECT_DIR$/ApplicationLayer/Commands/DeleteUserPostCommand.cs" />
-        <option value="$PROJECT_DIR$/ApplicationLayer/Commands/Handlers/DeleteUserPostCommandHandler.cs" />
         <option value="$PROJECT_DIR$/app/src/models/interfaces/user.ts" />
-        <option value="$PROJECT_DIR$/Controllers/UsersController.cs" />
-        <option value="$PROJECT_DIR$/ApplicationLayer/Commands/Handlers/DeleteUsersCommandHandler.cs" />
         <option value="$PROJECT_DIR$/app/src/app/services/posts.service.ts" />
         <option value="$PROJECT_DIR$/app/src/css/compiled/styles.css" />
         <option value="$PROJECT_DIR$/app/src/app/app.component.ts" />
         <option value="$PROJECT_DIR$/app/src/app/components/home/home.component.html" />
         <option value="$PROJECT_DIR$/app/src/app/components/user-detail/user-detail.component.scss" />
         <option value="$PROJECT_DIR$/app/src/app/services/users.service.ts" />
-        <option value="$PROJECT_DIR$/Startup.cs" />
         <option value="$PROJECT_DIR$/ApplicationLayer/Queries/GetPostsQuery.cs" />
         <option value="$PROJECT_DIR$/app/src/app/components/home/home.component.ts" />
         <option value="$PROJECT_DIR$/Controllers/PostsController.cs" />
-        <option value="$PROJECT_DIR$/ApplicationLayer/Queries/Handlers/GetPostsQueryHandler.cs" />
         <option value="$PROJECT_DIR$/app/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/app/src/app/services/users/users.service.ts" />
         <option value="$PROJECT_DIR$/app/src/app/components/users/users.component.ts" />
@@ -277,23 +255,39 @@
         <option value="$PROJECT_DIR$/app/src/app/components/user-detail/user-detail.component.ts" />
         <option value="$PROJECT_DIR$/app/src/app/components/user-detail/user-detail.component.html" />
         <option value="$PROJECT_DIR$/app/src/app/components/post-list/post-list.component.scss" />
-        <option value="$PROJECT_DIR$/app/src/app/components/post-list/post-list.component.html" />
-        <option value="$PROJECT_DIR$/app/src/app/components/post-list/post-list.component.ts" />
         <option value="$PROJECT_DIR$/app/src/app/services/posts/posts.service.ts" />
-        <option value="$PROJECT_DIR$/Data Layer/Models/Comment.cs" />
         <option value="$PROJECT_DIR$/app/src/models/interfaces/IComment.ts" />
         <option value="$PROJECT_DIR$/app/src/models/interfaces/post.ts" />
         <option value="$PROJECT_DIR$/app/node_modules/now-ui-kit/assets/css/now-ui-kit.css" />
-        <option value="$PROJECT_DIR$/ApplicationLayer/Commands/Handlers/UpdateUserPostCommandHandler.cs" />
         <option value="$PROJECT_DIR$/app/src/app/components/post/post.component.ts" />
-        <option value="$PROJECT_DIR$/app/src/app/components/post/post.component.html" />
         <option value="$PROJECT_DIR$/app/src/css/styles.scss" />
+        <option value="$PROJECT_DIR$/ApplicationLayer/Queries/Handlers/GetUserPostsQueryHandler.cs" />
+        <option value="$PROJECT_DIR$/ApplicationLayer/Commands/Handlers/UpdateUserPostCommandHandler.cs" />
+        <option value="$PROJECT_DIR$/app/src/app/components/post/post.component.html" />
+        <option value="$PROJECT_DIR$/app/src/app/components/post-list/post-list.component.ts" />
+        <option value="$PROJECT_DIR$/ApplicationLayer/Queries/Handlers/GetPostsQueryHandler.cs" />
+        <option value="$PROJECT_DIR$/app/src/app/components/post-list/post-list.component.html" />
+        <option value="$PROJECT_DIR$/Data Layer/Models/User.cs" />
+        <option value="$PROJECT_DIR$/Data Layer/Models/Post.cs" />
+        <option value="$PROJECT_DIR$/Data Layer/Models/Comment.cs" />
+        <option value="$PROJECT_DIR$/Startup.cs" />
+        <option value="$PROJECT_DIR$/ApplicationLayer/Queries/GetUsersQuery.cs" />
+        <option value="$PROJECT_DIR$/ApplicationLayer/Commands/Handlers/DeleteUsersCommandHandler.cs" />
+        <option value="$PROJECT_DIR$/ApplicationLayer/Commands/DeleteUsersCommand.cs" />
+        <option value="$PROJECT_DIR$/Controllers/UsersController.cs" />
+        <option value="$PROJECT_DIR$/ApplicationLayer/Commands/DeleteUserPostCommand.cs" />
+        <option value="$PROJECT_DIR$/ApplicationLayer/Commands/Handlers/DeleteUserPostCommandHandler.cs" />
+        <option value="$PROJECT_DIR$/ApplicationLayer/Commands/CreateUserPostCommand.cs" />
+        <option value="$PROJECT_DIR$/Data Layer/Seeding/DatabaseSeeder.cs" />
+        <option value="$PROJECT_DIR$/Data Layer/Contexts/ApplicationDbContext.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="1680" />
-    <option name="height" value="1050" />
+    <option name="x" value="-1246" />
+    <option name="y" value="-1058" />
+    <option name="width" value="1920" />
+    <option name="height" value="1058" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -303,8 +297,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AssemblyExplorer" />
-      <pane id="FileSystemExplorer" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -321,72 +313,28 @@
               <item name="" type="784c90a0:SolutionExplorerRootNode" />
               <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
               <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="app" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ApplicationLayer" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
               <item name="" type="784c90a0:SolutionExplorerRootNode" />
               <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
               <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="app" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Data Layer" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
               <item name="" type="784c90a0:SolutionExplorerRootNode" />
               <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
               <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="app" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="app" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="app" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="app" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="components" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="app" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="app" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="components" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="new-user" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="app" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="css" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="app" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="models" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="cms" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="app" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="models" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="interfaces" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Data Layer" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Seeding" type="24d0babc:SolutionExplorerModelNode" />
             </path>
           </expand>
           <select />
         </subPane>
         <option name="show-all-files" value="false" />
       </pane>
+      <pane id="AssemblyExplorer" />
+      <pane id="FileSystemExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -396,7 +344,7 @@
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="database.console.LAST_STATE" value="true" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -480,6 +428,7 @@
       <workItem from="1563297558507" duration="9000000" />
       <workItem from="1563386673415" duration="53674000" />
       <workItem from="1564133047712" duration="32986000" />
+      <workItem from="1564685656663" duration="5394000" />
     </task>
     <task id="LOCAL-00001" summary="File restructure">
       <created>1562927766954</created>
@@ -793,7 +742,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109945000" />
+    <option name="totallyTimeSpent" value="115339000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -805,36 +754,35 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1680" height="1028" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1246" y="-1058" width="1920" height="1058" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22283272" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3312034" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32919255" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32158118" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39183673" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32158118" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39026916" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.34508547" />
-      <window_info anchor="bottom" id="NuGet" order="7" weight="0.32857144" />
+      <window_info anchor="bottom" id="NuGet" order="7" weight="0.50641024" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32959184" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Unit Tests" order="11" />
       <window_info anchor="bottom" id="REST Client" order="12" weight="0.32959184" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
-      <window_info anchor="bottom" id="Build" order="14" weight="0.27755103" />
+      <window_info anchor="bottom" id="Build" order="14" weight="0.27639753" />
       <window_info anchor="bottom" id="TypeScript" order="15" weight="0.32959184" />
-      <window_info anchor="bottom" id="Terminal" order="16" weight="0.327551" />
-      <window_info active="true" anchor="bottom" id="Database Console" order="17" visible="true" weight="0.32958034" />
+      <window_info anchor="bottom" id="Terminal" order="16" weight="0.3167702" />
+      <window_info anchor="bottom" id="Database Console" order="17" weight="0.32905984" />
       <window_info anchor="bottom" id="Messages" order="18" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Errors In Solution" order="3" weight="0.32905984" />
-      <window_info anchor="right" id="Database" order="4" weight="0.22161172" />
+      <window_info anchor="right" id="Errors In Solution" order="3" weight="0.18636848" />
+      <window_info active="true" anchor="right" id="Database" order="4" visible="true" weight="0.22151224" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -879,6 +827,19 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Controllers/PostsController.cs</url>
+          <line>69</line>
+          <properties documentPath="$PROJECT_DIR$/Controllers/PostsController.cs" initialLine="69">
+            <startOffsets>
+              <option value="1927" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1977" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -915,285 +876,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ApplicationLayer/Commands/DeleteUserPostCommand.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-          <folding>
-            <marker date="1564050531385" expanded="true" signature="39:343" ph="{...}" />
-            <marker date="1564050531385" expanded="true" signature="135:341" ph="{...}" />
-            <marker date="1564050531385" expanded="true" signature="257:335" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data Layer/Models/User.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding>
-            <marker date="1563274619315" expanded="true" signature="101:334" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/node_modules/typescript/lib/lib.es5.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="1230" column="4" selection-start-line="1230" selection-start-column="4" selection-end-line="1230" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/node_modules/@angular/common/http/http.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="763" column="4" selection-start-line="763" selection-start-column="4" selection-end-line="763" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/UsersController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="55" column="36" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
-          <folding>
-            <marker date="1564087669028" expanded="false" signature="6:279" ph="..." />
-            <marker date="1564087669028" expanded="true" signature="414:2617" ph="{...}" />
-            <marker date="1564087669028" expanded="true" signature="638:762" ph="{...}" />
-            <marker date="1564087669028" expanded="true" signature="821:1069" ph="{...}" />
-            <marker date="1564087669028" expanded="true" signature="964:1027" ph="{...}" />
-            <marker date="1564087669028" expanded="true" signature="1149:1457" ph="{...}" />
-            <marker date="1564087669028" expanded="true" signature="1344:1407" ph="{...}" />
-            <marker date="1564087669028" expanded="true" signature="1552:1850" ph="{...}" />
-            <marker date="1564087669028" expanded="true" signature="1711:1797" ph="{...}" />
-            <marker date="1564087669028" expanded="true" signature="1940:2230" ph="{...}" />
-            <marker date="1564087669028" expanded="true" signature="2093:2179" ph="{...}" />
-            <marker date="1564087669028" expanded="true" signature="2321:2611" ph="{...}" />
-            <marker date="1564087669028" expanded="true" signature="2474:2560" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ApplicationLayer/Commands/Handlers/DeleteUsersCommandHandler.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="43" column="31" lean-forward="true" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
-          <folding>
-            <marker date="1564087988459" expanded="false" signature="6:133" ph="..." />
-            <marker date="1564087988459" expanded="true" signature="183:1710" ph="{...}" />
-            <marker date="1564087988459" expanded="true" signature="292:1708" ph="{...}" />
-            <marker date="1564087988459" expanded="true" signature="528:610" ph="{...}" />
-            <marker date="1564087988459" expanded="true" signature="686:1702" ph="{...}" />
-            <marker date="1564087988459" expanded="true" signature="770:1558" ph="{...}" />
-            <marker date="1564087988459" expanded="true" signature="1068:1372" ph="{...}" />
-            <marker date="1564087988459" expanded="true" signature="1590:1664" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/app/components/user-detail/user-detail.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data Layer/Contexts/ApplicationDbContext.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding>
-            <marker date="1563274619313" expanded="false" signature="6:65" ph="..." />
-            <marker date="1563274619313" expanded="true" signature="100:472" ph="{...}" />
-            <marker date="1563274619313" expanded="true" signature="152:470" ph="{...}" />
-            <marker date="1563274619313" expanded="true" signature="258:316" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ApplicationLayer/Queries/GetUserPostsQuery.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" column="43" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="43" />
-          <folding>
-            <marker date="1563274619310" expanded="false" signature="6:62" ph="..." />
-            <marker date="1563274619310" expanded="true" signature="102:315" ph="{...}" />
-            <marker date="1563274619310" expanded="true" signature="179:313" ph="{...}" />
-            <marker date="1563274619310" expanded="true" signature="258:307" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ApplicationLayer/Queries/Handlers/GetUserPostsQueryHandler.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-          <folding>
-            <marker date="1563274619310" expanded="false" signature="6:148" ph="..." />
-            <marker date="1563274619310" expanded="true" signature="197:1070" ph="{...}" />
-            <marker date="1563274619310" expanded="true" signature="288:1068" ph="{...}" />
-            <marker date="1563274619310" expanded="true" signature="513:595" ph="{...}" />
-            <marker date="1563274619310" expanded="true" signature="654:1062" ph="{...}" />
-            <marker date="1563274619310" expanded="true" signature="804:939" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/css/compiled/users.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/app/components/user-detail/user-detail.component.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms.csproj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" selection-start-line="23" selection-end-line="24" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Startup.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="55" column="93" selection-start-line="55" selection-start-column="93" selection-end-line="55" selection-end-column="93" />
-          <folding>
-            <marker date="1564221368575" expanded="false" signature="6:819" ph="..." />
-            <marker date="1564221368575" expanded="true" signature="834:3968" ph="{...}" />
-            <marker date="1564221368575" expanded="true" signature="861:3966" ph="{...}" />
-            <marker date="1564221368575" expanded="true" signature="980:1029" ph="{...}" />
-            <marker date="1564221368575" expanded="true" signature="1039:1254" ph="/* This method gets called by the runtime. Use this method to add services to the container. ... */" />
-            <marker date="1564221368575" expanded="true" signature="1321:3223" ph="{...}" />
-            <marker date="1564221368575" expanded="true" signature="3457:3960" ph="{...}" />
-            <marker date="1564221368575" expanded="true" signature="3620:3697" ph="{...}" />
-            <marker date="1564221368575" expanded="true" signature="3714:3785" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ApplicationLayer/Queries/GetPostsQuery.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <marker date="1564221406250" expanded="true" signature="6:62" ph="..." />
-            <marker date="1564221406250" expanded="true" signature="102:194" ph="{...}" />
-            <marker date="1564221406250" expanded="true" signature="171:192" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/app/components/home/home.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ApplicationLayer/Queries/Handlers/GetPostsQueryHandler.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-          <folding>
-            <marker date="1564223034980" expanded="true" signature="6:185" ph="..." />
-            <marker date="1564223034980" expanded="true" signature="234:765" ph="{...}" />
-            <marker date="1564223034980" expanded="true" signature="317:763" ph="{...}" />
-            <marker date="1564223034980" expanded="true" signature="538:620" ph="{...}" />
-            <marker date="1564223034980" expanded="true" signature="675:757" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/angular.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/app/services/users/users.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/app/components/users/users.component.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/app/guards/user-detail.guard.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="65" lean-forward="true" selection-start-line="10" selection-start-column="65" selection-end-line="10" selection-end-column="65" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/app/services/notifications/notifications.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/node_modules/now-ui-kit/assets/sass/now-ui-kit/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="48" column="8" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/node_modules/now-ui-kit/assets/sass/now-ui-kit/_buttons.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="110" column="20" selection-start-line="110" selection-start-column="4" selection-end-line="110" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/app/components/home/home.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/app/components/new-user/new-user.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -1205,44 +887,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/app/components/post-list/post-list.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="42" lean-forward="true" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data Layer/Models/Post.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
-          <folding>
-            <marker date="1564049484041" expanded="true" signature="6:144" ph="..." />
-            <marker date="1564049484041" expanded="true" signature="177:1544" ph="{...}" />
-            <marker date="1564049484041" expanded="true" signature="201:1542" ph="{...}" />
-            <marker date="1564049484041" expanded="true" signature="486:1093" ph="{...}" />
-            <marker date="1564049484041" expanded="true" signature="513:1055" ph="{...}" />
-            <marker date="1564049484041" expanded="true" signature="645:774" ph="{...}" />
-            <marker date="1564049484041" expanded="true" signature="795:872" ph="{...}" />
-            <marker date="1564049484041" expanded="true" signature="1340:1536" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/app/components/post-list/post-list.component.scss">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data Layer/Models/Comment.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
-          <folding>
-            <marker date="1564309069116" expanded="true" signature="6:144" ph="..." />
-            <marker date="1564309069116" expanded="true" signature="177:535" ph="{...}" />
-            <marker date="1564309069116" expanded="true" signature="204:533" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/models/interfaces/post.ts">
       <provider selected="true" editor-type-id="text-editor">
@@ -1265,16 +911,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/app/components/post-list/post-list.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/app/components/user-detail/user-detail.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -1292,16 +928,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/app/components/user-detail/user-detail.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/app/components/users/users.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-7">
@@ -1312,10 +938,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/app/components/users/users.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="12" lean-forward="true" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/node_modules/now-ui-kit/assets/css/now-ui-kit.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="2604" column="18" selection-start-line="2604" selection-start-column="18" selection-end-line="2604" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/app/components/user-detail/user-detail.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/app/components/post/post.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="43" column="39" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/css/compiled/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1290">
+          <caret line="86" column="42" selection-start-line="86" selection-start-column="42" selection-end-line="86" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/css/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="133" column="16" selection-start-line="133" selection-start-column="16" selection-end-line="133" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Controllers/PostsController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="94" column="1" lean-forward="true" selection-start-line="94" selection-start-column="1" selection-end-line="94" selection-end-column="1" />
+        <state relative-caret-position="325">
+          <caret line="70" column="12" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
           <folding>
             <marker date="1564222596090" expanded="true" signature="6:226" ph="..." />
             <marker date="1564222596090" expanded="true" signature="253:2612" ph="{...}" />
@@ -1335,17 +1009,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/app/components/users/users.component.html">
+    <entry file="file://$PROJECT_DIR$/ApplicationLayer/Commands/Processor/CommandProcessor.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="12" lean-forward="true" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
+        <state relative-caret-position="240">
+          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+          <folding>
+            <marker date="1563274619309" expanded="true" signature="96:629" ph="{...}" />
+            <marker date="1563274619309" expanded="true" signature="152:627" ph="{...}" />
+            <marker date="1563274619309" expanded="true" signature="270:328" ph="{...}" />
+            <marker date="1563274619309" expanded="true" signature="461:621" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/node_modules/now-ui-kit/assets/css/now-ui-kit.css">
+    <entry file="file://$PROJECT_DIR$/ApplicationLayer/Commands/Handlers/UpdateUserPostCommandHandler.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="2604" column="18" selection-start-line="2604" selection-start-column="18" selection-end-line="2604" selection-end-column="18" />
+        <state relative-caret-position="468">
+          <caret line="48" column="59" lean-forward="true" selection-start-line="48" selection-start-column="59" selection-end-line="48" selection-end-column="59" />
+          <folding>
+            <marker date="1564686475593" expanded="false" signature="6:165" ph="..." />
+            <marker date="1564686475593" expanded="true" signature="215:2226" ph="{...}" />
+            <marker date="1564686475593" expanded="true" signature="325:2224" ph="{...}" />
+            <marker date="1564686475593" expanded="true" signature="570:652" ph="{...}" />
+            <marker date="1564686475593" expanded="true" signature="726:2218" ph="{...}" />
+            <marker date="1564686475593" expanded="true" signature="805:2076" ph="{...}" />
+            <marker date="1564686475593" expanded="true" signature="1114:1320" ph="{...}" />
+            <marker date="1564686475593" expanded="true" signature="1368:1610" ph="{...}" />
+            <marker date="1564686475593" expanded="true" signature="2108:2180" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1356,52 +1047,413 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ApplicationLayer/Commands/Handlers/UpdateUserPostCommandHandler.cs">
+    <entry file="file://$PROJECT_DIR$/ApplicationLayer/Queries/GetPostsQuery.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="60" column="1" lean-forward="true" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
           <folding>
-            <marker date="1564524072062" expanded="false" signature="6:165" ph="..." />
-            <marker date="1564524072062" expanded="true" signature="215:1988" ph="{...}" />
-            <marker date="1564524072062" expanded="true" signature="325:1986" ph="{...}" />
-            <marker date="1564524072062" expanded="true" signature="570:652" ph="{...}" />
-            <marker date="1564524072062" expanded="true" signature="726:1980" ph="{...}" />
-            <marker date="1564524072062" expanded="true" signature="805:1838" ph="{...}" />
-            <marker date="1564524072062" expanded="true" signature="1034:1240" ph="{...}" />
-            <marker date="1564524072062" expanded="true" signature="1288:1530" ph="{...}" />
-            <marker date="1564524072062" expanded="true" signature="1870:1942" ph="{...}" />
+            <marker date="1564221406250" expanded="true" signature="6:62" ph="..." />
+            <marker date="1564221406250" expanded="true" signature="102:194" ph="{...}" />
+            <marker date="1564221406250" expanded="true" signature="171:192" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/app/components/post/post.component.ts">
+    <entry file="file://$PROJECT_DIR$/app/src/app/components/post-list/post-list.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="39" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
+        <state relative-caret-position="315">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ApplicationLayer/Queries/Handlers/GetUserPostsQueryHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+          <folding>
+            <marker date="1564686142126" expanded="false" signature="6:185" ph="..." />
+            <marker date="1564686142126" expanded="true" signature="234:1211" ph="{...}" />
+            <marker date="1564686142126" expanded="true" signature="325:1209" ph="{...}" />
+            <marker date="1564686142126" expanded="true" signature="550:632" ph="{...}" />
+            <marker date="1564686142126" expanded="true" signature="691:1203" ph="{...}" />
+            <marker date="1564686142126" expanded="true" signature="841:976" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApplicationLayer/Queries/Handlers/GetPostsQueryHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+          <folding>
+            <marker date="1564687215271" expanded="true" signature="6:185" ph="..." />
+            <marker date="1564687215271" expanded="true" signature="234:886" ph="{...}" />
+            <marker date="1564687215271" expanded="true" signature="317:884" ph="{...}" />
+            <marker date="1564687215271" expanded="true" signature="538:620" ph="{...}" />
+            <marker date="1564687215271" expanded="true" signature="675:878" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/app/components/post-list/post-list.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://20a68ae8-47d2-436c-9eee-ed1ff84a984f/database/cms/schema/public/table/Comments">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="c665feaa-ec75-43a7-b0dc-8f8fb878948d">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data Layer/Migrations/20190801192409_AuthorToComment.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-106">
+          <caret line="2" column="25" lean-forward="true" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data Layer/Migrations/20190728111856_CommentAuthorIdToInt.Designer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-556">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data Layer/Migrations/20190728111856_CommentAuthorIdToInt.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="31" column="71" lean-forward="true" selection-start-line="31" selection-start-column="71" selection-end-line="31" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/app/components/post/post.component.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="49" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data Layer/Migrations/20190707093334_AddPostsToUser.cs">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/css/compiled/styles.css">
+    <entry file="file://$PROJECT_DIR$/Data Layer/Migrations/20190702225328_InitialMigration.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="86" column="42" selection-start-line="86" selection-start-column="42" selection-end-line="86" selection-end-column="42" />
+        <state relative-caret-position="60">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+          <folding>
+            <marker date="1563274619313" expanded="true" signature="84:339" ph="{...}" />
+            <marker date="1563274619313" expanded="true" signature="140:337" ph="{...}" />
+            <marker date="1563274619313" expanded="true" signature="216:237" ph="{...}" />
+            <marker date="1563274619313" expanded="true" signature="310:331" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/css/styles.scss">
+    <entry file="file://$PROJECT_DIR$/Data Layer/Migrations/20190702231434_AddCommentPostAndUser.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="124" selection-start-line="124" selection-end-line="124" />
+        <state relative-caret-position="-602">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApplicationLayer/Commands/CommandResult.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding>
+            <marker date="1563274619306" expanded="true" signature="30:217" ph="{...}" />
+            <marker date="1563274619306" expanded="true" signature="66:215" ph="{...}" />
+            <marker date="1563274619306" expanded="true" signature="160:209" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data Layer/Models/Comment.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="51" lean-forward="true" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
+          <folding>
+            <marker date="1564866830875" expanded="true" signature="6:144" ph="..." />
+            <marker date="1564866830875" expanded="true" signature="177:555" ph="{...}" />
+            <marker date="1564866830875" expanded="true" signature="204:553" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data Layer/Models/Post.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+          <folding>
+            <marker date="1564866827654" expanded="true" signature="6:144" ph="..." />
+            <marker date="1564866827654" expanded="true" signature="177:1280" ph="{...}" />
+            <marker date="1564866827654" expanded="true" signature="201:1278" ph="{...}" />
+            <marker date="1564866827654" expanded="true" signature="488:1095" ph="{...}" />
+            <marker date="1564866827654" expanded="true" signature="515:1057" ph="{...}" />
+            <marker date="1564866827654" expanded="true" signature="647:776" ph="{...}" />
+            <marker date="1564866827654" expanded="true" signature="797:874" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data Layer/Models/User.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding>
+            <marker date="1564866827659" expanded="true" signature="77:337" ph="{...}" />
+            <marker date="1564866827659" expanded="true" signature="101:335" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data Layer/Migrations/ApplicationDbContextModelSnapshot.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+          <folding>
+            <marker date="1564867012481" expanded="false" signature="28:270" ph="..." />
+            <marker date="1564867012481" expanded="true" signature="307:3596" ph="{...}" />
+            <marker date="1564867012481" expanded="true" signature="423:3594" ph="{...}" />
+            <marker date="1564867012481" expanded="true" signature="499:3588" ph="{...}" />
+            <marker date="1564867012481" expanded="true" signature="908:941" ph="{...}" />
+            <marker date="1564867012481" expanded="true" signature="1560:2041" ph="{...}" />
+            <marker date="1564867012481" expanded="true" signature="2171:2581" ph="{...}" />
+            <marker date="1564867012481" expanded="true" signature="2671:3222" ph="{...}" />
+            <marker date="1564867012481" expanded="true" signature="3309:3543" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApplicationLayer/Queries/GetUsersQuery.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding>
+            <marker date="1564866882059" expanded="false" signature="6:62" ph="..." />
+            <marker date="1564866882059" expanded="true" signature="102:336" ph="{...}" />
+            <marker date="1564866882059" expanded="true" signature="171:334" ph="{...}" />
+            <marker date="1564866882059" expanded="true" signature="272:328" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApplicationLayer/Queries/Handlers/GetUsersQueryHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="8" column="60" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
+          <folding>
+            <marker date="1563274619310" expanded="false" signature="6:148" ph="..." />
+            <marker date="1563274619310" expanded="true" signature="197:1267" ph="{...}" />
+            <marker date="1563274619310" expanded="true" signature="280:1265" ph="{...}" />
+            <marker date="1563274619310" expanded="true" signature="501:583" ph="{...}" />
+            <marker date="1563274619310" expanded="true" signature="638:1259" ph="{...}" />
+            <marker date="1563274619310" expanded="true" signature="711:782" ph="{...}" />
+            <marker date="1563274619310" expanded="true" signature="999:1208" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="66" column="99" selection-start-line="66" selection-start-column="99" selection-end-line="66" selection-end-column="99" />
+          <folding>
+            <marker date="1564866856710" expanded="false" signature="6:819" ph="..." />
+            <marker date="1564866856710" expanded="true" signature="834:3970" ph="{...}" />
+            <marker date="1564866856710" expanded="true" signature="861:3968" ph="{...}" />
+            <marker date="1564866856710" expanded="true" signature="980:1029" ph="{...}" />
+            <marker date="1564866856710" expanded="true" signature="1039:1254" ph="/* This method gets called by the runtime. Use this method to add services to the container. ... */" />
+            <marker date="1564866856710" expanded="true" signature="1321:3225" ph="{...}" />
+            <marker date="1564866856710" expanded="true" signature="3459:3962" ph="{...}" />
+            <marker date="1564866856710" expanded="true" signature="3622:3699" ph="{...}" />
+            <marker date="1564866856710" expanded="true" signature="3716:3787" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApplicationLayer/Commands/Handlers/DeleteUserPostCommandHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding>
+            <marker date="1564866947933" expanded="false" signature="6:128" ph="..." />
+            <marker date="1564866947933" expanded="true" signature="178:2161" ph="{...}" />
+            <marker date="1564866947933" expanded="true" signature="289:2159" ph="{...}" />
+            <marker date="1564866947933" expanded="true" signature="534:616" ph="{...}" />
+            <marker date="1564866947933" expanded="true" signature="691:2153" ph="{...}" />
+            <marker date="1564866947933" expanded="true" signature="771:2011" ph="{...}" />
+            <marker date="1564866947933" expanded="true" signature="1065:1275" ph="{...}" />
+            <marker date="1564866947933" expanded="true" signature="1328:1538" ph="{...}" />
+            <marker date="1564866947933" expanded="true" signature="1586:1837" ph="{...}" />
+            <marker date="1564866947933" expanded="true" signature="2043:2115" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApplicationLayer/Commands/CreateUserPostCommand.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding>
+            <marker date="1564866965667" expanded="true" signature="69:369" ph="{...}" />
+            <marker date="1564866965667" expanded="true" signature="165:367" ph="{...}" />
+            <marker date="1564866965667" expanded="true" signature="287:361" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApplicationLayer/Commands/DeleteUserPostCommand.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+          <folding>
+            <marker date="1564866922186" expanded="true" signature="39:348" ph="{...}" />
+            <marker date="1564866922186" expanded="true" signature="136:346" ph="{...}" />
+            <marker date="1564866922186" expanded="true" signature="262:340" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApplicationLayer/Commands/Handlers/DeleteUsersCommandHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="19" column="59" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
+          <folding>
+            <marker date="1564866898530" expanded="false" signature="6:133" ph="..." />
+            <marker date="1564866898530" expanded="true" signature="183:1713" ph="{...}" />
+            <marker date="1564866898530" expanded="true" signature="293:1711" ph="{...}" />
+            <marker date="1564866898530" expanded="true" signature="529:611" ph="{...}" />
+            <marker date="1564866898530" expanded="true" signature="688:1705" ph="{...}" />
+            <marker date="1564866898530" expanded="true" signature="773:1561" ph="{...}" />
+            <marker date="1564866898530" expanded="true" signature="1071:1375" ph="{...}" />
+            <marker date="1564866898530" expanded="true" signature="1593:1667" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApplicationLayer/Commands/DeleteUsersCommand.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding>
+            <marker date="1564866898533" expanded="true" signature="74:327" ph="{...}" />
+            <marker date="1564866898533" expanded="true" signature="170:325" ph="{...}" />
+            <marker date="1564866898533" expanded="true" signature="268:319" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/UsersController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="41" column="35" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
+          <folding>
+            <marker date="1564866912399" expanded="false" signature="6:279" ph="..." />
+            <marker date="1564866912399" expanded="true" signature="306:2622" ph="{...}" />
+            <marker date="1564866912399" expanded="true" signature="414:2620" ph="{...}" />
+            <marker date="1564866912399" expanded="true" signature="638:762" ph="{...}" />
+            <marker date="1564866912399" expanded="true" signature="821:1069" ph="{...}" />
+            <marker date="1564866912399" expanded="true" signature="964:1027" ph="{...}" />
+            <marker date="1564866912399" expanded="true" signature="1150:1459" ph="{...}" />
+            <marker date="1564866912399" expanded="true" signature="1346:1409" ph="{...}" />
+            <marker date="1564866912399" expanded="true" signature="1555:1853" ph="{...}" />
+            <marker date="1564866912399" expanded="true" signature="1714:1800" ph="{...}" />
+            <marker date="1564866912399" expanded="true" signature="1943:2233" ph="{...}" />
+            <marker date="1564866912399" expanded="true" signature="2096:2182" ph="{...}" />
+            <marker date="1564866912399" expanded="true" signature="2324:2614" ph="{...}" />
+            <marker date="1564866912399" expanded="true" signature="2477:2563" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data Layer/Migrations/20190803211652_LongIds.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="47" column="31" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
+          <folding>
+            <marker date="1564867012481" expanded="false" signature="6:101" ph="..." />
+            <marker date="1564867012481" expanded="true" signature="138:4452" ph="{...}" />
+            <marker date="1564867012481" expanded="true" signature="185:4450" ph="{...}" />
+            <marker date="1564867012481" expanded="true" signature="261:2316" ph="{...}" />
+            <marker date="1564867012481" expanded="true" signature="2389:4444" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/088051FB-72DE-4607-81C4-D1937DDE71E2/89/9a06491c/ExceptionDispatchInfo.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="91" column="6" selection-start-line="91" selection-start-column="6" selection-end-line="91" selection-end-column="6" />
+          <folding>
+            <marker date="1563277093837" expanded="true" signature="0:360" ph="/* Decompiled with JetBrains decompiler ... */" />
+            <marker date="1563277093837" expanded="true" signature="431:2426" ph="{...}" />
+            <marker date="1563277093837" expanded="true" signature="477:2424" ph="{...}" />
+            <marker date="1563277093837" expanded="true" signature="759:1239" ph="{...}" />
+            <marker date="1563277093837" expanded="true" signature="1280:1360" ph="{...}" />
+            <marker date="1563277093837" expanded="true" signature="1296:1354" ph="{...}" />
+            <marker date="1563277093837" expanded="true" signature="1395:1470" ph="{...}" />
+            <marker date="1563277093837" expanded="true" signature="1411:1464" ph="{...}" />
+            <marker date="1563277093837" expanded="true" signature="1513:1585" ph="{...}" />
+            <marker date="1563277093837" expanded="true" signature="1529:1579" ph="{...}" />
+            <marker date="1563277093837" expanded="true" signature="1625:1701" ph="{...}" />
+            <marker date="1563277093837" expanded="true" signature="1641:1695" ph="{...}" />
+            <marker date="1563277093837" expanded="true" signature="1739:1817" ph="{...}" />
+            <marker date="1563277093837" expanded="true" signature="1755:1811" ph="{...}" />
+            <marker date="1563277093837" expanded="true" signature="1884:2049" ph="{...}" />
+            <marker date="1563277093837" expanded="true" signature="2087:2158" ph="{...}" />
+            <marker date="1563277093837" expanded="true" signature="2103:2152" ph="{...}" />
+            <marker date="1563277093837" expanded="true" signature="2206:2307" ph="{...}" />
+            <marker date="1563277093837" expanded="true" signature="2355:2420" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data Layer/Contexts/ApplicationDbContext.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding>
+            <marker date="1564867235446" expanded="false" signature="6:65" ph="..." />
+            <marker date="1564867235446" expanded="true" signature="100:479" ph="{...}" />
+            <marker date="1564867235446" expanded="true" signature="159:477" ph="{...}" />
+            <marker date="1564867235446" expanded="true" signature="265:323" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://20a68ae8-47d2-436c-9eee-ed1ff84a984f/role/jardine">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/20a68ae8-47d2-436c-9eee-ed1ff84a984f/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data Layer/Seeding/DatabaseSeeder.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <marker date="1564867208841" expanded="false" signature="6:174" ph="..." />
+            <marker date="1564867208841" expanded="true" signature="208:1415" ph="{...}" />
+            <marker date="1564867208841" expanded="true" signature="252:1413" ph="{...}" />
+            <marker date="1564867208841" expanded="true" signature="455:537" ph="{...}" />
+            <marker date="1564867208841" expanded="true" signature="568:821" ph="{...}" />
+            <marker date="1564867208841" expanded="true" signature="856:1407" ph="{...}" />
+            <marker date="1564867208841" expanded="true" signature="943:1302" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>

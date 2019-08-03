@@ -274,14 +274,8 @@
         <e p="Migrations" t="Include">
           <e p="20190702225328_InitialMigration.cs" t="Include" />
           <e p="20190702225328_InitialMigration.Designer.cs" t="Include" />
-          <e p="20190702231434_AddCommentPostAndUser.cs" t="Include" />
-          <e p="20190702231434_AddCommentPostAndUser.Designer.cs" t="Include" />
-          <e p="20190707093334_AddPostsToUser.cs" t="Include" />
-          <e p="20190707093334_AddPostsToUser.Designer.cs" t="Include" />
-          <e p="20190707165656_RemotePostsFromUser.cs" t="Include" />
-          <e p="20190707165656_RemotePostsFromUser.Designer.cs" t="Include" />
-          <e p="20190728111856_CommentAuthorIdToInt.cs" t="Include" />
-          <e p="20190728111856_CommentAuthorIdToInt.Designer.cs" t="Include" />
+          <e p="20190803211652_LongIds.cs" t="Include" />
+          <e p="20190803211652_LongIds.Designer.cs" t="Include" />
           <e p="ApplicationDbContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="Models" t="Include">
@@ -310,6 +304,7 @@
     </e>
     <e p="$USER_HOME$/Library/Caches/Rider2019.1/extResources" t="IncludeRecursive" />
     <e p="$USER_HOME$/Library/Caches/Rider2019.1/resharper-host/local/Transient/ReSharperHost/v191/SolutionCaches/_cms.-1388826890.00" t="ExcludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/consoles/db" t="IncludeRecursive" />
     <e p="$APPLICATION_CONFIG_DIR$/extensions" t="IncludeRecursive" />
   </component>
 </project>

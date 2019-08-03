@@ -10,8 +10,8 @@ using cms.Data_Layer.Contexts;
 namespace cms.Data_Layer.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20190728111856_CommentAuthorIdToInt")]
-    partial class CommentAuthorIdToInt
+    [Migration("20190803211652_LongIds")]
+    partial class LongIds
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -23,17 +23,21 @@ namespace cms.Data_Layer.Migrations
 
             modelBuilder.Entity("cms.Data_Layer.Models.Comment", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<long>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<int?>("CommentId");
+                    b.Property<long>("AuthorId");
+
+                    b.Property<long?>("CommentId");
 
                     b.Property<string>("Content")
                         .IsRequired();
 
-                    b.Property<int?>("PostId");
+                    b.Property<long?>("PostId");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("AuthorId");
 
                     b.HasIndex("CommentId");
 
@@ -44,10 +48,10 @@ namespace cms.Data_Layer.Migrations
 
             modelBuilder.Entity("cms.Data_Layer.Models.Post", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<long>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<int>("AuthorId");
+                    b.Property<long>("AuthorId");
 
                     b.Property<string>("Body");
 
@@ -65,7 +69,7 @@ namespace cms.Data_Layer.Migrations
 
             modelBuilder.Entity("cms.Data_Layer.Models.User", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<long>("Id")
                         .ValueGeneratedOnAdd();
 
                     b.Property<string>("Email")
@@ -83,6 +87,11 @@ namespace cms.Data_Layer.Migrations
 
             modelBuilder.Entity("cms.Data_Layer.Models.Comment", b =>
                 {
+                    b.HasOne("cms.Data_Layer.Models.User", "Author")
+                        .WithMany()
+                        .HasForeignKey("AuthorId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
                     b.HasOne("cms.Data_Layer.Models.Comment")
                         .WithMany("Replies")
                         .HasForeignKey("CommentId");

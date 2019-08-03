@@ -5,9 +5,9 @@ namespace cms.ApplicationLayer.Queries
 {
     public class GetUsersQuery : IQuery<GetUsersQuery, List<User>>
     {
-        public IList<int> userIds;
+        public IList<long> userIds;
 
-        public GetUsersQuery(IList<int> userIds  = null)
+        public GetUsersQuery(IList<long> userIds  = null)
         {
             this.userIds = userIds;
         }

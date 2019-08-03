@@ -58,13 +58,13 @@ namespace cms
             // Commands
             services.AddScoped<ICommandProcessor, CommandProcessor>();
             services.AddScoped<ICommandResolver, CommandResolver>();
-            services.AddScoped<ICommandHandler<DeleteUsersCommand, CommandResult<List<int>>>, DeleteUsersCommandHandler>();
+            services.AddScoped<ICommandHandler<DeleteUsersCommand, CommandResult<List<long>>>, DeleteUsersCommandHandler>();
             services.AddScoped<ICommandHandler<UpdateUsersCommand, CommandResult<List<User>>>, UpdateUsersCommandHandler>();
             services.AddScoped<ICommandHandler<CreateUsersCommand, CommandResult<List<User>>>, CreateUserCommandHandler>();
             
             services.AddScoped<ICommandHandler<CreateUserPostCommand, CommandResult<Post>>, CreateUserPostCommandHandler>();
             services.AddScoped<ICommandHandler<UpdateUserPostCommand, CommandResult<Post>>, UpdateUserPostCommandHandler>();
-            services.AddScoped<ICommandHandler<DeleteUserPostCommand, CommandResult<int?>>, DeleteUserPostCommandHandler>();
+            services.AddScoped<ICommandHandler<DeleteUserPostCommand, CommandResult<long?>>, DeleteUserPostCommandHandler>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

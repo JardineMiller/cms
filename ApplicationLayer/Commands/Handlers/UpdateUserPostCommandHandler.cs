@@ -26,6 +26,8 @@ namespace cms.ApplicationLayer.Commands.Handlers
             {
                 var updatedPost = command.Post;
                 var userId = command.UserId;
+                
+                updatedPost.Timestamp = DateTimeOffset.UtcNow;
 
                 var dbPost = ctx.Posts.FirstOrDefault(p => p.Id == updatedPost.Id);
 
@@ -48,7 +50,12 @@ namespace cms.ApplicationLayer.Commands.Handlers
                 ctx.SaveChanges();
 
                 result.Success = true;
-                result.Response = ctx.Posts.Where(p => p.Id == updatedPost.Id).Include(p => p.Author).First();
+                result.Response = ctx.Posts
+                    .Where(p => p.Id == updatedPost.Id)
+                    .Include(p => p.Author)
+                    .Include(p => p.Comments)
+                    .ThenInclude(c => c.Replies)
+                    .First();
             }
             catch (Exception e)
             {

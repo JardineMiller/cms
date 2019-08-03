@@ -1,4 +1,4 @@
-<section class="container">
+<section class="container" *ngIf="posts">
   <article class="post preview" *ngFor="let post of posts" [routerLink]="['/posts/', post.id]">
     <div class="post-header">
       <h5>{{post.title}}</h5>

@@ -20,7 +20,11 @@ namespace cms.ApplicationLayer.Queries.Handlers
 
         public List<Post> Handle(GetPostsQuery query)
         {
-            return ctx.Posts.Include(p => p.Author).ToList();
+            return ctx.Posts
+                .Include(p => p.Author)
+                .Include(p => p.Comments)
+                .ThenInclude(c => c.Replies)
+                .ToList();
         }
     }
 }

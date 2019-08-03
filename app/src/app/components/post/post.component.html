@@ -14,14 +14,15 @@
       <div class="post-snippet" [innerHTML]="post.snippet">
       </div>
     </article>
+    <button class="btn btn-seconary" [routerLink]="['/posts']">Back</button>
   </section>
   <section class="container">
     <h5>Comments</h5>
-    <div *ngIf="!post.comments.length">
+    <div *ngIf="post.comments && !post.comments.length">
       Be the first to leave a comment
       <textarea class="form-control" name="comment" id="comment" rows="4"></textarea>
     </div>
-    <ul class="comments" *ngIf="post.comments.length">
+    <ul class="comments" *ngIf="post.comments && post.comments.length">
       <li class="comment" *ngFor="let comment of post.comments">
 
       </li>

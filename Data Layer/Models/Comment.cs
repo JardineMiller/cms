@@ -8,15 +8,14 @@ namespace cms.Data_Layer.Models
     public class Comment
     {
         [Key]
-        public int Id { get; set; }
+        public long Id { get; set; }
 
         [ForeignKey("Author")]
-        public int AuthorId;
+        public long AuthorId { get; set; }
 
-        public User Author;
+        public User Author { get; set; }
 
-        [Required]
-        public DateTimeOffset Timestamp;
+        [Required] public DateTimeOffset Timestamp;
 
         [Required]
         public string Content { get; set; }

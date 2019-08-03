@@ -8,10 +8,10 @@ namespace cms.Data_Layer.Models
     public class Post
     {
         [Key]
-        public int Id { get; set; }
+        public long Id { get; set; }
 
         [ForeignKey("Author")]
-        public int AuthorId { get; set; }
+        public long AuthorId { get; set; }
 
         [Required]
         public string Title { get; set; }
@@ -48,17 +48,8 @@ namespace cms.Data_Layer.Models
         public User Author { get; private set; }
 
         [Required]
-        public DateTimeOffset Timestamp { get; private set; }
+        public DateTimeOffset Timestamp { get; set; }
 
         public List<Comment> Comments { get; set; }
-
-        public Post(int authorId, string title, string body)
-        {
-            AuthorId = authorId;
-            Title = title;
-            Body = body;
-            Timestamp = DateTimeOffset.UtcNow;
-            Comments = new List<Comment>();
-        }
     }
 }

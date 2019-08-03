@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
 using cms.Data_Layer.Contexts;
 using cms.Data_Layer.Models;
 using Microsoft.Extensions.Logging;
@@ -31,7 +30,6 @@ namespace cms.Data_Layer.Seeding
 
         private void seedPeople()
         {
-            if (!cnt.Users.Any())
             {
                 var people = new List<User>()
                 {

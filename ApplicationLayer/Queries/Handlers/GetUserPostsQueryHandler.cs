@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using cms.Data_Layer.Contexts;
 using cms.Data_Layer.Models;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
 namespace cms.ApplicationLayer.Queries.Handlers
@@ -28,7 +29,10 @@ namespace cms.ApplicationLayer.Queries.Handlers
                 return null;
             }
 
-            var userPosts = ctx.Posts.Where(p => p.AuthorId == userId);
+            var userPosts = ctx.Posts
+                .Where(p => p.AuthorId == userId)
+                .Include(p => p.Comments)
+                .ThenInclude(c => c.Replies);
 
             return userPosts.ToList();
         }

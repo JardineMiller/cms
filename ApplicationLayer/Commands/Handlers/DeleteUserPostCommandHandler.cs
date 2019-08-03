@@ -6,7 +6,7 @@ using Microsoft.Extensions.Logging;
 
 namespace cms.ApplicationLayer.Commands.Handlers
 {
-    public class DeleteUserPostCommandHandler : ICommandHandler<DeleteUserPostCommand, CommandResult<int?>>
+    public class DeleteUserPostCommandHandler : ICommandHandler<DeleteUserPostCommand, CommandResult<long?>>
     {
         private readonly ApplicationDbContext ctx;
         private readonly ILogger<DeleteUserPostCommandHandler> logger;
@@ -17,9 +17,9 @@ namespace cms.ApplicationLayer.Commands.Handlers
             this.logger = logger;
         }
 
-        public CommandResult<int?> Handle(DeleteUserPostCommand command)
+        public CommandResult<long?> Handle(DeleteUserPostCommand command)
         {
-            var result = new CommandResult<int?>();
+            var result = new CommandResult<long?>();
 
             try
             {

@@ -6,7 +6,7 @@ using Microsoft.Extensions.Logging;
 
 namespace cms.ApplicationLayer.Commands.Handlers
 {
-    public class DeleteUsersCommandHandler : ICommandHandler<DeleteUsersCommand, CommandResult<List<int>>>
+    public class DeleteUsersCommandHandler : ICommandHandler<DeleteUsersCommand, CommandResult<List<long>>>
     {
         private readonly ApplicationDbContext ctx;
         private readonly ILogger<DeleteUsersCommandHandler> logger;
@@ -17,9 +17,9 @@ namespace cms.ApplicationLayer.Commands.Handlers
             this.logger = logger;
         }
 
-        public CommandResult<List<int>> Handle(DeleteUsersCommand command)
+        public CommandResult<List<long>> Handle(DeleteUsersCommand command)
         {
-            var result = new CommandResult<List<int>>();
+            var result = new CommandResult<List<long>>();
 
             try
             {

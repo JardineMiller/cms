@@ -1,11 +1,11 @@
 namespace cms.ApplicationLayer.Commands
 {
-    public class DeleteUserPostCommand : ICommand<DeleteUserPostCommand, CommandResult<int?>>
+    public class DeleteUserPostCommand : ICommand<DeleteUserPostCommand, CommandResult<long?>>
     {
-        public int UserId;
-        public int PostId;
+        public long UserId;
+        public long PostId;
 
-        public DeleteUserPostCommand(int userId, int postId)
+        public DeleteUserPostCommand(long userId, long postId)
         {
             UserId = userId;
             PostId = postId;

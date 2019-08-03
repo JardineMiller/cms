@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace cms.Data_Layer.Contexts
 {
-    public class ApplicationDbContext : DbContext
+    public sealed class ApplicationDbContext : DbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {

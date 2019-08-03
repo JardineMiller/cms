@@ -37,9 +37,9 @@ namespace cms.Controllers
         }
 
         [HttpGet("{userId}")]
-        public IActionResult GetUser(int userId)
+        public IActionResult GetUser(long userId)
         {
-            var ids = new List<int>() {userId};
+            var ids = new List<long>() {userId};
 
             var query = new GetUsersQuery(ids);
             var result = queryProcessor.Process(query);
@@ -53,7 +53,7 @@ namespace cms.Controllers
         }
 
         [HttpDelete]
-        public IActionResult DeleteUsers([FromQuery] IList<int> userIds)
+        public IActionResult DeleteUsers([FromQuery] IList<long> userIds)
         {
             var cmd = new DeleteUsersCommand(userIds);
             var response = commandProcessor.Process(cmd);
