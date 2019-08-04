@@ -22,8 +22,8 @@ namespace cms.ApplicationLayer.Queries.Handlers
         {
             return ctx.Posts
                 .Include(p => p.Author)
-                .Include(p => p.Comments)
-                .ThenInclude(c => c.Replies)
+                .Include(p => p.Comments).ThenInclude(c => c.Author)
+                .Include(p => p.Comments).ThenInclude(c => c.Replies).ThenInclude(r => r.Author)
                 .ToList();
         }
     }

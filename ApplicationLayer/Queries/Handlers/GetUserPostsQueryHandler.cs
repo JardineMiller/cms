@@ -21,7 +21,7 @@ namespace cms.ApplicationLayer.Queries.Handlers
         public List<Post> Handle(GetUserPostsQuery query)
         {
             var userId = query.UserId;
-            var user = ctx.Users.FirstOrDefault(u => u.Id == userId);
+            var user = ctx.Users.SingleOrDefault(u => u.Id == userId);
 
             if (user == null)
             {
@@ -30,9 +30,9 @@ namespace cms.ApplicationLayer.Queries.Handlers
             }
 
             var userPosts = ctx.Posts
-                .Where(p => p.AuthorId == userId)
-                .Include(p => p.Comments)
-                .ThenInclude(c => c.Replies);
+                .Include(p => p.Author)
+                .Include(p => p.Comments).ThenInclude(c => c.Author)
+                .Include(p => p.Comments).ThenInclude(c => c.Replies).ThenInclude(r => r.Author);
 
             return userPosts.ToList();
         }

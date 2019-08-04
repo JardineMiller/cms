@@ -26,8 +26,8 @@ namespace cms.ApplicationLayer.Commands.Handlers
                 var userId = command.UserId;
                 var postId = command.PostId;
 
-                var dbUser = ctx.Users.FirstOrDefault(u => u.Id == userId);
-                var dbPost = ctx.Posts.FirstOrDefault(p => p.Id == postId);
+                var dbUser = ctx.Users.SingleOrDefault(u => u.Id == userId);
+                var dbPost = ctx.Posts.SingleOrDefault(p => p.Id == postId);
 
                 if (dbUser == null)
                 {

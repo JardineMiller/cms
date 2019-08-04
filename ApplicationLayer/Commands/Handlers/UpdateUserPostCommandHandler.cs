@@ -21,7 +21,7 @@ namespace cms.ApplicationLayer.Commands.Handlers
         public CommandResult<Post> Handle(UpdateUserPostCommand command)
         {
             var result = new CommandResult<Post>();
-
+            
             try
             {
                 var updatedPost = command.Post;
@@ -29,7 +29,9 @@ namespace cms.ApplicationLayer.Commands.Handlers
                 
                 updatedPost.Timestamp = DateTimeOffset.UtcNow;
 
-                var dbPost = ctx.Posts.FirstOrDefault(p => p.Id == updatedPost.Id);
+                var dbPost = ctx.Posts
+                    .Include(p => p.Comments)
+                    .SingleOrDefault(p => p.Id == updatedPost.Id);
 
                 if (dbPost == null)
                 {
@@ -44,18 +46,34 @@ namespace cms.ApplicationLayer.Commands.Handlers
                     result.Response = null;
                     return result;
                 }
-
+                
                 var entry = ctx.Entry(dbPost);
                 entry.CurrentValues.SetValues(updatedPost);
+                
+                dbPost.Comments.Clear();
+                foreach (var comment in updatedPost.Comments)
+                {
+                    Comment existingComment;
+
+                    existingComment = ctx.Comments.SingleOrDefault(c => c.Id == comment.Id);
+                    
+                    if (existingComment == null)
+                    {
+                        comment.Timestamp = DateTimeOffset.UtcNow;
+                        existingComment = ctx.Comments.Add(comment).Entity;
+                    }
+
+                    dbPost.Comments.Add(existingComment);
+                }
+                
                 ctx.SaveChanges();
 
                 result.Success = true;
                 result.Response = ctx.Posts
-                    .Where(p => p.Id == updatedPost.Id)
                     .Include(p => p.Author)
-                    .Include(p => p.Comments)
-                    .ThenInclude(c => c.Replies)
-                    .First();
+                    .Include(p => p.Comments).ThenInclude(c => c.Author)
+                    .Include(p => p.Comments).ThenInclude(c => c.Replies).ThenInclude(r => r.Author)
+                    .SingleOrDefault(p => p.Id == updatedPost.Id);;
             }
             catch (Exception e)
             {
