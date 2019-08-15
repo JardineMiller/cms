@@ -68,8 +68,7 @@ section {
   top: 0;
   width: 100%; }
 
-article.post,
-.comments {
+article.post {
   transition: all .2s;
   background: #fff;
   border-radius: 2px;
@@ -77,31 +76,23 @@ article.post,
   padding: 25px;
   margin-bottom: 20px;
   color: #333; }
-  article.post p :last-child,
-  .comments p :last-child {
+  article.post p :last-child {
     margin-bottom: 0; }
-  article.post .post-header,
-  .comments .post-header {
+  article.post .post-header {
     position: relative; }
-    article.post .post-header .action-buttons,
-    .comments .post-header .action-buttons {
+    article.post .post-header .action-buttons {
       position: absolute;
       top: 0;
       right: 0; }
-      article.post .post-header .action-buttons i,
-      .comments .post-header .action-buttons i {
+      article.post .post-header .action-buttons i {
         cursor: pointer; }
-  article.post .post-meta-info,
-  .comments .post-meta-info {
+  article.post .post-meta-info {
     color: #666; }
-  article.post .post-footer,
-  .comments .post-footer {
+  article.post .post-footer {
     color: #666; }
-    article.post .post-footer p:last-child,
-    .comments .post-footer p:last-child {
+    article.post .post-footer p:last-child {
       margin-bottom: 0; }
-    article.post .post-footer :hover,
-    .comments .post-footer :hover {
+    article.post .post-footer :hover {
       cursor: pointer;
       text-decoration: underline; }
 

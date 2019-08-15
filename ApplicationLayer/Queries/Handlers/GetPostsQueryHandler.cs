@@ -49,6 +49,7 @@ namespace cms.ApplicationLayer.Queries.Handlers
         private Comment LoadComment(Comment comment)
         {
             var dbComment = ctx.Comments
+                .Include(c => c.Author)
                 .Include(c => c.Replies).ThenInclude(r => r.Author)
                 .SingleOrDefault(c => c.Id == comment.Id);
 

@@ -11,22 +11,55 @@
           <p>Written by {{post.author.name}} on {{post.timestamp | date}}</p>
         </div>
       </div>
-      <div class="post-snippet" [innerHTML]="post.snippet">
+      <div class="post-body" [innerHTML]="post.body">
       </div>
     </article>
     <button class="btn btn-seconary" [routerLink]="['/posts']">Back</button>
   </section>
   <section class="container">
     <h5>Comments</h5>
-    <div *ngIf="post.comments && !post.comments.length">
-      Be the first to leave a comment
-      <textarea class="form-control" name="comment" id="comment" rows="4"></textarea>
-    </div>
+
     <ul class="comments" *ngIf="post.comments && post.comments.length">
       <li class="comment" *ngFor="let comment of post.comments">
-
+        <div class="author-info">
+          <div class="author-avatar"></div>
+          <div class="author-meta-info">
+            <h6 class="author-name">
+              {{comment.author.name}}
+            </h6>
+          </div>
+        </div>
+        <div class="comment-body">
+          {{comment.content}}
+        </div>
+        <ul class="comments" *ngIf="comment.replies && comment.replies.length">
+          <li class="reply" *ngFor="let reply of comment.replies">
+            <div class="author-info">
+              <div class="author-avatar"></div>
+              <div class="author-meta-info">
+                <h6 class="author-name">
+                  {{reply.author.name}}
+                </h6>
+              </div>
+            </div>
+            <div class="comment-body">
+              {{reply.content}}
+            </div>
+          </li>
+        </ul>
       </li>
     </ul>
+
+    <form class="comment-form">
+      <h6>Leave a comment</h6>
+      <div class="form-group">
+        <input type="text" id="name" name="name" class="form-control" placeholder="Enter name...">
+      </div>
+      <div class="form-group">
+        <textarea class="form-control" [(ngModel)]="newComment.content" name="comment" id="comment" rows="4" placeholder="Comment..."></textarea>
+      </div>
+    </form>
+    <button class="btn btn-primary" (click)="saveComment()">Save</button>
   </section>
 </div>
 
@@ -39,7 +72,7 @@
       </div>
       <div class="form-group">
         <label for="post-body">Post Body</label>
-        <textarea name="" id="post-body" cols="30" rows="10" class="form-control" name="post-body" [(ngModel)]="post.body"></textarea>
+        <textarea name="" id="post-body" class="form-control post-edit-body" name="post-body" [(ngModel)]="post.body"></textarea>
       </div>
     </form>
     <button class="btn btn-primary" (click)="save()">Save</button>

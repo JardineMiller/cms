@@ -24,15 +24,18 @@ namespace cms.Data_Layer.Models
         
         // Relationships
         
+//        [JsonIgnore]
         public long AuthorId { get; set; }
 
         public User Author { get; set; }
-
+        
+        [JsonIgnore]
         public long? PostId { get; set; }
         
         [JsonIgnore]
         public Post Post { get; set; }
         
+        [JsonIgnore]
         public long? ParentCommentId { get; set; }
 
         [JsonIgnore]

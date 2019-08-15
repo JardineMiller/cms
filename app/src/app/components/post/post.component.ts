@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {PostsService} from "../../services/posts/posts.service";
 import {ActivatedRoute, Router} from "@angular/router";
 import {IPost} from "../../../models/interfaces/post";
+import {IComment} from "../../../models/interfaces/IComment";
 
 @Component({
   selector: 'app-post',
@@ -11,9 +12,11 @@ import {IPost} from "../../../models/interfaces/post";
 export class PostComponent implements OnInit {
   private post: IPost;
   public editMode: boolean;
+  public newComment: IComment;
 
   constructor(private posts: PostsService, private route: ActivatedRoute, private router: Router) {
     this.editMode = false;
+    this.newComment = {content: "", authorId: 1};
   }
 
   ngOnInit() {
@@ -43,5 +46,10 @@ export class PostComponent implements OnInit {
     this.posts.delete(this.post.authorId, this.post.id).then(res => {
       this.router.navigate(['/posts']);
     })
+  }
+
+  private saveComment() {
+    this.post.comments.push(this.newComment);
+    this.save();
   }
 }
